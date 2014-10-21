@@ -1,0 +1,64 @@
+
+body {
+	padding-top:65px;
+}
+.navbar-inverse {
+  background-color: #006655;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #FFE151;
+    color: #006655;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #FFE151;
+    color: #006655;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #006655;
+}
+
+.navbar-toggle {
+	background-color: #FFE151;
+    border-color: #FFE151;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #FFE151;
+    color: #006655;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus {
+    background-color: #006655;
+    border-color: #006655;
+    color: #fff;
+}
+
+a {
+  color: #006655;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #006655;
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  background-image: url('morrisonslogo.png');
+  background-position: 15px 15px;
+  background-size:30px;
+  background-repeat: no-repeat;
+  padding-left:60px;
+}
+
+

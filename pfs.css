@@ -1,9 +1,17 @@
+html {
+position: relative;
+min-height: 100%;
+}
 
 body {
 	padding-top:65px;
+	margin-bottom: 60px;
+	
 }
+
 .navbar-inverse {
   background-color: #006655;
+    border-color: #006655;
 }
 
 .navbar-inverse .navbar-brand {
@@ -27,14 +35,28 @@ body {
     border-color: #006655;
 }
 
-.navbar-toggle {
-	background-color: #FFE151;
-    border-color: #FFE151;
+
+.navbar-inverse .navbar-toggle {
+	background-color: #006655;
+    border-color: #fff;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     background-color: #FFE151;
     color: #006655;
+}
+
+
+.footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+/* Set the fixed height of the footer here */
+height: 60px;
+}
+
+.footer .container-fluid p {
+	    margin: 20px 0;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:focus {
@@ -53,12 +75,16 @@ a:hover {
   text-decoration: underline;
 }
 
-.navbar-brand {
+/*.navbar-brand {
   background-image: url('morrisonslogo.png');
   background-position: 15px 15px;
   background-size:30px;
   background-repeat: no-repeat;
   padding-left:60px;
+}*/
+
+.navbar-logo {
+	padding-right:10px;
 }
 
 

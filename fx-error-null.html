@@ -29,27 +29,27 @@
 	        </div>
 	      </div>
 	    </div>
-
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-xs-12 col-md-12 col-lg-12">
 					<h3 class="page-header">Exchange rates <small>Mon 05 Jan 2015</small></h3>
+					<div class="alert alert-danger"><p>Please enter all the required exchange rates.</p></div>
 					<form role="form">
 						<div class="row">
-						  <div class="form-group form-group-sm col-xs-4 col-sm-3 col-md-2 col-lg-2">
+						  <div class="form-group form-group-sm col-xs-4 col-sm-3 col-md-2 col-lg-2 has-error">
 							<label class="control-label">&dollar; USD / &pound; GBP</label>
-						    <input type="text" class="form-control" placeholder="" maxlength="6">	
+						    <input type="text" class="form-control" placeholder="">	
 						  </div>
 						  <div class="form-group form-group-sm col-xs-4 col-sm-3 col-md-2 col-lg-2">
 							<label class="control-label">&euro; EUR / &pound; GBP</label>
-						    <input type="text" class="form-control" placeholder="">						
+						    <input type="text" class="form-control" value="0.78800">					
 						  </div>
 						  <div class="form-group form-group-sm col-xs-4 col-sm-3 col-md-2 col-lg-2">
 							<label class="control-label">&euro; EUR / &dollar; USD</label>
-						    <input type="text" class="form-control" placeholder="">				
+						    <input type="text" class="form-control" value="1.2746" maxlength="6">				
 						  </div>
 					  </div>
-					  <a class="btn btn-primary" href="market-daily-fx-added.html">Save exchange rates</a>
+					  <a class="btn btn-primary" href="market-fx.html">Save exchange rates</a>
 					</form>													
 				</div>
 			</div>	

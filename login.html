@@ -11,7 +11,8 @@
 	
 	    <!-- Custom styles for this template -->
 	    <link href="pfs.css" rel="stylesheet">
-		<link href="login.css" rel="stylesheet">
+	    <link href="login.css" rel="stylesheet">
+	
 
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,12 +35,16 @@
 		<div class="container">
 
 		      <form role="form" class="form-signin">
-		        <h2 class="form-signin-heading">Please sign in</h2>
-		        <input type="email" autofocus="" required="" placeholder="Email address" class="form-control">
-		        <input type="password" required="" placeholder="Password" class="form-control">
-		        <label class="checkbox">
-		          <input type="checkbox" value="remember-me"> Remember me
-		        </label>
+		        <h2 class="page-header">Please sign in</h2>
+				<div class="alert alert-danger"><p>Your email or password was not recognised. Please try again.</p></div>
+				<div class="form-group">
+					<label class="control-label" for="email">Email address</label>
+		        	<input type="email" id="email" autofocus="" required="" class="form-control">
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="password">Password</label>		
+		        	<input type="password" id="password" required="" class="form-control">
+				</div>
 		        <a class="btn btn-lg btn-primary btn-block" href="dashboard.html">Sign in</a>
 		      </form>
 

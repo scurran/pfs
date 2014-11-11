@@ -87,4 +87,6 @@ a:hover {
 	padding-right:10px;
 }
 
-
+.bg-week td {
+    border-left: 1px dashed #ddd;
+}

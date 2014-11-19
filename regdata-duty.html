@@ -33,7 +33,7 @@
 				     <span class="glyphicon glyphicon-cog"></span>&nbsp;Configuration&nbsp;<span class="caret"></span>
 				    </a>
 				    <ul class="dropdown-menu" role="menu">
-			            <li><a href="regdata-history.html">Manage regulatory data</a></li>
+			            <li><a href="regdata-vat.html">Manage regulatory data</a></li>
 				    </ul>				
 				<li><a href="">Sign out</a></li>
 				</ul>
@@ -43,7 +43,6 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<ul class="nav nav-pills">
-						<li><a href="regdata-history.html">History</a></li>	
 						<li><a href="regdata-vat.html">VAT rate</a></li>
 						<li><a href="regdata-rtfo.html"><acronym title="Renewable Transport Fuel Obligation">RTFO</acronym> rate</a></li>									
 						<li class="active"><a href="regdata-duty.html">Duty amounts</a></li>									
@@ -57,45 +56,69 @@
 					<h3 class="page-header">Duty amounts</h3>
 					<form role="form">
 						<div class="row">
-						  <div class="form-group form-group-sm col-xs-4 col-sm-1">
+						  <div class="form-group col-xs-12 col-sm-2">
+							<label class="control-label">Effective date</label>
+						    <input type="text" class="form-control" value="01/01/2011">	
+							<span class="help-block">Use format DD/MM/YYYY</span>
+						  </div>
+						  <div class="form-group col-xs-4 col-sm-1">
 							<label class="control-label">Gasoil</label>
-						    	<input type="text" class="form-control" value="12.34">
+						    	<input type="text" class="form-control" value="11.33">
 						  </div>
-						  <div class="form-group form-group-sm col-xs-4 col-sm-1">
+						  <div class="form-group col-xs-4 col-sm-1">
 							<label class="control-label">PU50</label>
-						    	<input type="text" class="form-control" value="12.34">						
+						    	<input type="text" class="form-control" value="58.95">						
 						  </div>
-						  <div class="form-group form-group-sm col-xs-4 col-sm-1">
+						  <div class="form-group col-xs-4 col-sm-1">
 							<label class="control-label">ULSD</label>
-						    	<input type="text" class="form-control" value="12.34">						
+						    	<input type="text" class="form-control" value="58.95">						
 						  </div>
-						  <div class="form-group form-group-sm col-xs-4 col-sm-1">
+						  <div class="form-group col-xs-4 col-sm-1">
 							<label class="control-label">Super</label>
-						    	<input type="text" class="form-control" value="12.34">
+						    	<input type="text" class="form-control" value="0.00">
 						  </div>
 						
-						  <div class="form-group form-group-sm col-xs-4 col-sm-1">
+						  <div class="form-group col-xs-4 col-sm-1">
 							<label class="control-label">E85</label>
-						    	<input type="text" class="form-control" value="12.34">
+						    	<input type="text" class="form-control" value="0.00">
 						  </div>
-						<div class="form-group form-group-sm col-xs-4 col-sm-1">
+						<div class="form-group col-xs-4 col-sm-1">
 							<label class="control-label">B30</label>
-						    	<input type="text" class="form-control" value="12.34">
+						    	<input type="text" class="form-control" value="58.95">
+						  </div>
+						  <div class="form-group form-group-sm col-xs-4 col-sm-1">
+							<label class="control-label">Bio diesel</label>
+						    	<input type="text" class="form-control" value="58.95">
 						  </div>	
 						  <div class="form-group form-group-sm col-xs-4 col-sm-1">
 							<label class="control-label">T2</label>
-						    	<input type="text" class="form-control" value="12.34">
+						    	<input type="text" class="form-control" value="58.95">
 						  </div>
 						</div>	
-						<div class="row">
-						  <div class="form-group col-xs-6 col-md-2">
-							<label class="control-label">Date of activation</label>
-						    <input type="text" class="form-control" value="01/01/2015">	
-							<span class="help-block">Use format DD/MM/YYYY</span>
-						  </div>
-					  </div>
-  						<a class="btn btn-primary" href="market-daily-prices-added.html">Save duty rates</a>	
+  						<a class="btn btn-primary" href="market-daily-prices-added.html">Save duty amounts</a>	
 					</form>														
+				</div>
+			</div>	
+		</div>		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<h4 class="page-header">Duty amounts history</h4>
+					<table class="table table-condensed">
+						<thead>
+							<tr><th>Effective date</th><th>Gasoil</th><th>PU50</th><th>ULDS</th><th>Super</th><th>E85</th><th>B30</th><th>Bio diesel</th><th>T2</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>01/01/2011</td><td>11.33</td><td>58.95</td><td>58.95</td><td>0.00</td><td>0.00</td><td>0.00</td><td>58.95</td><td>58.95</td></tr>
+							<tr><td>01/10/2010</td><td>11.18</td><td>58.19</td><td>58.19</td><td>0.00</td><td>58.19</td><td>58.19</td><td>58.19</td><td>58.19</td></tr>
+							<tr><td>01/04/2010</td><td>10.99</td><td>57.19</td><td>57.19</td><td>0.00</td><td>57.19</td><td>57.19</td><td>57.19</td><td>57.19</td></tr>
+							<tr><td>06/09/2009</td><td>10.80</td><td>56.19</td><td>56.19</td><td>56.19</td><td>56.19</td><td>56.19</td><td>0.00</td><td>0.00</td></tr>
+							<tr><td>05/04/2009</td><td>10.42</td><td>54.19</td><td>54.19</td><td>54.19</td><td>54.19</td><td>54.19</td><td>0.00</td><td>0.00</td></tr>
+							<tr><td>07/12/2008</td><td>10.07</td><td>52.35</td><td>52.35</td><td>52.35</td><td>52.35</td><td>52.35</td><td>0.00</td><td>0.00</td></tr>
+							<tr><td>07/10/2007</td><td>9.69</td><td>50.35</td><td>50.35</td><td>50.35</td><td>50.35</td><td>50.35</td><td>0.00</td><td>0.00</td></tr>
+							<tr><td>30/09/2007</td><td>7.69</td><td>48.35</td><td>48.35</td><td>48.35</td><td>48.35</td><td>48.35</td><td>0.00</td><td>0.00</td></tr>
+						</tbody>
+					</table>						
 				</div>
 			</div>	
 		</div>		

@@ -40,7 +40,7 @@
 				     <span class="glyphicon glyphicon-cog"></span>&nbsp;Configuration&nbsp;<span class="caret"></span>
 				    </a>
 				    <ul class="dropdown-menu" role="menu">
-			            <li><a href="regdata-vat.html">Manage regulatory data</a></li>
+			            <li><a href="regdata-history.html">Manage regulatory data</a></li>
 				    </ul>				
 				<li><a href="">Sign out</a></li>
 				</ul>
@@ -51,6 +51,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<ul class="nav nav-pills">
+						<li><a href="regdata-history.html">History</a></li>	
 						<li class="active"><a href="regdata-vat.html">VAT rate</a></li>
 						<li><a href="regdata-rtfo.html"><acronym title="Renewable Transport Fuel Obligation">RTFO</acronym> rate</a></li>									
 						<li><a href="regdata-duty.html">Duty amounts</a></li>									
@@ -62,22 +63,24 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<h3 class="page-header">VAT rate</h3>
+					<div class="alert alert-success"><p>VAT rate saved.</p></div>
+					
 					<form role="form">
 						<div class="row">
 							<div class="form-group col-xs-6 col-md-2">
 							<label class="control-label">Effective date</label>
-						    <input type="text" class="form-control" value="01/01/2011">	
+						    <input type="text" class="form-control" value="01/01/2015">	
 							<span class="help-block">Use format DD/MM/YYYY</span>
 						  </div>
 						  <div class="form-group col-xs-6 col-md-2">
 							<label class="control-label">VAT rate</label>
 							<div class="input-group">
-						    <input type="text" class="form-control" value="20">	
+						    <input type="text" class="form-control" value="17.5">	
 							<div class="input-group-addon">%</div>
 							</div>
 						  </div>
 					  </div>
-					  <a class="btn btn-primary" href="regdata-vat-saved.html">Save VAT rate</a>
+					  <a class="btn btn-primary" href="">Save VAT rate</a>
 					</form>													
 				</div>
 			</div>	
@@ -91,6 +94,8 @@
 							<tr><th class="col-lg-2">Effective date</th><th>VAT rate</th></tr>
 						</thead>
 						<tbody>
+							<tr class="bg-success"><td>01/01/2015</td><td>17.5% <a class="btn btn-default btn-sm pull-right" href="regdata-vat.html"><span class="glyphicon glyphicon-remove"></span> Undo this change?</a></td></tr>
+							<tr><td>04/01/2011</td><td>20%</td></tr>
 							<tr><td>04/01/2011</td><td>20%</td></tr>
 							<tr><td>01/01/2010</td><td>17.5%</td></tr>
 							<tr><td>01/01/2009</td><td>15%</td></tr>

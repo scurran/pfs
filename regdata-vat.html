@@ -35,13 +35,7 @@
 	        </div>
 		    <div class="navbar-collapse collapse">
 			  <ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-				     <span class="glyphicon glyphicon-cog"></span>&nbsp;Configuration&nbsp;<span class="caret"></span>
-				    </a>
-				    <ul class="dropdown-menu" role="menu">
-			            <li><a href="regdata-vat.html">Manage regulatory data</a></li>
-				    </ul>				
+		        <li class="active"><a href="regdata-vat.html">Manage regulatory data</a></li>			
 				<li><a href="">Sign out</a></li>
 				</ul>
 			</div>	
@@ -87,13 +81,13 @@
 					<h4 class="page-header">VAT rate history</h4>
 					<table class="table table-condensed">
 						<thead>
-							<tr><th class="col-lg-2">Effective date</th><th>VAT rate</th></tr>
+							<tr><th class="col-lg-2">Effective date</th><th class="col-lg-2">VAT rate</th><th></th></tr>
 						</thead>
 						<tbody>
-							<tr><td>04/01/2011</td><td>20%</td></tr>
-							<tr><td>01/01/2010</td><td>17.5%</td></tr>
-							<tr><td>01/01/2009</td><td>15%</td></tr>
-							<tr><td>01/01/2000</td><td>17.5%</td></tr>							
+							<tr><td>04/01/2011</td><td>20%</td><td><a class="btn btn-default btn-sm" href="">Edit</a></td></tr>
+							<tr class="text-muted"><td>01/01/2010</td><td>17.5%</td><td></td></tr>
+							<tr class="text-muted"><td>01/01/2009</td><td>15%</td><td></td></tr>
+							<tr class="text-muted"><td>01/01/2000</td><td>17.5%</td><td></td></tr>							
 						</tbody>
 					</table>												
 				</div>

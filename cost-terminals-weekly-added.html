@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Morrisons Petrol Management System</title>
+
+	    <!-- Bootstrap core CSS -->
+	    <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	    <!-- Custom styles for this template -->
+	    <link href="pfs.css" rel="stylesheet">
+
+	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	  </head>
+	  <body>
+	    <div class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <a class="navbar-brand" href="dashboard.html">
+				<img alt="Morrisons logo" src="morrisonslogo.png" class="navbar-logo"> 
+				Petrol Operations</a>
+	        </div>
+
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="reports.html">Market data</a></li>
+				<li class="active"><a href="">Cost prices</a></li>
+				</ul>
+
+				  <ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					     <span class="glyphicon glyphicon-cog"></span>Configuration <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu" role="menu">
+				            <li><a href="terminals-home.html">Manage terminals</a></li>
+				            <li><a href="regdata-vat.html">Manage regulatory data</a></li>
+					    </ul>
+					</li>
+					<li><a href="">Sign out</a></li>
+					</ul>	
+
+	      </div>
+	    </div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3 class="page-header">Terminal advice <small>week ending 07/12/2014 (2014 wk 44)</small></h3>
+					<div class="alert alert-success"><p>Texaco Cardiff terminal advice saved.</p></div>
+					
+					<div class="table-responsive">
+						<table class="table table-hover table-condensed">
+						  <thead><tr>
+							<th>
+								<div class="dropdown">
+								  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+								    Filter terminal list by brand
+								    <span class="caret"></span>
+								  </button>
+								  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Harvest</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ineos</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mabanaft</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pace</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Shell</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">TFE</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total</a></li>
+								  </ul>
+								</div>
+								</th>
+							<th><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a></th><th>Gasoil</th><th>PU50</th><th>ULSD</th><th><a href="" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-chevron-right"></span></a></th><th><!-- empty cell--></th><th><button class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-ok"></span> Approve all prices</button></th></tr>
+							</thead>
+							<tbody>
+									<tr><th>Texaco Cardiff</th><td><!-- empty cell--></td><td>49.23</td><td>93.58</td><td>96.08</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Texaco Stanlow</th><td><!-- empty cell--></td><td>48.38</td><td>93.48</td><td>95.61</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Texaco Plymouth</th><td><!-- empty cell--></td><td>93.64</td><td>96.07</td><td>48.91</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Texaco Kingsbury</th><td><!-- empty cell--></td><td>48.82</td><td>95.93</td><td>92.97</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Texaco BOSL</th><td><!-- empty cell--></td><td>94.10</td><td>96.87</td><td>48.30</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Conoco Immingham</th><td><!-- empty cell--></td><td>47.15</td><td>95.53</td><td>92.90</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Conoco Bramhall</th><td><!-- empty cell--></td><td>47.65</td><td>93.49</td><td>96.25</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Conoco Kingsbury</th><td><!-- empty cell--></td><td>47.77</td><td>93.32</td><td>96.04</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Conoco Aberdeen</th><td><!-- empty cell--></td><td>&mdash;</td><td>95.06</td><td>98.03</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Esso Avonmouth</th><td><!-- empty cell--></td><td>49.22</td><td>94.26</td><td>97.08</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Esso Purfleet</th><td><!-- empty cell--></td><td>47.89</td><td>93.73</td><td>96.48</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Greenergy Clydebank</th><td><!-- empty cell--></td><td>48.42</td><td>93.88</td><td>96.15</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Mabanaft Avonmouth</th><td><!-- empty cell--></td><td>49.01</td><td>94.81</td><td>97.57<td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Esso Hythe</th><td><!-- empty cell--></td><td>48.10</td><td>93.79</td><td>96.3</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Tees Greenergy</th><td><!-- empty cell--></td><td>48.00</td><td>93.45</td><td>95.44</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Esso Birmingham</th><td><!-- empty cell--></td><td>48.10</td><td>93.20</td><td>95.78</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>TFE J41</th><td><!-- empty cell--></td><td>47.70</td><td>95.62</td><td>&mdash;</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>TFE Gadbrook</th><td><!-- empty cell--></td><td>47.99</td><td>95.72</td><td>&mdash;</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Total Milford</th><td><!-- empty cell--></td><td>47.30</td><td>93.09</td><td>95.17</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Total Nottingham</th><td><!-- empty cell--></td><td>49.10</td><td>93.62</td><td>96.22</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Total LOR</th><td><!-- empty cell--></td><td>48.54</td><td>92.92</td><td>95.75</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Harvest Seal Sands</th><td><!-- empty cell--></td><td>&mdash;</td><td>93.68</td><td>95.98</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Ineos Dalston</th><td><!-- empty cell--></td><td>&mdash;</td><td>94.78</td><td>96.50</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Shell Stanlow</th><td><!-- empty cell--></td><td>48.60</td><td>93.11</td><td>95.92</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Conoco Inverness</th><td><!-- empty cell--></td><td>47.30</td><td>92.92</td><td>94.89</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Mabanaft Ross</th><td><!-- empty cell--></td><td>48.25</td><td>93.26</td><td>95.26</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+									<tr><th>Pace Fuelcare IOW</th><td><!-- empty cell--></td><td>&mdash;</td><td>95.85</td><td>98.01</td><td><!-- empty cell--></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-ok"></span></button></td></tr>
+							</tbody>
+						</table>
+					</div>				
+				</div>
+			</div>	
+		</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/docs.min.js"></script>
+  </body>
+</html>

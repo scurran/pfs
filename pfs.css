@@ -90,3 +90,10 @@ a:hover {
 .bg-week td {
     border-left: 1px dashed #ddd;
 }
+
+.bank-holiday {
+	color: #999;
+	cursor:help;
+}
+
+.table > thead > tr > th, .table > tbody > tr > td {text-align:right;}

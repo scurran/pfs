@@ -96,4 +96,14 @@ a:hover {
 	cursor:help;
 }
 
-.table > thead > tr > th, .table > tbody > tr > td {text-align:right;}
+/*.table > thead > tr > th, .table > tbody > tr > td {text-align:right;} */
+
+.table th, .table td  { text-align:right; }
+
+/*.table th.table-control, .table td.table-control  { text-align:center; }*/
+
+.table th:first-child, .table td:first-child  { text-align:left; }
+
+/*.table th:last-child, .table td:last-child  { text-align:left; }*/
+
+.regdata-table {max-width:50%;}

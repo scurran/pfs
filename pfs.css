@@ -107,3 +107,8 @@ a:hover {
 /*.table th:last-child, .table td:last-child  { text-align:left; }*/
 
 .regdata-table {max-width:50%;}
+
+.label-accepted {
+	background-color: #006655;
+    color: #fff;
+}

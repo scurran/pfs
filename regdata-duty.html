@@ -55,69 +55,81 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
-					<h3 class="page-header">Duty</h3>
-					<form role="form">
-						<div class="row">
-						  <div class="form-group col-xs-6 col-sm-2">
-							<label class="control-label">Effective date</label>
-						    <input type="text" class="form-control" placeholder="DD/MM/YYYY">	
-						  </div>
-						  <div class="form-group col-xs-6 col-sm-1">
-							<label class="control-label">Gasoil</label>
-						    	<input type="text" class="form-control">
-						  </div>
-						  <div class="form-group col-xs-6 col-sm-1">
-							<label class="control-label">PU50</label>
-						    	<input type="text" class="form-control">						
-						  </div>
-						  <div class="form-group col-xs-6 col-sm-1">
-							<label class="control-label">ULSD</label>
-						    	<input type="text" class="form-control">						
-						  </div>
-						  <div class="form-group col-xs-6 col-sm-1">
-							<label class="control-label">Super</label>
-						    	<input type="text" class="form-control">
-						  </div>
-						  <div class="form-group col-xs-6 col-sm-1">
-							<label class="control-label">E85</label>
-						    	<input type="text" class="form-control">
-						  </div>
-						<div class="form-group col-xs-6 col-sm-1">
-							<label class="control-label">B30</label>
-						    	<input type="text" class="form-control">
-						  </div>
-						  <div class="form-group col-xs-6 col-sm-1">
-							<label class="control-label">Bio diesel</label>
-						    	<input type="text" class="form-control">
-						  </div>	
-						  <div class="form-group col-xs-6 col-sm-1">
-							<label class="control-label">T2</label>
-						    	<input type="text" class="form-control">
-						  </div>
-						</div>	
-  						<a class="btn btn-primary" href="regdata-duty-saved.html">Save duty</a>	
-					</form>														
-				</div>
-			</div>	
-		</div>		
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12">
-					<h4 class="page-header">Duty history</h4>
+					<h3 class="page-header">Duty</h3>												
 					<div class="table-responsive">
-						<table class="table table-condensed">
+						<table class="table table-condensed duty-table">
 							<thead>
-								<tr><th>Effective date</th><th>Gasoil</th><th>PU50</th><th>ULDS</th><th>Super</th><th>E85</th><th>B30</th><th>Bio diesel</th><th>T2</th><th><!-- empty cell --></th></tr>
+								<tr>
+									<th rowspan="3">Effective date</th>
+									<th>Unleaded</th>
+									<th>Diesel</th>
+									<th>Diesel</th>
+									<th>Ethanol</th>
+									<th>Red Bio-diesel </th>
+									<th>Red Bio-diesel</th>
+									<th>LPG</th>
+									<th>Med Unleaded</th>
+									<th>Med Unleaded</th>
+									<th>Med Diesel</th>
+									<th colspan="2" rowspan="3"><!-- empty cell --></th>
+								</tr>
+								<tr class="retail-product">
+									<td>(Unleaded)</td>
+									<td>(Diesel)</td>
+									<td>(Gasoil)</td>
+									<td>(Unleaded)</td>
+									<td>(Diesel)</td>
+									<td>(Gasoil)</td>
+									<td>(LPG)</td>
+									<td>(Unleaded)</td>
+									<td>(Super)</td>
+									<td>(Diesel)</td>
+								</tr>
+								<tr>
+									<td>(ppl)</td>
+									<td>(ppl)</td>
+									<td>(ppl)</td>
+									<td>(ppl)</td>
+									<td>(ppl)</td>
+									<td>(ppl)</td>
+									<td>(ppl)</td>
+									<td>(£/t)</td>
+									<td>(£/t)</td>
+									<td>(£/t)</td>
+								</tr>
+								<!-- <tr>
+									<th>Effective date</th>
+									<th>Unleaded <span class="text-duty-retail-product" title="Retail product name">(Unleaded)</span> <span class="label label-duty-unit-price" title="Unit price">(ppl)</span></th>
+									<th>Diesel <span class="text-duty-retail-product" title="Retail product name">(Diesel)</span> <span class="label label-duty-unit-price" title="Unit price">(ppl)</span></th>
+									<th>Diesel <span class="text-duty-retail-product" title="Retail product name">(Gasoil)</span> <span class="label label-duty-unit-price" title="Unit price">(ppl)</span></th>
+									<th>Ethanol <span class="text-duty-retail-product" title="Retail product name">(Unleaded)</span> <span class="label label-duty-unit-price" title="Unit price">(ppl)</span></th>
+									<th>Red Bio-diesel <span class="text-duty-retail-product" title="Retail product name">(Diesel)</span> <span class="label label-duty-unit-price" title="Unit price">(ppl)</span></th>
+									<th>Red Bio-diesel <span class="text-duty-retail-product" title="Retail product name">(Gasoil)</span> <span class="label label-duty-unit-price" title="Unit price">(ppl)</span></th>
+									<th>LPG <span class="text-duty-retail-product" title="Retail product name">(LPG) <span class="label label-duty-unit-price" title="Unit price">(ppl)</span></th>
+									<th>Med Unleaded <span class="text-duty-retail-product" title="Retail product name">(Unleaded)</span> <span class="label label-duty-unit-price" title="Unit price">(£/t)</span></th>
+									<th>Med Unleaded <span class="text-duty-retail-product" title="Retail product name">(Super)</span> <span class="label label-duty-unit-price" title="Unit price">(£/t)</span></th>
+									<th>Med Diesel <span class="text-duty-retail-product" title="Retail product name">(Diesel)</span> <span class="label label-duty-unit-price" title="Unit price">(£/t)</span></th>
+									<th colspan="2">empty cell</th>
+								</tr> -->
+								<!-- <tr>
+									<th>Effective date</th>
+									<th>Unleaded</th>
+									<th>Diesel</th>
+									<th>Diesel</th>
+									<th>Ethanol</th>
+									<th>Red Bio-diesel</th>
+									<th>Red Bio-diesel</th>
+									<th>LPG</th>
+									<th>Med Unleaded</th>
+									<th>Med Unleaded</th>
+									<th>Med Diesel</th>
+									<th colspan="2">empty cell </th>
+								</tr>-->	
 							</thead>
 							<tbody>
-								<tr><td>01/01/2011</td><td>11.33</td><td>58.95</td><td>58.95</td><td>0.00</td><td>0.00</td><td>0.00</td><td>58.95</td><td>58.95</td><td><a href="regdata-duty-edit.html" class="btn btn-primary btn-sm">Edit</a><a href="regdata-duty-delete.html" class="btn btn-default btn-sm pull-right"><span class="glyphicon glyphicon-remove"></span> Delete</a></td></tr>
-								<tr><td>01/10/2010</td><td>11.18</td><td>58.19</td><td>58.19</td><td>0.00</td><td>58.19</td><td>58.19</td><td>58.19</td><td>58.19</td><td><!-- empty cell --></td></tr>
-								<tr><td>01/04/2010</td><td>10.99</td><td>57.19</td><td>57.19</td><td>0.00</td><td>57.19</td><td>57.19</td><td>57.19</td><td>57.19</td><td><!-- empty cell --></td></tr>
-								<tr><td>06/09/2009</td><td>10.80</td><td>56.19</td><td>56.19</td><td>56.19</td><td>56.19</td><td>56.19</td><td>0.00</td><td>0.00</td><td><!-- empty cell --></td></tr>
-								<tr><td>05/04/2009</td><td>10.42</td><td>54.19</td><td>54.19</td><td>54.19</td><td>54.19</td><td>54.19</td><td>0.00</td><td>0.00</td><td><!-- empty cell --></td></tr>
-								<tr><td>07/12/2008</td><td>10.07</td><td>52.35</td><td>52.35</td><td>52.35</td><td>52.35</td><td>52.35</td><td>0.00</td><td>0.00</td><td><!-- empty cell --></td></tr>
-								<tr><td>07/10/2007</td><td>9.69</td><td>50.35</td><td>50.35</td><td>50.35</td><td>50.35</td><td>50.35</td><td>0.00</td><td>0.00</td><td><!-- empty cell --></td></tr>
-								<tr><td>30/09/2007</td><td>7.69</td><td>48.35</td><td>48.35</td><td>48.35</td><td>48.35</td><td>48.35</td><td>0.00</td><td>0.00</td><td><!-- empty cell --></td></tr>
+								<tr><td>01/04/2011</td><td>57.95</td><td>57.95</td><td>11.14</td><td>57.95</td><td>57.95</td><td>11.14</td><td>15.80</td><td>290.00</td><td>220.00</td><td>290.00</td><td><a href="regdata-vat-edit.html" class="btn btn-default">Edit</a></td><td><a href="regdata-vat-delete.html" class="btn btn-danger">Delete</a></td></tr>
+								<tr><td>01/04/2011</td><td>57.95</td><td>57.95</td><td>11.14</td><td>57.95</td><td>57.95</td><td>11.14</td><td>15.80</td><td>290.00</td><td>220.00</td><td>290.00</td><td></td><td></td></tr>
+								<tr><td>01/04/2011</td><td>57.95</td><td>57.95</td><td>11.14</td><td>57.95</td><td>57.95</td><td>11.14</td><td>15.80</td><td>290.00</td><td>220.00</td><td>290.00</td><td></td><td></td></tr>
 							</tbody>
 						</table>	
 					</div>						

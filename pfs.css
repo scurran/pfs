@@ -112,3 +112,13 @@ a:hover {
 	background-color: #006655;
     color: #fff;
 }
+
+.duty-table th {width:6.25%;white-space: normal;}
+
+.duty-table th:first-child, .duty-table th:last-child {
+	width: 18.75%;
+}
+.text-duty-retail-product {font-weight:normal;font-size:95%;cursor:help;display:block;clear:both;}
+.label-duty-unit-price {background-color:#f5f5f5;color:#777;cursor:help;}
+
+.table > thead > tr.retail-product > td {border-bottom:0px;}

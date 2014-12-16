@@ -113,7 +113,7 @@ a:hover {
     color: #fff;
 }
 
-.duty-table th {width:7.5%;white-space: normal;}
+.duty-table th {width:7.5%;white-space: normal;} 
 
 .duty-table th:first-child, .duty-table th:last-child {
 	width: 12.5%;
@@ -125,4 +125,11 @@ a:hover {
 
 .help-cursor {
 	cursor:help;
+}
+
+th.feedstock-cell, td.feedstock-cell {
+	border-right: 1px solid #ddd;
+}
+td.feedstock-cell {
+	color:#777;
 }

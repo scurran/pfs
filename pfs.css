@@ -129,9 +129,9 @@ a:hover {
 	cursor:help;
 }
 
-th.feedstock-cell, td.feedstock-cell {
+th.duty-header-cell, td.duty-header-cell {
 	border-right: 1px solid #ddd;
 }
-td.feedstock-cell {
+td.duty-header-cell {
 	color:#777;
 }

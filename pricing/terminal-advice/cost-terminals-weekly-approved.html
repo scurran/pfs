@@ -20,7 +20,7 @@
 	    <![endif]-->
 	  </head>
 	  <body>
-	    <div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar navbar-inverse navbar-fixed-top">
 	      <div class="container-fluid">
 	        <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,8 +35,10 @@
 	        </div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-left">
-					<li><a href="reports.html">Market data</a></li>
-					<li class="active"><a href="">Cost prices</a></li>
+					<li><a href="../../margins/index.html">Margins</a></li>
+					<li class="active"><a href="index.html">Pricing</a></li>
+					<li><a href="../../logistics/index.html">Logistics</a></li>
+					<li><a href="../../markets/index.html">Markets</a></li>
 					</ul>
 			  <ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
@@ -44,8 +46,10 @@
 				     <span class="glyphicon glyphicon-cog"></span>Configuration <span class="caret"></span>
 				    </a>
 				    <ul class="dropdown-menu" role="menu">
-			            <li><a href="terminals-home.html">Manage terminals</a></li>
-			            <li><a href="regdata-vat.html">Manage regulatory data</a></li>
+					    <li><a href="../../configuration/sites/index.html">Manage sites</a></li>
+			            <li><a href="../../configuration/terminals/index.html">Manage terminals</a></li>	
+			            <li><a href="../../configuration/products/index.html">Manage products</a></li>
+			            <li><a href="../../configuration/regdata/index.html">Manage regulatory data</a></li>
 				    </ul>
 				</li>
 				<li><a href="">Sign out</a></li>
@@ -57,8 +61,10 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<ul class="nav nav-pills" role="tablist">
-						<li class="active"><a href="#">Weekly terminal advice</a></li>
-						<li class="pull-right"><a href="#"><span class="glyphicon glyphicon-download"></span> Download all terminal advice</a></li>
+						<li><a href="../retail-pricing/index.html">Retail pricing</a></li>
+						<li><a href="../rdc-pricing/index.html">RDC pricing</a></li>
+						<li><a href="../bunker-pricing/index.html">Bunker pricing</a></li>
+						<li class="active"><a href="cost-terminals-weekly.html">Terminal advice</a></li>
 					</ul>
 				</div>
 			</div>	
@@ -71,6 +77,7 @@
 					<form role="form">
 						<div class="form-group">	
 							<a class="btn btn-primary" href="cost-terminals-weekly-approved.html">Accept all terminal advice</a>
+							<a href="#" class="pull-right"><span class="glyphicon glyphicon-download"></span> Download all terminal advice</a>	
 						</div>
 					</form>				
 					<div class="table-responsive">

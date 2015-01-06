@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Morrisons Petrol Management System</title>
+
+	    <!-- Bootstrap core CSS -->
+	    <link href="../../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	    <!-- Custom styles for this template -->
+	    <link href="../../pfs.css" rel="stylesheet">
+
+	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	  </head>
+	  <body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="dashboard.html">
+				<img alt="Morrisons logo" src="../../morrisonslogo.png" class="navbar-logo"> 
+				Petrol Operations</a>
+	        </div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="../../margins/index.html">Margins</a></li>
+					<li><a href="../../pricing/index.html">Pricing</a></li>
+					<li><a href="../../logistics/index.html">Logistics</a></li>
+					<li class="active"><a href="../markets/index.html">Markets</a></li>
+					</ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				     <span class="glyphicon glyphicon-cog"></span>Configuration <span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu" role="menu">
+					    <li><a href="../../configuration/sites/index.html">Manage sites</a></li>
+			            <li><a href="../../configuration/terminals/index.html">Manage terminals</a></li>	
+			            <li><a href="../../configuration/products/index.html">Manage products</a></li>
+			            <li><a href="../../configuration/regdata/index.html">Manage regulatory data</a></li>
+				    </ul>
+				</li>
+				<li><a href="">Sign out</a></li>
+				</ul>	
+			</div>		
+	      </div>
+	    </div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="nav nav-pills" role="tablist">
+						<li><a href="../fx-rates/fx-daily.html">Exchange rates</a></li>
+						<li><a href="../product-prices/prices-daily.html">Product prices</a></li>
+						<li class="active"><a href="index.html">Daily summary</a></li>
+						<li><a href="../weekly-summary/index.html">Weekly summary</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3 class="page-header">Daily summary <small>week ending 11/01/15</small></h3>
+					<div class="alert alert-success"><p>Exchange rates saved.</p></div>
+					<table class="table table-hover table-condensed">
+					  <thead><tr><th><!--empty cell--></th><th class="table-control"><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a><th>MON 05</th><th>TUE 06</th><th>WED 07</th><th>THU 08</th><th>FRI 09</th><th class="table-control"><button class="btn btn-default" disabled="disabled"><span class="glyphicon glyphicon-chevron-right"></span></button></th><th>11/01/15</th></tr></thead>
+						<tbody>
+							<tr><th>&pound; GBP / &dollar; USD</th><td></td><td>1.2345</td><td>1.2345</td><td>1.2345</td><td>1.2345</td><td>1.2345</td><td></td><td>1.2345</td></tr>
+							<tr><th>&pound; GBP / &euro; EUR</th><td></td><td>1.2345</td><td>1.2345</td><td>1.2345</td><td>1.2345</td><td>1.2345</td><td></td><td>1.2345</td></tr>
+							<tr><th>&euro; EUR / &dollar; USD</th><td></td><td>1.2345</td><td>1.2345</td><td>1.2345</td><td>1.2345</td><td>1.2345</td><td></td><td>1.2345</td></tr>
+							<tr><td></td><td></td><td><a class="btn btn-default btn-sm" href="fx-daily-added.html">Edit</a></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm">Edit</button></td><td></td><td></td></tr>
+							<tr><th>Unleaded</th><td></td><td>100.23</td><td class="text-danger">100.23</td><td class="text-success">100.23</td><td>100.23</td><td>100.23</td><td></td><td>100.23</td></tr>
+							<tr><th>Diesel</th><td></td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td></td><td>100.23</td></tr>
+							<tr><th>Ethanol</th><td></td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td></td><td>100.23</td></tr>
+							<tr><th>Red bio-diesel</th><td></td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td></td><td>100.23</td></tr>
+							<tr><th>Bio-diesel</th><td></td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td></td><td>100.23</td></tr>
+							<tr><th>LPG</th><td></td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td></td><td>100.23</td></tr>
+							<tr><th>Med unleaded</th><td></td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td></td><td>100.23</td></tr>
+							<tr><th>Med diesel</th><td></td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td>100.23</td><td></td><td>100.23</td></tr>
+							<tr><td></td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm">Edit</button></td><td><button class="btn btn-default btn-sm">Edit</button></td><td></td><td></td></tr>
+						</tbody>	
+					</table>
+				</div>
+			</div>	
+		</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+  </body>
+</html>

@@ -7,10 +7,10 @@
 	    <title>Morrisons Petrol Management System</title>
 
 	    <!-- Bootstrap core CSS -->
-	    <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="../../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
 	
 	    <!-- Custom styles for this template -->
-	    <link href="pfs.css" rel="stylesheet">
+	    <link href="../../pfs.css" rel="stylesheet">
 
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,22 +20,51 @@
 	    <![endif]-->
 	  </head>
 	  <body>
-	    <div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar navbar-inverse navbar-fixed-top">
 	      <div class="container-fluid">
 	        <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
 	          <a class="navbar-brand" href="dashboard.html">
-				<img alt="Morrisons logo" src="morrisonslogo.png" class="navbar-logo"> 
+				<img alt="Morrisons logo" src="../../morrisonslogo.png" class="navbar-logo"> 
 				Petrol Operations</a>
 	        </div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="../../margins/index.html">Margins</a></li>
+					<li><a href="../../pricing/index.html">Pricing</a></li>
+					<li><a href="../../logistics/index.html">Logistics</a></li>
+					<li class="active"><a href="../markets/index.html">Markets</a></li>
+					</ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				     <span class="glyphicon glyphicon-cog"></span>Configuration <span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu" role="menu">
+					    <li><a href="../../configuration/sites/index.html">Manage sites</a></li>
+			            <li><a href="../../configuration/terminals/index.html">Manage terminals</a></li>	
+			            <li><a href="../../configuration/products/index.html">Manage products</a></li>
+			            <li><a href="../../configuration/regdata/index.html">Manage regulatory data</a></li>
+				    </ul>
+				</li>
+				<li><a href="">Sign out</a></li>
+				</ul>	
+			</div>		
 	      </div>
 	    </div>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
-					<ul class="nav nav-pills">
-						<li><a href="fx-daily.html">Exchange rates</a></li>
+					<ul class="nav nav-pills" role="tablist">
+						<li><a href="../fx-rates/fx-daily.html">Exchange rates</a></li>
 						<li class="active"><a href="prices-daily.html">Product prices</a></li>
-						<li><a href="market-daily-historic.html">Daily summary</a></li>						
+						<li><a href="../daily-summary/index.html">Daily summary</a></li>
+						<li><a href="../weekly-summary/index.html">Weekly summary</a></li>
 					</ul>
 				</div>
 			</div>	
@@ -46,12 +75,12 @@
 					<h3 class="page-header">Product prices <small>Mon 05 Jan 2015</small></h3>
 					<p class="lead">Product prices are entered as the average price in dollars (&dollar;) per ton.</p> 
 					
-					<div class="alert alert-danger"><p>Please enter fuel prices with 2 decimal places.</p></div>
+					<div class="alert alert-danger"><p>Please use only numbers and a decimal place when entering fuel prices.</p></div>
 					<form role="form">
 						<div class="row">
 						  <div class="form-group col-xs-6 col-sm-2 has-error">
 							<label class="control-label">Unleaded</label>
-						    	<input type="text" class="form-control" placeholder="0000.00" value="100.2">
+						    	<input type="text" class="form-control" placeholder="0000.00" value="$100,23">
 							<span class="help-block">Platts code: AAXFQ00</span>
 						  </div>
 						  <div class="form-group col-xs-6 col-sm-2">
@@ -87,7 +116,7 @@
 							<span class="help-block">Platts code: AAWYZ00</span>
 						  </div>
 						</div>	
-  						<a class="btn btn-primary" href="market-daily-prices-added.html">Save product prices</a>	
+  						<a class="btn btn-primary" href="../daily-summary/market-daily-prices-added.html">Save product prices</a>	
 					</form>														
 				</div>
 			</div>	
@@ -98,7 +127,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/docs.min.js"></script>
+    <script src="../../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
   </body>
 </html>

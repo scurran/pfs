@@ -7,10 +7,10 @@
 	    <title>Morrisons Petrol Management System</title>
 
 	    <!-- Bootstrap core CSS -->
-	    <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="../../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
 	
 	    <!-- Custom styles for this template -->
-	    <link href="pfs.css" rel="stylesheet">
+	    <link href="../../pfs.css" rel="stylesheet">
 
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,39 +20,51 @@
 	    <![endif]-->
 	  </head>
 	  <body>
-	    <div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar navbar-inverse navbar-fixed-top">
 	      <div class="container-fluid">
 	        <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
 	          <a class="navbar-brand" href="dashboard.html">
-				<img alt="Morrisons logo" src="morrisonslogo.png" class="navbar-logo"> 
+				<img alt="Morrisons logo" src="../../morrisonslogo.png" class="navbar-logo"> 
 				Petrol Operations</a>
 	        </div>
-
-			<ul class="nav navbar-nav navbar-left">
-				<li><a href="reports.html">Market data</a></li>
-				<li class="active"><a href="">Cost prices</a></li>
-				</ul>
-
-				  <ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-					    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-					     <span class="glyphicon glyphicon-cog"></span>Configuration <span class="caret"></span>
-					    </a>
-					    <ul class="dropdown-menu" role="menu">
-				            <li><a href="terminals-home.html">Manage terminals</a></li>
-				            <li><a href="regdata-vat.html">Manage regulatory data</a></li>
-					    </ul>
-					</li>
-					<li><a href="">Sign out</a></li>
-					</ul>	
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="">Margins</a></li>
+					<li class="active"><a href="">Pricing</a></li>
+					<li><a href="">Logistics</a></li>
+					<li><a href="reports.html">Markets</a></li>
+					</ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				     <span class="glyphicon glyphicon-cog"></span>Configuration <span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu" role="menu">
+					    <li><a href="">Manage sites</a></li>
+			            <li><a href="terminals-home.html">Manage terminals</a></li>	
+			            <li><a href="">Manage products</a></li>
+			            <li><a href="regdata-vat.html">Manage regulatory data</a></li>
+				    </ul>
+				</li>
+				<li><a href="">Sign out</a></li>
+				</ul>	
+			</div>		
 	      </div>
 	    </div>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
 					<ul class="nav nav-pills" role="tablist">
-						<li class="active"><a href="#">Weekly terminal advice</a></li>
-						<li class="pull-right"><a href="#" class="btn btn-default"><span class="glyphicon glyphicon-download"></span> Download all terminal advice</a></li>
+						<li><a href="#">Retail pricing</a></li>
+						<li><a href="#">RDC pricing</a></li>
+						<li><a href="#">Bunker pricing</a></li>
+						<li class="active"><a href="#">Terminal advice</a></li>
 					</ul>
 				</div>
 			</div>	
@@ -60,9 +72,15 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
-					<h3 class="page-header">Terminal advice <small>week ending 07/12/2014 (2014 wk 44)</small></h3>
-					<div class="alert alert-success"><p>Texaco Cardiff terminal advice saved.</p></div>
+					<h3 class="page-header">Terminal advice <small>week ending 07/12/2014 (2014 wk 44)</small></h3>	
+					<div class="alert alert-success"><p>Conoco Bramhall terminal advice saved.</p></div>
 					
+					<form role="form">						
+						<div class="form-group">
+							<a class="btn btn-primary" href="cost-terminals-weekly-approved.html">Accept weekly terminal advice</a>
+							<a href="#" class="pull-right"><span class="glyphicon glyphicon-download"></span> Download all terminal advice</a>	
+						</div>
+					</form>				
 					<div class="table-responsive">
 						<table class="table table-condensed">
 						  <thead><tr>
@@ -86,9 +104,9 @@
 							</th><th><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a></th><th>Status</th><th>PU10</th><th>ULSD</th><th>Gasoil</th><th>LPG</th><th></th><th><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span></a></th></tr>
 							</thead>
 							<tbody>
-								<tr><td>Conoco Aberdeen</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>95.06</td><td>98.03</td><td>&mdash;</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
-								<tr><td>Conoco Bramhall</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>93.49</td><td>96.25</td><td>47.65</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
-								<tr><td>Conoco Immingham</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>95.53</td><td>92.90</td><td>47.15</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
+								<tr><td>Conoco Aberdeen</td><td><!-- empty cell --></td><td><span class="label label-accepted">Accepted</span></td><td>95.06</td><td>98.03</td><td>&mdash;</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit-accepted.html">Edit</a></td><td><!-- empty cell --></td></tr>
+								<tr><td>Conoco Bramhall</td><td><!-- empty cell --></td><td><span class="label label-warning">To review</span></td><td class="bg-warning">93.49</td><td>96.25</td><td>47.65</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit-warning.html">Edit</a></td><td><!-- empty cell --></td></tr>
+								<tr><td>Conoco Immingham</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>95.53</td><td>92.90</td><td>47.15</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit.html">Edit</a></td><td><!-- empty cell --></td></tr>
 								<tr><td>Conoco Inverness</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>92.92</td><td>94.89</td><td>47.30</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
 								<tr><td>Conoco Kingsbury</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>93.32</td><td>96.04</td><td>47.77</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
 								<tr><td>Esso Avonmouth</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>94.26</td><td>97.08</td><td>49.22</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
@@ -104,10 +122,10 @@
 								<tr><td>Pace Fuelcare IOW</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>95.85</td><td>98.01</td><td>&mdash;</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
 								<tr><td>Shell Stanlow</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>93.11</td><td>95.92</td><td>48.60</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
 								<tr><td>Texaco BOSL</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>96.87</td><td>48.30</td><td>94.10</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
-								<tr><td>Texaco Cardiff</td><td><!-- empty cell --></td><td><span class="label label-warning">To review</span></td><td class="bg-warning">94.58</td><td>96.08</td><td>49.23</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit-warning.html">Edit</a></td><td><!-- empty cell --></td></tr>
+								<tr><td>Texaco Cardiff</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>94.58</td><td>96.08</td><td>49.23</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit-warning.html">Edit</a></td><td><!-- empty cell --></td></tr>
 								<tr><td>Texaco Kingsbury</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>95.93</td><td>92.97</td><td>48.82</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
 								<tr><td>Texaco Plymouth</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>93.64</td><td>96.07</td><td>48.91</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit.html">Edit</a></td><td><!-- empty cell --></td></tr>
-								<tr><td>Texaco Stanlow</td><td><!-- empty cell --></td><td><span class="label label-accepted">Accepted</span></td><td>93.48</td><td>95.61</td><td>48.38</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit-accepted.html">Edit</a></td><td><!-- empty cell --></td></tr>
+								<tr><td>Texaco Stanlow</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>93.48</td><td>95.61</td><td>48.38</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit-accepted.html">Edit</a></td><td><!-- empty cell --></td></tr>
 								<tr><td>TFE J41</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>95.62</td><td>&mdash;</td><td>47.70</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
 								<tr><td>TFE Gadbrook</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>95.72</td><td>&mdash;</td><td>47.99</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
 								<tr><td>Total LOR</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>92.92</td><td>95.75</td><td>48.54</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
@@ -125,7 +143,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/docs.min.js"></script>
+    <script src="../../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
   </body>
 </html>

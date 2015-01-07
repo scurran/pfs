@@ -46,6 +46,11 @@ body {
     color: #006655;
 }
 
+.dropdown-menu > li.active > a, .dropdown-menu > li.active > a:hover, .dropdown-menu > li.active > a:focus {
+    background-color: #FFE151;
+    color: #006655;	
+}
+
 
 .footer {
 position: absolute;
@@ -112,7 +117,6 @@ a:hover {
 	background-color: #006655;
     color: #fff;
 }
-
 
 
 .duty-table th {width:7.5%;white-space: normal;} 

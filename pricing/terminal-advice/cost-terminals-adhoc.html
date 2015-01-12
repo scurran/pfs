@@ -35,10 +35,10 @@
 	        </div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-left">
-					<li><a href="">Margins</a></li>
-					<li class="active"><a href="">Pricing</a></li>
-					<li><a href="">Logistics</a></li>
-					<li><a href="reports.html">Markets</a></li>
+					<li><a href="../../margins/index.html">Margins</a></li>
+					<li class="active"><a href="index.html">Pricing</a></li>
+					<li><a href="../../logistics/index.html">Logistics</a></li>
+					<li><a href="../../markets/index.html">Markets</a></li>
 					</ul>
 			  <ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
@@ -46,10 +46,10 @@
 				     <span class="glyphicon glyphicon-cog"></span>Configuration <span class="caret"></span>
 				    </a>
 				    <ul class="dropdown-menu" role="menu">
-					    <li><a href="">Manage sites</a></li>
-			            <li><a href="terminals-home.html">Manage terminals</a></li>	
-			            <li><a href="">Manage products</a></li>
-			            <li><a href="regdata-vat.html">Manage regulatory data</a></li>
+					    <li><a href="../../configuration/sites/index.html">Manage sites</a></li>
+			            <li><a href="../../configuration/terminals/index.html">Manage terminals</a></li>	
+			            <li><a href="../../configuration/products/index.html">Manage products</a></li>
+			            <li><a href="../../configuration/regdata/index.html">Manage regulatory data</a></li>
 				    </ul>
 				</li>
 				<li><a href="">Sign out</a></li>
@@ -73,8 +73,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<h3 class="page-header">Terminal advice <small>week ending 07/12/2014 (2014 wk 44)</small></h3>	
-					<div class="alert alert-success"><p>Conoco Bramhall terminal advice saved.</p></div>
-					
+					<div class="alert alert-warning"><p>The regulatory data has changed. Please check updated advice for the highlighted terminals.</p></div>
 					<form role="form">						
 						<div class="form-group">
 							<a class="btn btn-primary" href="cost-terminals-weekly-approved.html">Accept weekly terminal advice</a>
@@ -89,7 +88,7 @@
 								  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">All terminals</a></li>
 									<li class="divider"></li>
-								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="cost-terminals-weekly-filtered.html">Conoco</a></li>
 								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso</a></li>
 								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Harvest</a></li>
 								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ineos</a></li>
@@ -104,10 +103,12 @@
 							</th><th><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a></th><th>Status</th><th>PU10</th><th>ULSD</th><th>Gasoil</th><th>LPG</th><th></th><th><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span></a></th></tr>
 							</thead>
 							<tbody>
-								<tr><td>Conoco Aberdeen</td><td><!-- empty cell --></td><td><span class="label label-accepted">Accepted</span></td><td>95.06</td><td>98.03</td><td>&mdash;</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit-accepted.html">Edit</a></td><td><!-- empty cell --></td></tr>
-								<tr><td>Conoco Bramhall</td><td><!-- empty cell --></td><td><span class="label label-warning">To review</span></td><td>93.49</td><td>96.25</td><td>47.65</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit-warning.html">Edit</a></td><td><!-- empty cell --></td></tr>
+								<tr class="bg-warning text-muted"><td>Conoco Aberdeen</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>95.06</td><td>98.03</td><td>&mdash;</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit-accepted.html">Edit</a></td><td><!-- empty cell --></td></tr>
+								<tr class="bg-warning"><td>Conoco Aberdeen</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>95.06</td><td>98.03</td><td>&mdash;</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit-adhoc.html">Edit</a></td><td><!-- empty cell --></td></tr>
+								<tr><td>Conoco Bramhall</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>93.49</td><td>96.25</td><td>47.65</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit-warning.html">Edit</a></td><td><!-- empty cell --></td></tr>
 								<tr><td>Conoco Immingham</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>95.53</td><td>92.90</td><td>47.15</td><td>&mdash;</td><td><a class="btn btn-default btn-sm" href="cost-terminal-edit.html">Edit</a></td><td><!-- empty cell --></td></tr>
-								<tr><td>Conoco Inverness</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>92.92</td><td>94.89</td><td>47.30</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
+								<tr class="bg-warning text-muted"><td>Conoco Inverness</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>92.92</td><td>94.89</td><td>47.30</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
+								<tr class="bg-warning"><td>Conoco Inverness</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>92.92</td><td>94.89</td><td>47.30</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
 								<tr><td>Conoco Kingsbury</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>93.32</td><td>96.04</td><td>47.77</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
 								<tr><td>Esso Avonmouth</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>94.26</td><td>97.08</td><td>49.22</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>
 								<tr><td>Esso Birmingham</td><td><!-- empty cell --></td><td><span class="label label-default">Not started</span></td><td>93.20</td><td>95.78</td><td>48.10</td><td>&mdash;</td><td><button class="btn btn-default btn-sm">Edit</button></td><td><!-- empty cell --></td></tr>

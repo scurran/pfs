@@ -70,6 +70,25 @@ height: 60px;
     color: #fff;
 }
 
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #006655;
+    border-color: #006655;
+}
+
 a {
   color: #006655;
   text-decoration: none;
@@ -132,3 +151,12 @@ a:hover {
 
 th.duty-header-cell, td.duty-header-cell {border-right: 1px solid #ddd;}
 td.duty-header-cell {color:#777;}
+
+.lifting-table th:first-child + th, .lifting-table td:first-child + td {
+ text-align:left; 	
+}
+
+.progress-bar {
+	background-color: #FFE151;
+	color:#006655;
+}

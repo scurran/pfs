@@ -57,52 +57,63 @@
 			</div>		
 	      </div>
 	    </div>
+
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
-					<ul class="nav nav-pills" role="tablist">
-						<li class="active"><a href="index.html">Liftings</a></li>
-						<li><a href="drawings/index.html">Drawings</a></li>
-						<li><a href="deliveries/index.html">Deliveries</a></li>
-						<li><a href="refusals/index.html">Refusals</a></li>
-					</ul>
+					<h3 class="page-header">Aberdeen <small class="text-uppercase">123</small></h3>
 				</div>
-			</div>	
-		</div>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12">
-					<h3 class="page-header">Liftings <small>week ending 07/12/2014 (2014 wk 44)</small></h3>
-					<ul class="nav nav-tabs nav-justified">
-					  <li role="presentation"><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
-					  <li role="presentation" class="active"><a href="#">MON 01/12</a></li>
-					  <li role="presentation"><a href="#">TUE 02/12</a></li>
-					  <li role="presentation"><a href="#">WED 03/12</a></li>
-					  <li role="presentation"><a href="#">THU 04/12</a></li>
-					  <li role="presentation"><a href="#">FRI 05/12</a></li>
-					  <li role="presentation"><a href="#">SAT 06/12</a></li>
-					  <li role="presentation"><a href="#">SUN 07/12</a></li>
-					  <li role="presentation"><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
-					</ul>
-					<form role="form" style="margin-top:30px;">						
-						<div class="form-group">
-							<a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-filter"></span> Filter current view</a>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-lg-4">				
+					<form role="form">
+					  <div class="form-group">
+					    <label for="orderNumber">Order number</label>
+					    <input type="text" class="form-control" id="orderNumber" value="123456789">
+					  </div>
+					<div class="form-group">
+						<label>Invoice status</label>
+						<div class="checkbox">
+						  <label>
+						    <input type="checkbox" value="" checked>
+						    Paid
+						  </label>
 						</div>
-					</form>
-					<div class="table-responsive">
-						<table class="table table-condensed table-hover lifting-table">
-						  <thead>
-							<tr><th class="active"><a href="">Load point <span class="glyphicon glyphicon-sort"></span></a></th><th><a href="">Site location</a></th><th><a href="">Site ID</a></th><th><a href="">Invoice number</a></th><th><a href="">Status</a></th><th>UNL</th><th>DSL</th><th>SUL</th><th>GAS</th><th>E85</th><th>B30</th><th><!-- empty cell --></th></tr>
-							</thead>
-							<tbody>
-								<tr><td>Conoco Aberdeen</td><td>Aberdeen</td><td>160</td><td>123456789</td><td><span class="label label-default">PAID</span></td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>Conoco Aberdeen</td><td>Inverurie</td><td>123</td><td>123456789</td><td><span class="label label-default">PAID</span></td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-						</tbody>
-						</table>
 					</div>
 				</div>
-			</div>	
+			</div>		
+			<div class="row">
+			  <div class="form-group form-group-sm col-xs-4 col-sm-1">
+				<label class="control-label">UNL</label>
+			    	<input type="text" class="form-control">
+			  </div>
+			  <div class="form-group form-group-sm col-xs-4 col-sm-1">
+				<label class="control-label">DSL</label>
+			    	<input type="text" class="form-control">						
+			  </div>
+			  <div class="form-group form-group-sm col-xs-4 col-sm-1">
+				<label class="control-label">SUL</label>
+			    	<input type="text" class="form-control">						
+			  </div>
+			  <div class="form-group form-group-sm col-xs-4 col-sm-1">
+				<label class="control-label">GAS</label>
+			    	<input type="text" class="form-control">
+			  </div>
+			  <div class="form-group form-group-sm col-xs-4 col-sm-1">
+				<label class="control-label">E85</label>
+			    	<input type="text" class="form-control">
+			  </div>
+			  <div class="form-group form-group-sm col-xs-4 col-sm-1">
+				<label class="control-label">B30</label>
+			    	<input type="text" class="form-control">
+			  </div>
+			</div>
+				
+					  <button type="submit" class="btn btn-primary">Save order details</button>
+					</form>
+
 		</div>
+
 
 
     <!-- Bootstrap core JavaScript

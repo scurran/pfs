@@ -86,17 +86,68 @@
 					</ul>
 					<form role="form" style="margin-top:30px;">						
 						<div class="form-group">
-							<a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-filter"></span> Filter current view</a>
+							<div class="btn-group">
+							  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<span class="glyphicon glyphicon-filter"></span>
+							    Filter current view <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" role="menu">
+							    <li><a href="#">Show all</a></li>
+								<li class="divider"></li>
+							    <li><a href="#">Check losses</a></li>
+							    <li><a href="#">Deliveries not checked</a></li>
+							    <li><a href="#">Deliveries carried over</a></li>
+							    <li><a href="#">Deliveries not invoiced</a></li>
+							    <li><a href="#">Temperature adjusted volumes</a></li>							
+							  </ul>
+							</div>
+							<a class="btn btn-default pull-right" href="#"><span class="glyphicon glyphicon-export"></span> Export liftings data</a>
+														
 						</div>
 					</form>
 					<div class="table-responsive">
 						<table class="table table-condensed table-hover lifting-table">
 						  <thead>
-							<tr><th class="active"><a href="">Load point <span class="glyphicon glyphicon-sort"></span></a></th><th><a href="">Site location</a></th><th><a href="">Site ID</a></th><th><a href="">Invoice number</a></th><th><a href="">Status</a></th><th>UNL</th><th>DSL</th><th>SUL</th><th>GAS</th><th>E85</th><th>B30</th><th><!-- empty cell --></th></tr>
+							<tr><th>
+								<div class="dropdown"><a href="" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Terminals <span class="caret"></span></a>
+								  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">All terminals</a></li>
+									<li class="divider"></li>
+								    <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">Conoco Aberdeen</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Avonmouth</a></li>
+								
+								  </ul>
+								</div>
+								</th><th>Job no.</th><th>Location</th><th>Site</th><th>Order no.</th><th>Status</th><th>Invoice no.</th><th>UNL</th><th class="small">actual</th><th>DSL</th><th class="small">actual</th><th>GAS</th><th class="small">actual</th><th><span class="glyphicon glyphicon-comment"></span></th><th><!-- empty cell --></th></tr>
 							</thead>
 							<tbody>
-								<tr><td>Conoco Aberdeen</td><td>Aberdeen</td><td>160</td><td>123456789</td><td><span class="label label-default">PAID</span></td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>Conoco Aberdeen</td><td>Inverurie</td><td>123</td><td>123456789</td><td><span class="label label-default">PAID</span></td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr class="text-muted"><td>Conoco Aberdeen</td><td>823015</td><td>Aberdeen</td><td>160</td><td>1606762</td><td><span class="label label-default">Paid</span></td><td>997368904</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td><span class="glyphicon glyphicon-comment" title="A comment has been made on this item"></span></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Aberdeen</td><td>823016</td><td>Inverurie</td><td>189</td><td>1896470</td><td><span class="label label-accepted">Checked</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td class="text-danger">12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr class="bg-danger"><td>Conoco Aberdeen</td><td>823014</td><td>Peterhead</td><td>194</td><td>1946459</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td class="text-danger">12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Aberdeen</td><td>823014</td><td>Peterhead</td><td>194</td><td>1946459</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td class="text-danger">12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823106</td><td>Enterprise 5</td><td>003</td><td>0036658</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823071</td><td>Keighley</td><td>005</td><td>0056475</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823099</td><td>Failsworth</td><td>022</td><td>0226339</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823070</td><td>Eccles</td><td>028</td><td>0286551</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823069</td><td>Dukinfield</td><td>037</td><td>0376369</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823098</td><td>Stoke</td><td>050</td><td>0506553</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823072</td><td>Rochdale</td><td>053</td><td>0536559</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823162</td><td>Oldham</td><td>057</td><td>0576469</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823161</td><td>Bolton Atlas</td><td>059</td><td>0596451</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823067</td><td>Denton</td><td>093</td><td>0936374</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823054</td><td>Nelson</td><td>104</td><td>1046503</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823160</td><td>Hyde</td><td>119</td><td>1196372</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr class="bg-info"><td>Conoco Bramhall</td><td>823068</td><td>Cheadle Heath</td><td>122</td><td>1226643</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823105</td><td>Cheadle Heath</td><td>122</td><td>1226644</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823100</td><td>Swinnow Road</td><td>137</td><td>1376513</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823159</td><td>Harwood</td><td>212</td><td>2126361</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823055</td><td>Bredbury</td><td>215</td><td>2156543</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823066</td><td>Newcastle Und</td><td>256</td><td>2566512</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823167</td><td>Newcastle Und</td><td>256</td><td>2566513</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823165</td><td>Openshaw</td><td>391</td><td>3916350</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823166</td><td>Great Harwood</td><td>398</td><td>3986135</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823056</td><td>Illingsworth</td><td>475</td><td>4756369</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823104</td><td>Colne RDC</td><td>900</td><td>9006046</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
 						</tbody>
 						</table>
 					</div>

@@ -152,7 +152,7 @@ a:hover {
 th.duty-header-cell, td.duty-header-cell {border-right: 1px solid #ddd;}
 td.duty-header-cell {color:#777;}
 
-.lifting-table th:first-child + th, .lifting-table td:first-child + td {
+.lifting-table th:first-child + th + th, .lifting-table td:first-child + td +td {
  text-align:left; 	
 }
 

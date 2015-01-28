@@ -154,7 +154,7 @@ a:hover {
  text-align:left; 	
 }
 
-.deliveries-table th:first-child, .table td:first-child  { text-align:right; }
+.deliveries-table th:first-child, .deliveries-table td:first-child  { text-align:right; }
 
 .progress-bar {
 	background-color: #FFE151;

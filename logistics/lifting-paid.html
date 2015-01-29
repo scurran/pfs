@@ -76,99 +76,102 @@
 				</div>
 				</div>
 				<form role="form">
+					<div class="row">
+						<div class="col-xs-12 col-sm-3">				
+						  <div class="form-group">
+						    <label for="terminalBrand">Terminal</label>
+						    <select class="form-control" id="terminalBrand">
+							<option>Select an existing terminal</option>
+						    <option selected="selected">Conoco Aberdeen</option>
+						    <option>Conoco Bramhall</option>
+							<option>Conoco Immingham</option>
+							<option>Conoco Inverness</option>
+							<option>Conoco Kingsbury</option>
+							<option>Esso Avonmouth</option>
+							<option>Esso Birmingham</option>
+							<option>Esso Hythe</option>
+							<option>Esso Purfleet</option>
+							<option>Greenergy Clydebank</option>
+							<option>Greenergy Tees</option>
+							<option>Harvest Seal Sands</option>
+							<option>Ineos Dalston</option>
+							<option>Mabanaft Avonmouth</option>
+							<option>Mabanaft Ross</option>
+							<option>Pace Fuelcare IOW</option>
+							<option>Shell Stanlow</option>
+							<option>Texaco BOSL</option>
+							<option>Texaco Cardiff</option>
+							<option>Texaco Kingsbury</option>
+							<option>Texaco Plymouth</option>
+							<option>Texaco Stanlow</option>
+							<option>TFE J41</option>
+							<option>TFE Gadbrook</option>
+							<option>Total LOR</option>
+							<option>Total Milford</option>
+							<option>Total Nottingham</option>							
+							</select>
+						  </div>
+						</div>
+						<div class="col-xs-12 col-sm-2">							
+						  <div class="form-group">
+						    <label for="jobNumber">Job number</label>
+						    <input type="text" class="form-control" id="jobNumber" value="823015">
+						  </div>
+						</div>
+
+						<div class="col-xs-12 col-sm-3">	
+						  <div class="form-group">
+						    <label for="terminalBrand">Location / Site ID</label>
+						    <select class="form-control" id="terminalBrand">
+							<option>Select an existing location</option>
+							<option selected="selected">Aberdeen 160</option>  
+							<option>Inverurie 189</option>    
+							<option>Peterhead 194</option>
+							</select>
+						  </div>
+						</div>
+						<div class="col-xs-12 col-sm-2">						
+						  <div class="form-group">
+						    <label for="jobNumber">Order number</label>
+						    <input type="text" class="form-control" id="jobNumber" value="1606762">
+						  </div>
+						</div>
+					</div>
 				<div class="row">	
-					<div class="col-xs-12 col-sm-4">
+					<div class="col-xs-12 col-sm-3">
 						<label>Status</label>
-						<div class="radio">
-							<label class="radio-inline">
-						    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-						    Open
-						  </label>
-						  <label class="radio-inline">
-						    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-						    Checked
-						  </label>
-						  <label class="radio-inline">
-						    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-						    Paid
-						  </label>
+						<div class="form-group">
+							<div class="radio">
+								<label class="radio-inline">
+							    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+							    Open
+							  </label>
+							  <label class="radio-inline">
+							    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+							    Checked
+							  </label>
+							  <label class="radio-inline">
+							    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+							    Paid
+							  </label>
+							</div>
 						</div>
 					</div>					
-					<div class="col-xs-12 col-sm-4">				
+					<div class="col-xs-12 col-sm-2">				
 					  <div class="form-group">
 					    <label for="jobNumber">Invoice number</label>
 					    <input type="text" class="form-control" id="jobNumber" value="997368904">
 					  </div>
 					</div>
-				</div>					
-				<div class="row">
-					<div class="col-xs-12 col-sm-4">				
+					<div class="col-xs-12 col-sm-5">				
 					  <div class="form-group">
-					    <label for="terminalBrand">Terminal</label>
-					    <select class="form-control" id="terminalBrand">
-						<option>Select an existing terminal</option>
-					    <option selected="selected">Conoco Aberdeen</option>
-					    <option>Conoco Bramhall</option>
-						<option>Conoco Immingham</option>
-						<option>Conoco Inverness</option>
-						<option>Conoco Kingsbury</option>
-						<option>Esso Avonmouth</option>
-						<option>Esso Birmingham</option>
-						<option>Esso Hythe</option>
-						<option>Esso Purfleet</option>
-						<option>Greenergy Clydebank</option>
-						<option>Greenergy Tees</option>
-						<option>Harvest Seal Sands</option>
-						<option>Ineos Dalston</option>
-						<option>Mabanaft Avonmouth</option>
-						<option>Mabanaft Ross</option>
-						<option>Pace Fuelcare IOW</option>
-						<option>Shell Stanlow</option>
-						<option>Texaco BOSL</option>
-						<option>Texaco Cardiff</option>
-						<option>Texaco Kingsbury</option>
-						<option>Texaco Plymouth</option>
-						<option>Texaco Stanlow</option>
-						<option>TFE J41</option>
-						<option>TFE Gadbrook</option>
-						<option>Total LOR</option>
-						<option>Total Milford</option>
-						<option>Total Nottingham</option>							
-						</select>
+					    <label for="jobNumber"><span class="glyphicon glyphicon-comment" title="Comment"></span> Comments</label>
+					    <textarea class="form-control" rows="1">OK</textarea>
 					  </div>
 					</div>
-					<div class="col-xs-12 col-sm-4">							
-					  <div class="form-group">
-					    <label for="jobNumber">Job number</label>
-					    <input type="text" class="form-control" id="jobNumber" value="823015">
-					  </div>
-					</div>
-				</div>
+				</div>						
+				<hr><!-- separate form parts -->		
 				<div class="row">	
-					<div class="col-xs-12 col-sm-4">	
-					  <div class="form-group">
-					    <label for="terminalBrand">Location / Site ID</label>
-					    <select class="form-control" id="terminalBrand">
-						<option>Select an existing location</option>
-						<option selected="selected">Aberdeen 160</option>  
-						<option>Inverurie 189</option>    
-						<option>Peterhead 194</option>
-						</select>
-					  </div>
-					</div>
-					<div class="col-xs-12 col-sm-4">						
-					  <div class="form-group">
-					    <label for="jobNumber">Order number</label>
-					    <input type="text" class="form-control" id="jobNumber" value="1606762">
-					  </div>
-					</div>
-				</div>	
-				<div class="row">
-					<div class="col-xs-12">
-						<hr>
-					</div>	
-				</div>
-				<div class="row">
 					<div class="col-xs-6 col-sm-2">	
 					  <div class="form-group">
 						<label class="control-label">UNL</label>
@@ -201,14 +204,8 @@
 					</div>
 				</div>
 				
-				<div class="row">
-					<div class="col-xs-12 col-sm-4">				
-					  <div class="form-group">
-					    <label for="jobNumber">Comments</label>
-					    <textarea class="form-control" rows="2">OK</textarea>
-					  </div>
-					</div>
-				</div>
+				<hr><!-- separate form parts -->		
+
 			
 					  <a type="submit" class="btn btn-primary" href="lifting-saved.html">Save order details</a>
 					</form>

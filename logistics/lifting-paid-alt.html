@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Morrisons Petrol Management System</title>
+
+	    <!-- Bootstrap core CSS -->
+	    <link href="../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	    <!-- Custom styles for this template -->
+	    <link href="../pfs.css" rel="stylesheet">
+
+	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	  </head>
+	  <body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="dashboard.html">
+				<img alt="Morrisons logo" src="../morrisonslogo.png" class="navbar-logo"> 
+				Petrol Operations</a>
+	        </div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="../margins/index.html">Margins</a></li>
+					<li><a href="../pricing/index.html">Pricing</a></li>
+					<li class="active"><a href="index.html">Logistics</a></li>
+					<li><a href="../markets/index.html">Markets</a></li>
+					</ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				     <span class="glyphicon glyphicon-cog"></span>Configuration <span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu" role="menu">
+					    <li><a href="../configuration/sites/index.html">Manage sites</a></li>
+			            <li><a href="../configuration/terminals/index.html">Manage terminals</a></li>	
+			            <li><a href="../configuration/products/index.html">Manage products</a></li>
+			            <li><a href="../configuration/regdata/index.html">Manage regulatory data</a></li>
+				    </ul>
+				</li>
+				<li><a href="">Sign out</a></li>
+				</ul>	
+			</div>		
+	      </div>
+	    </div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="nav nav-pills" role="tablist">
+						<li><a href="index.html">Liftings</a></li>
+						<li><a href="drawings/index.html">Drawings</a></li>
+						<li><a href="deliveries/index.html">Deliveries</a></li>
+						<li><a href="refusals/index.html">Refusals</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3 class="page-header">Aberdeen <small class="text-uppercase">1606762</small></h3>
+				</div>
+				</div>
+				<form role="form">
+					<div class="row">
+						<div class="col-xs-12 col-sm-3">				
+						  <div class="form-group">
+						    <label for="terminalBrand">Terminal</label>
+						    <select class="form-control" id="terminalBrand">
+							<option>Select an existing terminal</option>
+						    <option selected="selected">Conoco Aberdeen</option>
+						    <option>Conoco Bramhall</option>
+							<option>Conoco Immingham</option>
+							<option>Conoco Inverness</option>
+							<option>Conoco Kingsbury</option>
+							<option>Esso Avonmouth</option>
+							<option>Esso Birmingham</option>
+							<option>Esso Hythe</option>
+							<option>Esso Purfleet</option>
+							<option>Greenergy Clydebank</option>
+							<option>Greenergy Tees</option>
+							<option>Harvest Seal Sands</option>
+							<option>Ineos Dalston</option>
+							<option>Mabanaft Avonmouth</option>
+							<option>Mabanaft Ross</option>
+							<option>Pace Fuelcare IOW</option>
+							<option>Shell Stanlow</option>
+							<option>Texaco BOSL</option>
+							<option>Texaco Cardiff</option>
+							<option>Texaco Kingsbury</option>
+							<option>Texaco Plymouth</option>
+							<option>Texaco Stanlow</option>
+							<option>TFE J41</option>
+							<option>TFE Gadbrook</option>
+							<option>Total LOR</option>
+							<option>Total Milford</option>
+							<option>Total Nottingham</option>							
+							</select>
+						  </div>
+						</div>
+						<div class="col-xs-12 col-sm-3">							
+						  <div class="form-group">
+						    <label for="jobNumber">Job number</label>
+						    <input type="text" class="form-control" id="jobNumber" value="823015">
+						  </div>
+						</div>
+
+						<div class="col-xs-12 col-sm-3">	
+						  <div class="form-group">
+						    <label for="terminalBrand">Location / Site ID</label>
+						    <select class="form-control" id="terminalBrand">
+							<option>Select an existing location</option>
+							<option selected="selected">Aberdeen 160</option>  
+							<option>Inverurie 189</option>    
+							<option>Peterhead 194</option>
+							</select>
+						  </div>
+						</div>
+						<div class="col-xs-12 col-sm-3">						
+						  <div class="form-group">
+						    <label for="jobNumber">Order number</label>
+						    <input type="text" class="form-control" id="jobNumber" value="1606762">
+						  </div>
+						</div>
+					</div>
+				<div class="row">	
+					<div class="col-xs-12 col-sm-3">
+						<label>Status</label>
+						<div class="form-group">
+							<div class="btn-group" data-toggle="buttons">
+							  <label class="btn btn-default">
+							    <input type="radio" name="options" id="option1" autocomplete="off" checked> Open
+							  </label>
+							  <label class="btn btn-default">
+							    <input type="radio" name="options" id="option2" autocomplete="off"> Checked
+							  </label>
+							  <label class="btn btn-default active">
+							    <input type="radio" name="options" id="option3" autocomplete="off"> Paid
+							  </label>
+							</div>
+						</div>
+					</div>					
+					<div class="col-xs-12 col-sm-3">				
+					  <div class="form-group">
+					    <label for="jobNumber">Invoice number</label>
+					    <input type="text" class="form-control" id="jobNumber" value="997368904">
+					  </div>
+					</div>
+					<div class="col-xs-12 col-sm-6">				
+					  <div class="form-group">
+					    <label for="jobNumber"><span class="glyphicon glyphicon-comment" title="Comment"></span> Comments</label>
+					    <textarea class="form-control" rows="1">OK</textarea>
+					  </div>
+					</div>
+				</div>					
+	
+				<div class="row">
+					<div class="col-xs-12">
+						<hr>
+					</div>	
+				</div>
+				<div class="row">	
+					<div class="col-xs-6 col-sm-2">	
+					  <div class="form-group">
+						<label class="control-label">UNL</label>
+					    	<input type="text" class="form-control" value="12345">
+					</div>
+					<div class="form-group">
+						<label class="control-label">actual</label>
+					    	<input type="text" class="form-control" value="12345">						
+					  </div>
+					</div>
+					<div class="col-xs-6 col-sm-2">	
+					  <div class="form-group">
+						<label class="control-label">GAS</label>
+					    	<input type="text" class="form-control" value="12345">
+						</div>
+						<div class="form-group">
+						<label class="control-label">actual</label>
+					    	<input type="text" class="form-control" value="12345">
+					  </div>
+					</div>
+					<div class="col-xs-6 col-sm-2">
+						<div class="form-group">
+						<label class="control-label">DSL</label>
+					    	<input type="text" class="form-control" value="12345">
+						</div>
+						<div class="form-group">
+						<label class="control-label">actual</label>
+					    	<input type="text" class="form-control" value="12345">						
+					  </div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-12">
+						<hr>
+					</div>	
+				</div>
+			
+					  <a type="submit" class="btn btn-primary" href="lifting-saved.html">Save order details</a>
+					</form>
+							</div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/docs.min.js"></script>
+  </body>
+</html>

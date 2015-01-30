@@ -149,7 +149,6 @@ a:hover {
 	cursor:help;
 }
 
-
 .lifting-table th:first-child + th + th, .lifting-table td:first-child + td +td {
  text-align:left; 	
 }

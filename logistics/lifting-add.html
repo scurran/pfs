@@ -75,34 +75,9 @@
 					<h3 class="page-header">Add a delivery</h3>
 				</div>
 				</div>
-				<form role="form">
-				<div class="row">	
-					<div class="col-xs-12 col-sm-4">
-						<label>Status</label>
-						<div class="radio">
-							<label class="radio-inline">
-						    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" checked>
-						    Open
-						  </label>
-						  <label class="radio-inline">
-						    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-						    Checked
-						  </label>
-						  <label class="radio-inline">
-						    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-						    Paid
-						  </label>
-						</div>
-					</div>					
-					<div class="col-xs-12 col-sm-4">				
-					  <div class="form-group">
-					    <label for="jobNumber">Invoice number</label>
-					    <input type="text" class="form-control" id="jobNumber" disabled>
-					  </div>
-					</div>
-				</div>					
+				<form role="form">					
 				<div class="row">
-					<div class="col-xs-12 col-sm-4">				
+					<div class="col-xs-12 col-sm-3">				
 					  <div class="form-group">
 					    <label for="terminalBrand">Terminal</label>
 					    <select class="form-control" id="terminalBrand">
@@ -137,15 +112,13 @@
 						</select>
 					  </div>
 					</div>
-					<div class="col-xs-12 col-sm-4">							
+					<div class="col-xs-12 col-sm-2">							
 					  <div class="form-group">
 					    <label for="jobNumber">Job number</label>
 					    <input type="text" class="form-control" id="jobNumber">
 					  </div>
-					</div>
-				</div>
-				<div class="row">	
-					<div class="col-xs-12 col-sm-4">	
+					</div>	
+					<div class="col-xs-12 col-sm-3">	
 					  <div class="form-group">
 					    <label for="terminalBrand">Location / Site ID</label>
 					    <select class="form-control" id="terminalBrand">
@@ -156,18 +129,45 @@
 						</select>
 					  </div>
 					</div>
-					<div class="col-xs-12 col-sm-4">						
+					<div class="col-xs-12 col-sm-2">						
 					  <div class="form-group">
 					    <label for="jobNumber">Order number</label>
 					    <input type="text" class="form-control" id="jobNumber">
 					  </div>
 					</div>
 				</div>	
-				<div class="row">
-					<div class="col-xs-12">
-						<hr>
-					</div>	
+				<div class="row">	
+					<div class="col-xs-12 col-sm-3">
+						<label>Status</label>
+						<div class="radio">
+							<label class="radio-inline">
+						    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" checked>
+						    Open
+						  </label>
+						  <label class="radio-inline">
+						    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+						    Checked
+						  </label>
+						  <label class="radio-inline">
+						    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+						    Paid
+						  </label>
+						</div>
+					</div>					
+					<div class="col-xs-12 col-sm-2">				
+					  <div class="form-group">
+					    <label for="jobNumber">Invoice number</label>
+					    <input type="text" class="form-control" id="jobNumber" disabled>
+					  </div>
+					</div>
+					<div class="col-xs-12 col-sm-5">				
+					  <div class="form-group">
+					    <label for="jobNumber"><span class="glyphicon glyphicon-comment" title="Comment"></span> Comments</label>
+					    <textarea class="form-control" rows="1"></textarea>
+					  </div>
+					</div>
 				</div>
+				<hr><!-- separate form parts -->		
 				<div class="row">
 					<div class="col-xs-6 col-sm-2">	
 					  <div class="form-group">
@@ -201,16 +201,11 @@
 					</div>
 				</div>
 				
-				<div class="row">
-					<div class="col-xs-12 col-sm-4">				
-					  <div class="form-group">
-					    <label for="jobNumber">Comments</label>
-					    <textarea class="form-control" rows="2"></textarea>
-					  </div>
-					</div>
-				</div>
-			
-				  <a type="submit" class="btn btn-primary" href="lifting-saved.html">Save order details</a>
+				<hr><!-- separate form parts -->		
+
+				  <a class="btn btn-primary" href="lifting-saved.html">Save order details</a>
+				  <a class="btn btn-link" href="index.html">Cancel and return to Liftings</a>
+				
 					</form>
 							</div>
 

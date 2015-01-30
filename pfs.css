@@ -70,6 +70,18 @@ height: 60px;
     color: #fff;
 }
 
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active {
+  color: #006655;
+}
+.btn-link:hover,
+.btn-link:focus {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
 .btn-primary.disabled,
 .btn-primary[disabled],
 fieldset[disabled] .btn-primary,

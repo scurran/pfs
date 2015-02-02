@@ -61,9 +61,9 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<ul class="nav nav-pills" role="tablist">
-						<li><a href="index.html">Liftings</a></li>
+						<li><a href="../index.html">Liftings</a></li>
 						<li><a href="drawings/index.html">Drawings</a></li>
-						<li><a href="deliveries/index.html">Deliveries</a></li>
+						<li><a href="index.html">Deliveries</a></li>
 						<li><a href="refusals/index.html">Refusals</a></li>
 					</ul>
 				</div>
@@ -72,52 +72,11 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
-					<h3 class="page-header">Aberdeen <small class="text-uppercase">1606762</small></h3>
+					<h3 class="page-header">Aberdeen</h3>
 				</div>
 				</div>
 				<form role="form">											
-				<div class="row">
-					<div class="col-xs-12 col-sm-3">				
-					  <div class="form-group">
-					    <label for="terminalBrand">Terminal</label>
-					    <select class="form-control" id="terminalBrand">
-						<option>Select an existing terminal</option>
-					    <option selected="selected">Conoco Aberdeen</option>
-					    <option>Conoco Bramhall</option>
-						<option>Conoco Immingham</option>
-						<option>Conoco Inverness</option>
-						<option>Conoco Kingsbury</option>
-						<option>Esso Avonmouth</option>
-						<option>Esso Birmingham</option>
-						<option>Esso Hythe</option>
-						<option>Esso Purfleet</option>
-						<option>Greenergy Clydebank</option>
-						<option>Greenergy Tees</option>
-						<option>Harvest Seal Sands</option>
-						<option>Ineos Dalston</option>
-						<option>Mabanaft Avonmouth</option>
-						<option>Mabanaft Ross</option>
-						<option>Pace Fuelcare IOW</option>
-						<option>Shell Stanlow</option>
-						<option>Texaco BOSL</option>
-						<option>Texaco Cardiff</option>
-						<option>Texaco Kingsbury</option>
-						<option>Texaco Plymouth</option>
-						<option>Texaco Stanlow</option>
-						<option>TFE J41</option>
-						<option>TFE Gadbrook</option>
-						<option>Total LOR</option>
-						<option>Total Milford</option>
-						<option>Total Nottingham</option>							
-						</select>
-					  </div>
-					</div>
-					<div class="col-xs-12 col-sm-2">							
-					  <div class="form-group">
-					    <label for="jobNumber">Job number</label>
-					    <input type="text" class="form-control" id="jobNumber" value="823015">
-					  </div>
-					</div>	
+				<div class="row">	
 					<div class="col-xs-12 col-sm-3">	
 					  <div class="form-group">
 					    <label for="terminalBrand">Location / Site ID</label>
@@ -129,47 +88,65 @@
 						</select>
 					  </div>
 					</div>
-					<div class="col-xs-12 col-sm-2">						
+					<div class="col-xs-4 col-sm-1">
+						<div class="form-group">	
+					    	<label for="tank" class="control-label">Tank</label>
+					    	<input type="date" class="form-control" id="tank" value="1">
+						</div>
+					 </div>
+					<div class="col-xs-4 col-sm-2">
+						<div class="form-group">	
+					    	<label for="capacity" class="control-label">Capacity</label>
+					    	<input type="date" class="form-control" id="capacity" value="43130">
+						</div>
+					 </div>
+					<div class="col-xs-4 col-sm-2">	
 					  <div class="form-group">
-					    <label for="jobNumber">Order number</label>
-					    <input type="text" class="form-control" id="jobNumber" value="1606762">
+					    <label for="terminalBrand">Fuel</label>
+					    <select class="form-control" id="terminalBrand">
+						<option>Select a fuel</option>
+						<option selected>ULP</option>
+						</select>
 					  </div>
 					</div>
 				</div>	
 				<div class="row">
-					<div class="col-xs-12 col-sm-2">
+					<div class="col-xs-4 col-sm-2">
 						<div class="form-group">	
-					    	<label for="drawingDate" class="control-label"><span class="glyphicon glyphicon-time"></span> Date reconciled</label>
-					    	<input type="date" class="form-control" id="drawingDate" value="01/12/2014">
+					    	<label for="opening" class="control-label">Opening</label>
+					    	<input type="date" class="form-control" id="opening" value="21029">
+						</div>
+					 </div>
+					<div class="col-xs-4 col-sm-2">
+						<div class="form-group">	
+					    	<label for="closing" class="control-label">Closing</label>
+					    	<input type="date" class="form-control" id="closing" value="28080">
+						</div>
+					 </div>
+					<div class="col-xs-4 col-sm-2">
+						<div class="form-group">	
+					    	<label for="sales" class="control-label">Sales</label>
+					    	<input type="date" class="form-control" id="sales" value="5085">
+						</div>
+					 </div>
+					<div class="col-xs-4 col-sm-2">
+						<div class="form-group">	
+					    	<label for="delivery" class="control-label">Delivery</label>
+					    	<input type="date" class="form-control" id="delivery" value="12200">
+						</div>
+					 </div>
+					<div class="col-xs-4 col-sm-2">
+						<div class="form-group has-warning">	
+					    	<label for="variance" class="control-label">Variance</label>
+					    	<input type="date" class="form-control" id="variance" value="-64">
 						</div>
 					 </div>
 				</div>	
-				<hr><!-- separate form parts -->		
-				<div class="row">
-					<div class="col-xs-6 col-sm-2">	
-					  <div class="form-group">
-						<label class="control-label">UNL</label>
-					    	<input type="text" class="form-control" value="12345">
-					</div>
-					</div>
-					<div class="col-xs-6 col-sm-2">	
-					  <div class="form-group">
-						<label class="control-label">GAS</label>
-					    	<input type="text" class="form-control" value="12345">
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-2">
-						<div class="form-group">
-						<label class="control-label">DSL</label>
-					    	<input type="text" class="form-control" value="12345">
-						</div>
-					</div>
-				</div>
 				
 				<hr><!-- separate form parts -->
 
-				  <a class="btn btn-primary" href="drawing-saved.html">Save drawing details</a>
-				  <a class="btn btn-link" href="index.html">Cancel and return to Drawings</a>
+				  <a class="btn btn-primary" href="delivery-saved.html">Save delivery details</a>
+				  <a class="btn btn-link" href="index.html">Cancel and return to Deliveries</a>
 				
 					</form>
 							</div>

@@ -167,6 +167,10 @@ a:hover {
 
 .deliveries-table th:first-child, .deliveries-table td:first-child  { text-align:right; }
 
+.refusals-table th:first-child + th + th + th + th + th + th, .refusals-table td:first-child + td + td + td + td + td + td {
+ text-align:left; 	
+}
+
 .progress-bar {
 	background-color: #FFE151;
 	color:#006655;

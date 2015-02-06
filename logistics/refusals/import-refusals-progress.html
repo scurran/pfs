@@ -62,9 +62,9 @@
 				<div class="col-xs-12">
 					<ul class="nav nav-pills" role="tablist">
 						<li><a href="../index.html">Liftings</a></li>
-						<li class="active"><a href="index.html">Drawings</a></li>
+						<li><a href="index.html">Drawings</a></li>
 						<li><a href="../deliveries/index.html">Deliveries</a></li>
-						<li><a href="../refusals/index.html">Refusals</a></li>
+						<li class="active"><a href="../refusals/index.html">Refusals</a></li>
 					</ul>
 				</div>
 			</div>	
@@ -72,7 +72,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
-					<h3 class="page-header">Drawings <small>week ending 07/12/2014 (2014 wk 44)</small></h3>
+					<h3 class="page-header">Refusals <small>week ending 07/12/2014 (2014 wk 44)</small></h3>
 					<ul class="nav nav-tabs nav-justified">
 					  <li role="presentation"><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
 					  <li role="presentation" class="active"><a href="#">MON 01/12</a></li>
@@ -96,28 +96,22 @@
 						  </div>
 						</div>					
 						<div class="form-group">
-							<a class="btn btn-primary" href="import-drawings-success.html"><span class="glyphicon glyphicon-import"></span> Import drawings data</a>
+							<a class="btn btn-primary" href="import-refusals-success.html"><span class="glyphicon glyphicon-import"></span> Import refusals data</a>
 						</div>
 					</form>				
 					<div class="table-responsive">
-						<table class="table table-condensed table-hover">
-						  	<thead>
-								<tr><th>Load Point Name</th><th>Job Num</th><th>Site ID</th><th>Site Name</th><th>WINDMS</th><th>UNL</th><th>DSL</th><th>GAS</th><th><!-- empty cell --></th></tr>
+						<table class="table table-condensed table-hover refusals-table">
+					  		<thead>
+								<tr><th>Delivery location</th><th>Site</th><th>Date</th><th>Order</th><th>Diesel</th><th>Unleaded</th><!--<th>Terminal</th><th>Arrived on site</th><th>Refusal reason</th><th>Comments</th><th>Initial</th>--><th>Offload location</th><th>Site</th><th>Date</th><th>Order</th><th><span class="glyphicon glyphicon-comment" title="Comment"></span></th><th><!-- empty cell --></th></tr>		 
 							</thead>
 							<tbody>
-								<tr><td>ABERDEEN :CONOC</td><td>703014</td><td>194</td><td>PETERHEAD2</td><td>1946910</td><td>33400</td><td>7200</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>ABERDEEN :CONOC</td><td>703015</td><td>164</td><td>ARBROATH2</td><td>1646813</td><td>25500</td><td>14400</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>BRAMHALL :CONOC	</td><td>703010	</td><td>251</td><td>LEEK</td><td>2516752</td><td>19601</td><td>19500</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>BRAMHALL :CONOC	</td><td>703011	</td><td>119</td><td>HYDE</td><td>1196770</td><td>7200</td><td>30298</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>BRAMHALL :CONOC	</td><td>703012	</td><td>93</td><td>DENTON</td><td>936772</td><td>13200</td><td>24998</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>BRAMHALL :CONOC	</td><td>703013	</td><td>22</td><td>FAILSWORTH</td><td>226659</td><td>19601</td><td>19500</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>BRAMHALL :CONOC	</td><td>703449	</td><td>37</td><td>DUKINFIELD</td><td>376769</td><td>25701</td><td>13999</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>BRAMHALL :CONOC	</td><td>703450	</td><td>127</td><td>NEWCAS UN LY</td><td>1276809</td><td>19601</td><td>19500</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>BRAMHALL :CONOC	</td><td>703451	</td><td>11</td><td>MORLEY</td><td>117137</td><td>19600</td><td>19498</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>BRAMHALL :CONOC	</td><td>703465	</td><td>215</td><td>BREDBURY</td><td>2157156</td><td>25700</td><td>14000</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>BRAMHALL :CONOC	</td><td>703466	</td><td>256</td><td>NEWCASTLE UNDER LYME</td><td>2567055</td><td>7200</td><td>30300</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>BRAMHALL :CONOC	</td><td>703467	</td><td>122</td><td>CHEADLE HEATH</td><td>1227390</td><td>25700</td><td>14000</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>BRAMHALL :CONOC	</td><td>703468	</td><td>208</td><td>BUXTON</td><td>2086860</td><td>19600</td><td>19500</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Stone</td><td>262</td><td>05/10/2014</td><td>2626919</td><td>&mdash;</td><td>7000</td><!--<td>Esso Urdington</td><td>Yes</td><td>Ullage</td><td></td><td>JS</td>--><td>Shrewsbury</td><td>068</td><td>05/10/2014</td><td>0687066</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Yeadon</td><td>007</td><td>06/10/2014</td><td>0076825</td><td>19500</td><td>19600</td><!--<td>Conoco Imminghan</td><td>No</td><td>other</td><td></td><td>GM	</td>--><td>Brough</td><td>583</td><td>06/10/2014</td><td>5836402</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Cleethorpes</td><td>075</td><td>05/10/2014</td><td>0757336</td><td>&mdash;</td><td>6200</td><!--<td>Conoco Imminghan</td><td>Yes</td><td>Driver</td><td></td><td>GM	</td>--><td>Sheffield Meadowhead </td><td>229</td><td>06/10/2014</td><td>2297006</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Cromer</td><td>279</td><td>04/10/2014</td><td>2796565</td><td>14000</td><td>25500</td><!--<td>Greenergy Vopak</td><td>No</td><td>Vehicle</td><td>Blow out on route to Cromer</td><td>-ZHE A</td>--><td>Fakenham </td><td>282</td><td>04/10/2014</td><td>2827027</td><th><span class="glyphicon glyphicon-comment" title="Blow out on route to Cromer"></span></th><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Newquay</td><td>329</td><td>08/10/2014</td><td>3297204</td><td>25000</td><td>12500</td><!--<td>Valero Pymouth</td><td>No</td><td>other</td><td>Diverted as site hadn't any power</td><td>JA</td>--><td>Bodmin</td><td>322</td><td>08/10/2014</td><td>3227470</td><th><span class="glyphicon glyphicon-comment" title="Diverted as site hadn't any power"></span></th><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Bridgwater RDC</td><td>708</td><td>08/10/2014</td><td>7086584</td><td>37000</td><td>&mdash;</td><!--<td>Total Westerleigh</td><td>Yes</td><td>Site</td><td>Unable to access site</td><td>JA</td>--><td>Bridgwater RDC</td><td>708</td><td>09/10/2014</td><td>7086584</td><th><span class="glyphicon glyphicon-comment" title="Unable to access site"></span></th><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Carlisle</td><td>044</td><td>09/10/2014</td><td>0447138</td><td>14000</td><td>25700</td><!--<td>Harvest Stockton</td><td>No</td><td>Road</td><td></td><td>MTS</td>--><td>Killingworth</td><td>035</td><td>09/10/2014</td><td>0357186</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
 							</tbody>
 						</table>
 					</div>

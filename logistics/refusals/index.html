@@ -86,22 +86,22 @@
 					</ul>
 					<form role="form" style="margin-top:30px;">						
 						<div class="form-group">
-							<a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-import"></span> Import refusal data</a>
+							<a class="btn btn-primary" href="import-refusals.html"><span class="glyphicon glyphicon-import"></span> Import refusal data</a>
 						</div>
 					</form>
 					<div class="table-responsive">
-						<table class="table table-condensed table-hover deliveries-table">
-						  	<thead>
-								<tr><th>Store no</th><th>Delivery point</th><th>Order number</th><th>Date</th><th>DIE (lt)</th><th>UNL/E5 (lt)</th><th>Supplier/ terminal</th><th>Arrived on site</th><th>Refusal reason</th><th>Comments</th><th>Initial</th><th>Date delivered</th><th>Store no</th><th>Offload point</th><th>Order no<th><!-- empty cell --></th></tr>		 
+						<table class="table table-condensed table-hover refusals-table">
+					  		<thead>
+								<tr><th>Delivery location</th><th>Site</th><th>Date</th><th>Order</th><th>Diesel</th><th>Unleaded</th><!--<th>Terminal</th><th>Arrived on site</th><th>Refusal reason</th><th>Comments</th><th>Initial</th>--><th>Offload location</th><th>Site</th><th>Date</th><th>Order</th><th><span class="glyphicon glyphicon-comment" title="Comment"></span></th><th><!-- empty cell --></th></tr>		 
 							</thead>
 							<tbody>
-								<tr><td>262</td><td>Stone 	</td><td>2626919	</td><td>05/10/2014		</td><td></td><td>7000			</td><td>URDINGTON:ESSO      	</td><td>Yes	</td><td>Ullage</td><td></td><td>JS	</td><td>05/10/2014</td><td>	068	 </td><td>Shrewsbury 	</td><td>0687066</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>007	</td><td>Yeadon 	</td><td>0076825	</td><td>06/10/2014	</td><td>19500	</td><td>19600			</td><td>IMMINGHAM:CONOCO    	</td><td>No	</td><td>other</td><td></td><td>GM	</td><td>06/10/2014	</td><td>583	 </td><td>Brough 	</td><td>5836402</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>075	</td><td>Cleethorpes 	</td><td>0757336	</td><td>05/10/2014</td></td><td><td>6200			</td><td>IMMINGHAM:CONOCO    	</td><td>Yes	</td><td>Driver</td><td></td><td>GM	</td><td>06/10/2014</td><td>	229	 </td><td>Sheffield Meadowhead 	</td><td>2297006</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>279	 </td><td>Cromer 	</td><td>2796565	</td><td>04/10/2014	</td><td>14000	</td><td>25500			</td><td>VOPAK:GREENNERGY 	</td><td>No	</td><td>Vehicle</td><td>Blow out on route to Cromer</td><td>-ZHE	SA	</td><td>04/10/2014	</td><td>282	 </td><td>Fakenham 	</td><td>2827027</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>329	 </td><td>Newquay 	</td><td>3297204	</td><td>08/10/2014	</td><td>25000	</td><td>12500			</td><td>PLYMOUTH :VALERO 	</td><td>No	</td><td>other</td><td>Diverted as site hadn't any power	</td><td>JA	</td><td>08/10/2014	</td><td>322	 </td><td>Bodmin 	</td><td>3227470</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>708	 </td><td>Bridgwater RDC 	</td><td>7086584	</td><td>08/10/2014	</td><td>37000</td><td></td><td>WESTERLEIGH:TOTAL	</td><td>Yes	</td><td>Site</td><td>Unable to access site	</td><td>JA	</td><td>09/10/2014	</td><td>708	 </td><td>Bridgwater RDC 	</td><td>7086584</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>044	 </td><td>Carlisle 	</td><td>0447138	</td><td>09/10/2014	</td><td>14000	</td><td>25700			</td><td>STOCKTON :HARVEST  	</td><td>No	</td><td>Road</td><td></td><td>MTS	</td><td>09/10/2014	</td><td>035	 </td><td>Killingworth 	</td><td>0357186</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Stone</td><td>262</td><td>05/10/2014</td><td>2626919</td><td>&mdash;</td><td>7000</td><!--<td>Esso Urdington</td><td>Yes</td><td>Ullage</td><td></td><td>JS</td>--><td>Shrewsbury</td><td>068</td><td>05/10/2014</td><td>0687066</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Yeadon</td><td>007</td><td>06/10/2014</td><td>0076825</td><td>19500</td><td>19600</td><!--<td>Conoco Imminghan</td><td>No</td><td>other</td><td></td><td>GM	</td>--><td>Brough</td><td>583</td><td>06/10/2014</td><td>5836402</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Cleethorpes</td><td>075</td><td>05/10/2014</td><td>0757336</td><td>&mdash;</td><td>6200</td><!--<td>Conoco Imminghan</td><td>Yes</td><td>Driver</td><td></td><td>GM	</td>--><td>Sheffield Meadowhead </td><td>229</td><td>06/10/2014</td><td>2297006</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Cromer</td><td>279</td><td>04/10/2014</td><td>2796565</td><td>14000</td><td>25500</td><!--<td>Greenergy Vopak</td><td>No</td><td>Vehicle</td><td>Blow out on route to Cromer</td><td>-ZHE A</td>--><td>Fakenham </td><td>282</td><td>04/10/2014</td><td>2827027</td><th><span class="glyphicon glyphicon-comment" title="Blow out on route to Cromer"></span></th><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Newquay</td><td>329</td><td>08/10/2014</td><td>3297204</td><td>25000</td><td>12500</td><!--<td>Valero Pymouth</td><td>No</td><td>other</td><td>Diverted as site hadn't any power</td><td>JA</td>--><td>Bodmin</td><td>322</td><td>08/10/2014</td><td>3227470</td><th><span class="glyphicon glyphicon-comment" title="Diverted as site hadn't any power"></span></th><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Bridgwater RDC</td><td>708</td><td>08/10/2014</td><td>7086584</td><td>37000</td><td>&mdash;</td><!--<td>Total Westerleigh</td><td>Yes</td><td>Site</td><td>Unable to access site</td><td>JA</td>--><td>Bridgwater RDC</td><td>708</td><td>09/10/2014</td><td>7086584</td><th><span class="glyphicon glyphicon-comment" title="Unable to access site"></span></th><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Carlisle</td><td>044</td><td>09/10/2014</td><td>0447138</td><td>14000</td><td>25700</td><!--<td>Harvest Stockton</td><td>No</td><td>Road</td><td></td><td>MTS</td>--><td>Killingworth</td><td>035</td><td>09/10/2014</td><td>0357186</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
 							</tbody>
 						</table>
 					</div>

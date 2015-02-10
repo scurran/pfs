@@ -73,8 +73,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<h3 class="page-header">Liftings <small>week ending 07/12/2014 (2014 wk 44)</small></h3>
-					<div class="alert alert-success"><p>Liftings data saved</p></div>
-					<ul class="nav nav-tabs nav-justified">
+					<ul class="nav nav-tabs nav-justified nav-liftings">
 					  <li role="presentation"><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
 					  <li role="presentation" class="active"><a href="#">MON 01/12</a></li>
 					  <li role="presentation"><a href="#">TUE 02/12</a></li>
@@ -85,10 +84,13 @@
 					  <li role="presentation"><a href="#">SUN 07/12</a></li>
 					  <li role="presentation"><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
 					</ul>
-					<form role="form" style="margin-top:30px;">						
+					<div class="alert alert-success"><p>Delivery details saved.</p></div>
+					
+					<form role="form">						
 						<div class="form-group">
+							<a class="btn btn-primary" href="lifting-add.html">Add a delivery</a>														
 							
-							<div class="btn-group">
+							<div class="btn-group pull-right">
 							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 								<span class="glyphicon glyphicon-filter"></span>
 							    Filter current view <span class="caret"></span>
@@ -101,7 +103,6 @@
 							    <li><a href="filter-temp-adjusted.html">Temperature adjusted volumes</a></li>							
 							  </ul>
 							</div>
-							<a class="btn btn-primary pull-right" href="#">Add a delivery</a>														
 						</div>
 					</form>
 					<div class="table-responsive">
@@ -141,7 +142,7 @@
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total Nottingham</a></li>
 								</ul>
 								</div>
-								</th><th>Job no.</th><th>Location</th><th>Site</th><th>Order no.</th><th>
+								</th><th>Job number</th><th>Location</th><th>Site</th><th>Order number</th><th>
 									<div class="dropdown"><a href="" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Status <span class="caret"></span></a>
 									  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Show all</a></li>
@@ -151,13 +152,13 @@
 									    <li role="presentation"><a role="menuitem" tabindex="-1" href="status-open.html">Open</a></li>
 									  </ul>
 									</div>
-									</th><th>Invoice no.</th><th>UNL</th><th class="small">actual</th><th>DSL</th><th class="small">actual</th><th>GAS</th><th class="small">actual</th><th><span class="glyphicon glyphicon-comment"></span></th><th><!-- empty cell --></th></tr>
+									</th><th>Invoice number</th><th>UNL</th><th class="small">actual</th><th>DSL</th><th class="small">actual</th><th>GAS</th><th class="small">actual</th><th><span class="glyphicon glyphicon-comment" title="Comment"></span></th><th><!-- empty cell --></th></tr>
 							</thead>
 							<tbody>
-								<tr class="text-muted"><td>Conoco Aberdeen</td><td>823015</td><td>Aberdeen</td><td>160</td><td>1606762</td><td><span class="label label-default">Paid</span></td><td>997368904</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td><span class="glyphicon glyphicon-comment" title="A comment has been made on this item"></span></td><td><a class="btn btn-default btn-sm" href="lifting-paid.html">Edit</a></td></tr>
+								<tr class="text-muted"><td>Conoco Aberdeen</td><td>823015</td><td>Aberdeen</td><td>160</td><td>1606762</td><td><span class="label label-default">Paid</span></td><td>997368904</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td><span class="glyphicon glyphicon-comment" title="OK"></span></td><td><a class="btn btn-default btn-sm" href="lifting-paid.html">Edit</a></td></tr>
 								<tr><td>Conoco Aberdeen</td><td>823016</td><td>Inverurie</td><td>189</td><td>1896470</td><td><span class="label label-accepted">Checked</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td class="text-danger">12345</td><td></td><td><a class="btn btn-default btn-sm" href="lifting-checked.html">Edit</a></td></tr>
 								<tr class="bg-danger"><td>Conoco Aberdeen</td><td>823014</td><td>Peterhead</td><td>194</td><td>1946459</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td class="text-danger">12345</td><td></td><td><a class="btn btn-default btn-sm" href="lifting-open.html">Edit</a></td></tr>
-								<tr><td>Conoco Aberdeen</td><td>823014</td><td>Peterhead</td><td>194</td><td>1946459</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td class="text-danger">12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr class="bg-warning"><td>Conoco Aberdeen</td><td>823014</td><td>Peterhead</td><td>194</td><td>1946459</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td class="text-danger">12345</td><td></td><td><a class="btn btn-default btn-sm" href="lifting-warning.html">Edit</a></td></tr>
 								<tr><td>Conoco Bramhall</td><td>823106</td><td>Enterprise 5</td><td>003</td><td>0036658</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
 								<tr><td>Conoco Bramhall</td><td>823071</td><td>Keighley</td><td>005</td><td>0056475</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
 								<tr><td>Conoco Bramhall</td><td>823099</td><td>Failsworth</td><td>022</td><td>0226339</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>

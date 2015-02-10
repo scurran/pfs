@@ -63,8 +63,10 @@
 					<ul class="nav nav-pills" role="tablist">
 						<li><a href="../index.html">Liftings</a></li>
 						<li><a href="../drawings/index.html">Drawings</a></li>
-						<li class="active"><a href="index.html">Deliveries</a></li>
+						<li><a href="../deliveries/index.html">Deliveries</a></li>
 						<li><a href="../refusals/index.html">Refusals</a></li>
+						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-file"></span> Sales</a></li>
+						<li><a href="../volumes/index.html"><span class="glyphicon glyphicon-file"></span> Volumes</a></li>
 					</ul>
 				</div>
 			</div>	
@@ -72,57 +74,25 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
-					<h3 class="page-header">Deliveries <small>week ending 07/12/2014 (2014 wk 44)</small></h3>
-					<ul class="nav nav-tabs nav-justified">
-					  <li role="presentation"><a href="deliveries-history.html" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
-					  <li role="presentation" class="active"><a href="#">MON 01/12</a></li>
-					  <li role="presentation"><a href="deliveries-new.html">TUE 02/12</a></li>
-					  <li role="presentation"><a href="#">WED 03/12</a></li>
-					  <li role="presentation"><a href="#">THU 04/12</a></li>
-					  <li role="presentation"><a href="#">FRI 05/12</a></li>
-					  <li role="presentation"><a href="#">SAT 06/12</a></li>
-					  <li role="presentation"><a href="#">SUN 07/12</a></li>
-					  <li role="presentation"><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
-					</ul>
-					<form role="form" style="margin-top:30px;">						
-						<div class="form-group">
-							<a class="btn btn-primary" href="import-deliveries.html"><span class="glyphicon glyphicon-import"></span> Import deliveries data</a>							
-						</div>
-					</form>
+					<h3 class="page-header">Sales <small>Report</small></h3>
+					
 					<div class="table-responsive">
-						<table class="table table-condensed table-hover deliveries-table">
+						<table class="table table-condensed table-hover">
 						  	<thead>
-								<tr><th>sitecode</th><th>tank</th><th>openst</th><th>closst</th><th>sales</th><th>tstuni</th><th>deliv</th><th>desc</th><th>tanksize</th><th>variance</th><th><!-- empty cell --></th></tr>			
+								<tr><th>Week ending</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th><th>Total</th><th>Est M3</th></tr>
 							</thead>
 							<tbody>
-								<tr><td>1</td><td>1</td><td>9027</td><td>5847</td><td>3224</td><td>0</td><td>0</td><td>ULD</td><td>17274</td><td>44</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>1</td><td>2</td><td>185</td><td>185</td><td>0</td><td>0</td><td>0</td><td>ULP</td><td>17274</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>1</td><td>3</td><td>9224</td><td>7853</td><td>1385</td><td>0</td><td>0</td><td>ULD</td><td>25912</td><td>14</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>1</td><td>4</td><td>8107</td><td>6483</td><td>1616</td><td>0</td><td>0</td><td>ULP</td><td>25900</td><td>-8</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>1</td><td>5</td><td>16968</td><td>13909</td><td>3066</td><td>0</td><td>0</td><td>ULP</td><td>25900</td><td>7</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>1</td><td>6</td><td>16404</td><td>12312</td><td>4092</td><td>0</td><td>0</td><td>ULP</td><td>25900</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>1</td><td>7</td><td>11192</td><td>8667</td><td>2520</td><td>0</td><td>0</td><td>ULD</td><td>17200</td><td>-5</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>1</td><td>8</td><td>4280</td><td>4299</td><td>1137</td><td>0</td><td>960</td><td>LPG</td><td>6000</td><td>196</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>2</td><td>1</td><td>21029</td><td>28080</td><td>5085</td><td>0</td><td>12200</td><td>ULP</td><td>43130</td><td>-64</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>2</td><td>2</td><td>27494</td><td>28584</td><td>5877</td><td>0</td><td>7000</td><td>ULP</td><td>43130</td><td>-33</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>2</td><td>3</td><td>36025	</td><td>33962	</td><td>8570	</td><td>0	</td><td>6500	</td><td>ULD	</td><td>43130</td><td>	7</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>2</td><td>4</td><td>10931	</td><td>9935	</td><td>7967	</td><td>0	</td><td>7000	</td><td>ULD	</td><td>21565</td><td>	-29</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>2</td><td>5</td><td>9636	</td><td>13925	</td><td>1688	</td><td>0	</td><td>6000	</td><td>ULD	</td><td>21565</td><td>	-23</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>3</td><td>1</td><td>20775	</td><td>10658	</td><td>10180	</td><td>0	</td><td>0	</td><td>ULP</td><td>	51775</td><td>	63</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>3</td><td>2</td><td>22206	</td><td>10923	</td><td>11194	</td><td>0	</td><td>0	</td><td>ULP	</td><td>51775	</td><td>-89</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>3</td><td>3</td><td>9447	</td><td>15071	</td><td>7122	</td><td>0	</td><td>13000	</td><td>ULD	</td><td>51775	</td><td>-254</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>3</td><td>4	</td><td>15306	</td><td>23236	</td><td>8843	</td><td>0	</td><td>17000	</td><td>ULD	</td><td>32348</td><td>	-227</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>3</td><td>5	</td><td>9239	</td><td>10984	</td><td>4240	</td><td>0	</td><td>6000	</td><td>ULD	</td><td>32348</td><td>	-15</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>3</td><td>6	</td><td>2305	</td><td>1672	</td><td>691	</td><td>0	</td><td>0	</td><td>LPG	</td><td>4000</td><td>	58</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>4</td><td>1	</td><td>15306	</td><td>14125	</td><td>7403	</td><td>0	</td><td>6200	</td><td>ULP</td><td>	43187</td><td>	22</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>4</td><td>2	</td><td>14814	</td><td>14712	</td><td>6116	</td><td>0	</td><td>6000	</td><td>ULD</td><td>	43187</td><td>	14</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>4</td><td>3	</td><td>4269	</td><td>9568	</td><td>6699	</td><td>0	</td><td>11999	</td><td>ULD</td><td>	47506</td><td>	-1</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>4</td><td>4	</td><td>16699	</td><td>15749	</td><td>7986	</td><td>0	</td><td>6998	</td><td>ULP</td><td>	47506</td><td>	38</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>4</td><td>5	</td><td>13940	</td><td>17134	</td><td>3807	</td><td>0	</td><td>7000	</td><td>ULD</td><td>	30230</td><td>	1</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>5</td><td>1	</td><td>56120	</td><td>57808	</td><td>10523	</td><td>0	</td><td>12200	</td><td>ULP</td><td>	81688</td><td>	11</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>5</td><td>2	</td><td>31502	</td><td>35465	</td><td>3104	</td><td>0	</td><td>6999	</td><td>ULP</td><td>	39887</td><td>	68</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>5</td><td>3	</td><td>19984	</td><td>21362	</td><td>18638	</td><td>0	</td><td>19997	</td><td>ULD</td><td>	39887</td><td>	19</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td>5</td><td>4	</td><td>3444	</td><td>2823	</td><td>632	</td><td>0	</td><td>0	</td><td>LPG</td><td>	5610</td><td>	11</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>07/12/2014 (2014 wk 44)</td><td>8,411</td><td>7,910</td><td>8,289</td><td>8,898</td><td>9,687</td><td>7,844</td><td>6,008</td><td>57,047</td><td>57.0</td></tr>
+								<tr class="text-muted"><td>Year on year change</td><td>6.6%</td><td>3.5%</td><td>-0.8%</td><td>-2.6%</td><td>-0.7%</td><td>-5.6%</td><td>-5.9%</td><td>-0.7%</td><td>-0.8%</td></tr>
+								<tr><td>30/11/2014 (2014 wk 43)</td><td>8,411</td><td>7,910</td><td>8,289</td><td>8,898</td><td>9,687</td><td>7,844</td><td>6,008</td><td>57,047</td><td>57.0</td></tr>
+								<tr class="text-muted"><td>Year on year change</td><td>6.6%</td><td>3.5%</td><td>-0.8%</td><td>-2.6%</td><td>-0.7%</td><td>-5.6%</td><td>-5.9%</td><td>-0.7%</td><td>-0.8%</td></tr>
+								<tr><td>23/12/2014 (2014 wk 42)</td><td>8,411</td><td>7,910</td><td>8,289</td><td>8,898</td><td>9,687</td><td>7,844</td><td>6,008</td><td>57,047</td><td>57.0</td></tr>
+								<tr class="text-muted"><td>Year on year change</td><td>6.6%</td><td>3.5%</td><td>-0.8%</td><td>-2.6%</td><td>-0.7%</td><td>-5.6%</td><td>-5.9%</td><td>-0.7%</td><td>-0.8%</td></tr>
+								<tr><td>16/11/2014 (2014 wk 41)</td><td>8,411</td><td>7,910</td><td>8,289</td><td>8,898</td><td>9,687</td><td>7,844</td><td>6,008</td><td>57,047</td><td>57.0</td></tr>
+								<tr class="text-muted"><td>Year on year change</td><td>6.6%</td><td>3.5%</td><td>-0.8%</td><td>-2.6%</td><td>-0.7%</td><td>-5.6%</td><td>-5.9%</td><td>-0.7%</td><td>-0.8%</td></tr>
+								<tr><td>09/11/2014 (2014 wk 40)</td><td>8,411</td><td>7,910</td><td>8,289</td><td>8,898</td><td>9,687</td><td>7,844</td><td>6,008</td><td>57,047</td><td>57.0</td></tr>
+								<tr class="text-muted"><td>Year on year change</td><td>6.6%</td><td>3.5%</td><td>-0.8%</td><td>-2.6%</td><td>-0.7%</td><td>-5.6%</td><td>-5.9%</td><td>-0.7%</td><td>-0.8%</td></tr>
+
 							</tbody>
 						</table>
 					</div>

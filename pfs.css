@@ -179,3 +179,13 @@ a:hover {
 .nav-liftings {	
 	margin-bottom:30px;
 }
+
+.finance-invoice {text-align:right;}
+
+@media screen and (min-width: 768px) {
+.nav-liftings > li > a > .day {display:none;}
+}
+
+@media screen and (min-width: 769px) {
+.nav-liftings > li > a > .day {display:inline;}
+}

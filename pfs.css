@@ -189,3 +189,12 @@ a:hover {
 @media screen and (min-width: 769px) {
 .nav-liftings > li > a > .day {display:inline;}
 }
+
+.import-box {
+	  min-height: 20px;
+	  padding: 9px 9px 0;
+	  margin-bottom: 20px;
+	  background-color: #f5f5f5;
+	  border: 1px solid #e3e3e3;
+	  border-radius: 3px;
+	}

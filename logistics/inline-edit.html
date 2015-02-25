@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Morrisons Petrol Management System</title>
+
+	    <!-- Bootstrap core CSS -->
+	    <link href="../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	    <!-- Custom styles for this template -->
+	    <link href="../pfs.css" rel="stylesheet">
+
+	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	  </head>
+	  <body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="dashboard.html">
+				<img alt="Morrisons logo" src="../morrisonslogo.png" class="navbar-logo"> 
+				Petrol Operations</a>
+	        </div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="../margins/index.html">Margins</a></li>
+					<li><a href="../pricing/index.html">Pricing</a></li>
+					<li class="active"><a href="index.html">Logistics</a></li>
+					<li><a href="../markets/index.html">Markets</a></li>
+					</ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				     <span class="glyphicon glyphicon-cog"></span>Configuration <span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu" role="menu">
+					    <li><a href="../configuration/sites/index.html">Manage sites</a></li>
+			            <li><a href="../configuration/terminals/index.html">Manage terminals</a></li>	
+			            <li><a href="../configuration/products/index.html">Manage products</a></li>
+			            <li><a href="../configuration/regdata/index.html">Manage regulatory data</a></li>
+				    </ul>
+				</li>
+				<li><a href="">Sign out</a></li>
+				</ul>	
+			</div>		
+	      </div>
+	    </div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="nav nav-pills" role="tablist">
+						<li class="active"><a href="index.html">Liftings</a></li>
+						<li><a href="drawings/index.html">Drawings</a></li>
+						<li><a href="deliveries/index.html">Deliveries</a></li>
+						<li><a href="refusals/index.html">Refusals</a></li>
+						<li><a href="invoicing/index.html">Invoicing</a></li>
+						<li><a href="reports/index.html">Reports</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3 class="page-header">Liftings <small>week ending 07/12/2014 (2014 wk 44)</small></h3>
+					<ul class="nav nav-tabs nav-justified nav-liftings">
+					  <li role="presentation"><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+					  <li role="presentation" class="active"><a href="index.html">MON 01</a></li>
+					  <li role="presentation"><a href="liftings-new.html">TUE 02</a></li>
+					  <li role="presentation"><a href="#">WED 03</a></li>
+					  <li role="presentation"><a href="#">THU 04</a></li>
+					  <li role="presentation"><a href="#">FRI 05</a></li>
+					  <li role="presentation"><a href="#">SAT 06</a></li>
+					  <li role="presentation"><a href="#">SUN 07</a></li>
+					  <li role="presentation"><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+					</ul>
+					
+					<form role="form">						
+						<div class="form-group">
+							<a class="btn btn-primary" href="lifting-add.html">Add a delivery</a>														
+							
+							<div class="btn-group pull-right">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<span class="glyphicon glyphicon-filter"></span>
+							    Filter current view <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" role="menu">
+							    <li><a href="index.html">Remove filter</a></li>
+								<li class="divider"></li>
+							    <li><a href="filter-check-losses.html">Check losses</a></li>
+							    <li><a href="filter-deliveries-carried.html">Deliveries carried over</a></li>
+							    <li><a href="filter-temp-adjusted.html">Temperature adjusted volumes</a></li>							
+							  </ul>
+							</div>
+						</div>
+					</form>
+					<div class="table-responsive">
+						<table class="table table-condensed table-hover lifting-table">
+						  <thead>
+							<tr><th>
+								<div class="dropdown"><input class="form-control input-sm dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" type="text" placeholder="Terminal name" value="Con">
+								  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="terminal-aberdeen.html">Conoco Aberdeen</a></li>
+								    <li role="presentation"><a role="menuitem" tabindex="-1" href="terminal-bramhall.html">Conoco Bramhall</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Immingham</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Inverness</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Kingsbury</a></li>
+								</ul>
+								</div>
+								</th><th>Job number</th><th>Location</th><th>Site</th><th>Order number</th><th>
+									<div class="dropdown"><a href="" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Status <span class="caret"></span></a>
+									  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Show all</a></li>
+										<li class="divider"></li>
+									    <li role="presentation"><a role="menuitem" tabindex="-1" href="status-paid.html">Paid</a></li>
+									    <li role="presentation"><a role="menuitem" tabindex="-1" href="status-checked.html">Checked</a></li>
+									    <li role="presentation"><a role="menuitem" tabindex="-1" href="status-open.html">Open</a></li>
+									  </ul>
+									</div>
+									</th><th>Invoice number</th><th>UNL</th><th class="small">actual</th><th>DSL</th><th class="small">actual</th><th>GAS</th><th class="small">actual</th><th><span class="glyphicon glyphicon-comment" title="Comment"></span></th><th><!-- empty cell --></th></tr>
+							</thead>
+							<tbody>
+								<tr class="text-muted"><td>Conoco Aberdeen</td><td>823015</td><td>Aberdeen</td><td>160</td><td>1606762</td><td><span class="label label-default">Paid</span></td><td>997368904</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td><span class="glyphicon glyphicon-comment" title="OK"></span></td><td><a class="btn btn-default btn-sm" href="lifting-paid.html">Edit</a></td></tr>
+								<tr><td>Conoco Aberdeen</td><td>823016</td><td>Inverurie</td><td>189</td><td>1896470</td><td><span class="label label-accepted">Checked</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td class="text-danger">12345</td><td></td><td><a class="btn btn-default btn-sm" href="lifting-checked.html">Edit</a></td></tr>
+								<tr><td><select class="form-control" id="terminalBrand">
+								<option>Select an existing terminal</option>
+							    <option selected="selected">Conoco Aberdeen</option>
+							    <option>Conoco Bramhall</option>
+								<option>Conoco Immingham</option>
+								<option>Conoco Inverness</option>
+								<option>Conoco Kingsbury</option>
+								<option>Esso Avonmouth</option>
+								<option>Esso Birmingham</option>
+								<option>Esso Hythe</option>
+								<option>Esso Purfleet</option>
+								<option>Greenergy Clydebank</option>
+								<option>Greenergy Tees</option>
+								<option>Harvest Seal Sands</option>
+								<option>Ineos Dalston</option>
+								<option>Mabanaft Avonmouth</option>
+								<option>Mabanaft Ross</option>
+								<option>Pace Fuelcare IOW</option>
+								<option>Shell Stanlow</option>
+								<option>Texaco BOSL</option>
+								<option>Texaco Cardiff</option>
+								<option>Texaco Kingsbury</option>
+								<option>Texaco Plymouth</option>
+								<option>Texaco Stanlow</option>
+								<option>TFE J41</option>
+								<option>TFE Gadbrook</option>
+								<option>Total LOR</option>
+								<option>Total Milford</option>
+								<option>Total Nottingham</option>							
+								</select></td><td>823014</td><td>Peterhead</td><td>194</td><td>1946459</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td class="text-danger">12345</td><td></td><td><a class="btn btn-default btn-sm" href="lifting-open.html">Edit</a></td></tr>
+								<tr><td>Conoco Aberdeen</td><td>823014</td><td>Peterhead</td><td>194</td><td>1946459</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td class="text-danger">12345</td><td></td><td><a class="btn btn-default btn-sm" href="lifting-warning.html">Edit</a></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823106</td><td>Enterprise 5</td><td>003</td><td>0036658</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823071</td><td>Keighley</td><td>005</td><td>0056475</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823099</td><td>Failsworth</td><td>022</td><td>0226339</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823070</td><td>Eccles</td><td>028</td><td>0286551</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823069</td><td>Dukinfield</td><td>037</td><td>0376369</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823098</td><td>Stoke</td><td>050</td><td>0506553</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823072</td><td>Rochdale</td><td>053</td><td>0536559</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823162</td><td>Oldham</td><td>057</td><td>0576469</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823161</td><td>Bolton Atlas</td><td>059</td><td>0596451</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823067</td><td>Denton</td><td>093</td><td>0936374</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823054</td><td>Nelson</td><td>104</td><td>1046503</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823160</td><td>Hyde</td><td>119</td><td>1196372</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr class="bg-info"><td>Conoco Bramhall</td><td>823068</td><td>Cheadle Heath</td><td>122</td><td>1226643</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823105</td><td>Cheadle Heath</td><td>122</td><td>1226644</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823100</td><td>Swinnow Road</td><td>137</td><td>1376513</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823159</td><td>Harwood</td><td>212</td><td>2126361</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823055</td><td>Bredbury</td><td>215</td><td>2156543</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823066</td><td>Newcastle Und</td><td>256</td><td>2566512</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823167</td><td>Newcastle Und</td><td>256</td><td>2566513</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823165</td><td>Openshaw</td><td>391</td><td>3916350</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823166</td><td>Great Harwood</td><td>398</td><td>3986135</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823056</td><td>Illingsworth</td><td>475</td><td>4756369</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823104</td><td>Colne RDC</td><td>900</td><td>9006046</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/docs.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Morrisons Petrol Management System</title>
+
+	    <!-- Bootstrap core CSS -->
+	    <link href="../../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	    <!-- Custom styles for this template -->
+	    <link href="../../pfs.css" rel="stylesheet">
+
+	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	  </head>
+	  <body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="dashboard.html">
+				<img alt="Morrisons logo" src="../../morrisonslogo.png" class="navbar-logo"> 
+				Petrol Operations</a>
+	        </div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="../../margins/index.html">Margins</a></li>
+					<li><a href="../../pricing/index.html">Pricing</a></li>
+					<li class="active"><a href="../index.html">Logistics</a></li>
+					<li><a href="../../markets/index.html">Markets</a></li>
+					</ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				     <span class="glyphicon glyphicon-cog"></span>Configuration <span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu" role="menu">
+					    <li><a href="../../configuration/sites/index.html">Manage sites</a></li>
+			            <li><a href="../../configuration/terminals/index.html">Manage terminals</a></li>	
+			            <li><a href="../../configuration/products/index.html">Manage products</a></li>
+			            <li><a href="../../configuration/regdata/index.html">Manage regulatory data</a></li>
+				    </ul>
+				</li>
+				<li><a href="">Sign out</a></li>
+				</ul>	
+			</div>		
+	      </div>
+	    </div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="nav nav-pills" role="tablist">
+						<li><a href="../liftings/index.html">Liftings</a></li>
+						<li><a href="index.html">Drawings</a></li>
+						<li class="active"><a href="../deliveries/index.html">Deliveries</a></li>
+						<li><a href="../refusals/index.html">Refusals</a></li>
+						<li><a href="../invoicing/index.html">Invoicing</a></li>
+				</div>
+			</div>	
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3 class="page-header">Deliveries <small>week ending 07/12/2014 (2014 wk 44)</small></h3>
+					<ul class="nav nav-tabs nav-justified nav-liftings">
+					  <li role="presentation"><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+					  <li role="presentation"><a href="index.html">MON 01</a></li>
+					  <li role="presentation" class="active"><a href="#">TUE 02</a></li>
+					  <li role="presentation"><a href="#">WED 03</a></li>
+					  <li role="presentation"><a href="#">THU 04</a></li>
+					  <li role="presentation"><a href="#">FRI 05</a></li>
+					  <li role="presentation"><a href="#">SAT 06</a></li>
+					  <li role="presentation"><a href="#">SUN 07</a></li>
+					  <li role="presentation"><a href="" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+					</ul>
+					<form role="form">	
+						<div class="form-group well">
+						    <label for="exampleInputFile">Data file</label>
+						    <input type="file" id="exampleInputFile">
+						    <p class="help-block">Select the data file from your computer.</p>
+						  </div>					
+						<div class="form-group">
+							<a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-import"></span> Import deliveries data</a>
+						</div>
+					</form>
+				</div>
+			</div>	
+		</div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+  </body>
+</html>

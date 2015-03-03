@@ -41,7 +41,7 @@
 					<li class="active"><a href="../index.html">Inventory</a></li>
 					<li><a href="../../logistics/index.html">Logistics</a></li>
 					<li><a href="../../markets/index.html">Markets</a></li>
-					</ul>
+				</ul>
 			  <ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -62,12 +62,12 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 col-sm-4 pull-right">
-					    <label class="control-label sr-only" for="date">Set working date</label>
-						<div class="input-group">
-							<input id="date" class="form-control input-lg" type="text" placeholder="Today's date" value="Mon 01 Dec 2014">
-							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-	                    </div>
-						<p class="help-block">Week ending 07/12/2014 (2014 wk 44)</p>
+				    <label class="control-label sr-only" for="date">Set working date</label>
+					<div class="input-group">
+						<input id="date" class="form-control input-lg" type="text" placeholder="Today's date" value="Mon 01 Dec 2014">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+		               </div>
+					<p class="help-block">Week ending 07/12/2014 (2014 wk 44)</p>
 				</div>
 				<div class="col-xs-12 col-sm-8">
 					<ul class="nav nav-pills" role="tablist">
@@ -80,37 +80,31 @@
 		</div>
 		<hr>
 		<div class="container-fluid">
-			<!--<div class="row">
-				<div class="col-xs-12">
-					<h3 class="page-header">Daily volumes <small>week ending 07/12/2014 (2014 wk 44)</small></h3>
-				</div>
-			</div>-->
 			<div class="row">
-					<div class="col-xs-6 col-sm-8">
-						<div class="form-group">
-							<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Import daily volumes</a>
-						</div>
+				<div class="col-xs-6 col-sm-8">
+					<div class="form-group">
+						<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Import daily volumes</a>
 					</div>
-					<div class="col-xs-6 col-sm-4">	
-						<div class="input-group">
-						      <input type="text" class="form-control" placeholder="Search daily volumes">
-						      <div class="input-group-btn">
-									<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-							
-						        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="glyphicon glyphicon-filter"></span></button>
-						        <ul class="dropdown-menu dropdown-menu-right" role="menu">
-								    <li><a href="index.html">Remove filter</a></li>
-									<li class="divider"></li>
-								    <li><a href="filter-missing-volumes.html">Show missing volumes</a></li>
-						        </ul>
-						      </div>
-						    </div>
-						</div>
+				</div>
+				<div class="col-xs-6 col-sm-4">	
+					<div class="input-group">
+				      <input type="text" class="form-control" placeholder="Search daily volumes">
+					      <div class="input-group-btn">
+							<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+					        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="glyphicon glyphicon-filter"></span></button>
+					        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+							    <li><a href="index.html">Remove filter</a></li>
+								<li class="divider"></li>
+							    <li><a href="filter-missing-volumes.html">Show missing volumes</a></li>
+					        </ul>
+					      </div>
+					    </div>
+					</div>
 				</div>
 				<div class="row">
-						<div class="col-xs-12">
-							<div class="collapse" id="collapseExample">
-							<form role="form" class="import-box">				
+					<div class="col-xs-12">
+						<div class="collapse import-box" id="collapseExample">
+							<form role="form">				
 								<div class="form-group">
 								    <label for="exampleInputFile">Daily volumes file</label>
 								    <input type="file" id="exampleInputFile">
@@ -120,43 +114,43 @@
 									<a class="btn btn-default" href="import-volumes.html">Import data</a>							
 								</div>
 							</form>
-							</div>
 						</div>
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
-										<div class="table-responsive">
-											<table class="table table-condensed table-hover">
-											  	<thead>
-													<tr><th>Location</th><th>Site</th><th>Tank</th><th>Opening</th><th>Closing</th><th>Sales</th><th>Delivery</th><th>Fuel</th><th>Capacity</th><th>Variance</th></tr>			
-												</thead>
-												<tbody>
-													<tr><td>Mayo Avenue</td><td>2</td><td>1</td><td>21029</td><td>28080</td><td>5085</td><td>12200</td><td>ULP</td><td>43130</td><td>-64</td></tr>
-													<tr><td>Mayo Avenue</td><td>2</td><td>2</td><td>27494</td><td>28584</td><td>5877</td><td>7000</td><td>ULP</td><td>43130</td><td>-33</td></tr>
-													<tr><td>Mayo Avenue</td><td>2</td><td>3</td><td>36025	</td><td>33962	</td><td>8570	</td><td>6500	</td><td>ULD	</td><td>43130</td><td>	7</td></tr>
-													<tr><td>Mayo Avenue</td><td>2</td><td>4</td><td>10931	</td><td>9935	</td><td>7967	</td><td>7000	</td><td>ULD	</td><td>21565</td><td>	-29</td></tr>
-													<tr><td>Mayo Avenue</td><td>2</td><td>5</td><td>9636	</td><td>13925	</td><td>1688	</td><td>6000	</td><td>ULD	</td><td>21565</td><td>	-23</td></tr>
-													<tr><td>Enterprise 5</td><td>3</td><td>1</td><td>20775	</td><td>10658	</td><td>10180	</td><td>0	</td><td>ULP</td><td>	51775</td><td>	63</td></tr>
-													<tr><td>Enterprise 5</td><td>3</td><td>2</td><td>22206	</td><td>10923	</td><td>11194	</td><td>0	</td><td>ULP	</td><td>51775	</td><td>-89</td></tr>
-													<tr><td>Enterprise 5</td><td>3</td><td>3</td><td>9447	</td><td>15071	</td><td>7122	</td><td>13000	</td><td>ULD	</td><td>51775	</td><td>-254</td></tr>
-													<tr><td>Enterprise 5</td><td>3</td><td>4	</td><td>15306	</td><td>23236	</td><td>8843	</td><td>17000	</td><td>ULD	</td><td>32348</td><td>	-227</td></tr>
-													<tr><td>Enterprise 5</td><td>3</td><td>5	</td><td>9239	</td><td>10984	</td><td>4240	</td><td>6000	</td><td>ULD	</td><td>32348</td><td>	-15</td></tr>
-													<tr><td>Enterprise 5</td><td>3</td><td>6	</td><td>2305	</td><td>1672	</td><td>691	</td><td>0	</td><td>LPG	</td><td>4000</td><td>	58</td></tr>
-													<tr><td>Victoria</td><td>4</td><td>1	</td><td>15306	</td><td>14125	</td><td>7403	</td><td>6200	</td><td>ULP</td><td>	43187</td><td>	22</td></tr>
-													<tr><td>Victoria</td><td>4</td><td>2	</td><td>14814	</td><td>14712	</td><td>6116	</td><td>6000	</td><td>ULD</td><td>	43187</td><td>	14</td></tr>
-													<tr><td>Victoria</td><td>4</td><td>3	</td><td>4269	</td><td>9568	</td><td>6699	</td><td>11999	</td><td>ULD</td><td>	47506</td><td>	-1</td></tr>
-													<tr><td>Victoria</td><td>4</td><td>4	</td><td>16699	</td><td>15749	</td><td>7986	</td><td>6998	</td><td>ULP</td><td>	47506</td><td>	38</td></tr>
-													<tr><td>Victoria</td><td>4</td><td>5	</td><td>13940	</td><td>17134	</td><td>3807	</td><td>7000	</td><td>ULD</td><td>	30230</td><td>	1</td></tr>
-													<tr><td>Keighley</td><td>5</td><td>1	</td><td>56120	</td><td>57808	</td><td>10523	</td><td>12200	</td><td>ULP</td><td>	81688</td><td>	11</td></tr>
-													<tr><td>Keighley</td><td>5</td><td>2	</td><td>31502	</td><td>35465	</td><td>3104	</td><td>6999	</td><td>ULP</td><td>	39887</td><td>	68</td></tr>
-													<tr><td>Keighley</td><td>5</td><td>3	</td><td>19984	</td><td>21362	</td><td>18638	</td><td>19997	</td><td>ULD</td><td>	39887</td><td>	19</td></tr>
-													<tr><td>Keighley</td><td>5</td><td>4	</td><td>3444	</td><td>2823	</td><td>632	</td><td>0	</td><td>LPG</td><td>	5610</td><td>	11</td></tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>	
-							</div>
+						<div class="table-responsive">
+							<table class="table table-condensed table-hover">
+							  	<thead>
+									<tr><th>Location</th><th>Site</th><th>Tank</th><th>Opening</th><th>Closing</th><th>Sales</th><th>Delivery</th><th>Fuel</th><th>Capacity</th><th>Variance</th></tr>			
+								</thead>
+								<tbody>
+									<tr><td>Mayo Avenue</td><td>2</td><td>1</td><td>21029</td><td>28080</td><td>5085</td><td>12200</td><td>ULP</td><td>43130</td><td>-64</td></tr>
+									<tr><td>Mayo Avenue</td><td>2</td><td>2</td><td>27494</td><td>28584</td><td>5877</td><td>7000</td><td>ULP</td><td>43130</td><td>-33</td></tr>
+									<tr><td>Mayo Avenue</td><td>2</td><td>3</td><td>36025	</td><td>33962	</td><td>8570	</td><td>6500	</td><td>ULD	</td><td>43130</td><td>	7</td></tr>
+									<tr><td>Mayo Avenue</td><td>2</td><td>4</td><td>10931	</td><td>9935	</td><td>7967	</td><td>7000	</td><td>ULD	</td><td>21565</td><td>	-29</td></tr>
+									<tr><td>Mayo Avenue</td><td>2</td><td>5</td><td>9636	</td><td>13925	</td><td>1688	</td><td>6000	</td><td>ULD	</td><td>21565</td><td>	-23</td></tr>
+									<tr><td>Enterprise 5</td><td>3</td><td>1</td><td>20775	</td><td>10658	</td><td>10180	</td><td>0	</td><td>ULP</td><td>	51775</td><td>	63</td></tr>
+									<tr><td>Enterprise 5</td><td>3</td><td>2</td><td>22206	</td><td>10923	</td><td>11194	</td><td>0	</td><td>ULP	</td><td>51775	</td><td>-89</td></tr>
+									<tr><td>Enterprise 5</td><td>3</td><td>3</td><td>9447	</td><td>15071	</td><td>7122	</td><td>13000	</td><td>ULD	</td><td>51775	</td><td>-254</td></tr>
+									<tr><td>Enterprise 5</td><td>3</td><td>4</td><td>15306	</td><td>23236	</td><td>8843	</td><td>17000	</td><td>ULD	</td><td>32348</td><td>	-227</td></tr>
+									<tr><td>Enterprise 5</td><td>3</td><td>5</td><td>9239	</td><td>10984	</td><td>4240	</td><td>6000	</td><td>ULD	</td><td>32348</td><td>	-15</td></tr>
+									<tr><td>Enterprise 5</td><td>3</td><td>6	</td><td>2305	</td><td>1672	</td><td>691	</td><td>0	</td><td>LPG	</td><td>4000</td><td>	58</td></tr>
+									<tr><td>Victoria</td><td>4</td><td>1	</td><td>15306	</td><td>14125	</td><td>7403	</td><td>6200	</td><td>ULP</td><td>	43187</td><td>	22</td></tr>
+									<tr><td>Victoria</td><td>4</td><td>2	</td><td>14814	</td><td>14712	</td><td>6116	</td><td>6000	</td><td>ULD</td><td>	43187</td><td>	14</td></tr>
+									<tr><td>Victoria</td><td>4</td><td>3	</td><td>4269	</td><td>9568	</td><td>6699	</td><td>11999	</td><td>ULD</td><td>	47506</td><td>	-1</td></tr>
+									<tr><td>Victoria</td><td>4</td><td>4	</td><td>16699	</td><td>15749	</td><td>7986	</td><td>6998	</td><td>ULP</td><td>	47506</td><td>	38</td></tr>
+									<tr><td>Victoria</td><td>4</td><td>5	</td><td>13940	</td><td>17134	</td><td>3807	</td><td>7000	</td><td>ULD</td><td>	30230</td><td>	1</td></tr>
+									<tr><td>Keighley</td><td>5</td><td>1	</td><td>56120	</td><td>57808	</td><td>10523	</td><td>12200	</td><td>ULP</td><td>	81688</td><td>	11</td></tr>
+									<tr><td>Keighley</td><td>5</td><td>2	</td><td>31502	</td><td>35465	</td><td>3104	</td><td>6999	</td><td>ULP</td><td>	39887</td><td>	68</td></tr>
+									<tr><td>Keighley</td><td>5</td><td>3	</td><td>19984	</td><td>21362	</td><td>18638	</td><td>19997	</td><td>ULD</td><td>	39887</td><td>	19</td></tr>
+									<tr><td>Keighley</td><td>5</td><td>4	</td><td>3444	</td><td>2823	</td><td>632	</td><td>0	</td><td>LPG</td><td>	5610</td><td>	11</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>	
+			</div>
 
 
 					    <!-- Bootstrap core JavaScript
@@ -164,7 +158,10 @@
 					    <!-- Placed at the end of the document so the pages load faster -->
 					    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 					    <script src="../../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
-					    <script src="../../assets/docs.min.js"></script>					
+					    <script src="../../assets/docs.min.js"></script>
+						<!-- Collaborate -->
+						<script src="https://togetherjs.com/togetherjs-min.js"></script>
+						<button onclick="TogetherJS(this); return false;">Start TogetherJS</button>			
 					  </body>
 					</html>
 

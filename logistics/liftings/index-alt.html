@@ -11,7 +11,9 @@
 	
 	    <!-- Custom styles for this template -->
 	    <link href="../../pfs.css" rel="stylesheet">
-	    <link href="../../bootstrap-3.2.0-dist/css/bootstrap-datepicker.css" rel="stylesheet">
+	    <link href="../../bootstrap-3.2.0-dist/css/datepicker.css" rel="stylesheet">
+	    <link href="../../bootstrap-3.2.0-dist/css/typeahead.css" rel="stylesheet">
+	
 	
 
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -98,7 +100,7 @@
 				<div class="col-xs-6 col-sm-4">	
 					<div class="form-group">
 						<div class="input-group">
-					      <input type="text" class="form-control" placeholder="Search daily volumes">
+					      <input type="text" class="form-control" id="query" placeholder="Search daily volumes">
 					      <div class="input-group-btn">
 							<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 					        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="glyphicon glyphicon-filter"></span></button>
@@ -511,16 +513,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="../../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/docs.min.js"></script>
+    <script src="../../assets/typeahead.js"></script>
     <script src="../../assets/bootstrap-datepicker.js"></script>
     <script type="text/javascript">
         // When the document is ready
         $(document).ready(function () {
             
             $('#datepicker').datepicker({
-                format: "dd/mm/yyyy"
+                format: "D dd M yyyy"
             });  
         
         });
+    </script>
   </body>
 </html>
 					

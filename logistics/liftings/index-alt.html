@@ -65,9 +65,10 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-4 pull-right">
 				    <label class="control-label sr-only" for="date">Set working date</label>
-					<div class="input-group">
-						<input id="datepicker" class="form-control input-lg" type="text" placeholder="Set working day" value="Mon 01 Dec 2014">
-						<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+						
+						<input id="datepicker" class="form-control" type="text" placeholder="Set working day" value="Mon 01 Dec 2014">
 		               </div>
 					<p class="help-block">Week ending 07/12/2014 (2014 wk 44)</p>
 				</div>
@@ -101,14 +102,13 @@
 					<div class="form-group">
 						<div class="input-group">
 					      <input type="text" class="form-control" id="query" placeholder="Search daily volumes">
-					      <div class="input-group-btn">
-							<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-					        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="glyphicon glyphicon-filter"></span></button>
-					        <ul class="dropdown-menu dropdown-menu-right" role="menu">
-							    <li><a href="index.html">Remove filter</a></li>
-								<li class="divider"></li>
-							    <li><a href="filter-missing-volumes.html">Show missing volumes</a></li>
-					        </ul>
+						      <div class="input-group-btn">
+						        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="glyphicon glyphicon-filter"></span> Filter</button>
+						        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+								    <li><a href="index.html">Remove filter</a></li>
+									<li class="divider"></li>
+								    <li><a href="filter-missing-volumes.html">Show missing volumes</a></li>
+						        </ul>	
 					      </div>
 					    </div>
 					</div>

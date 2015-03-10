@@ -89,11 +89,11 @@
 						<div class="btn-group">
 							<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 							  <span class="glyphicon glyphicon-chevron-down"></span>
-							  Import drawings
+							  Import data
 							</button>
 							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#AddDelivery">
 							  <span class="glyphicon glyphicon-plus"></span>
-							  Add a delivery
+							  Add record
 							</button>
 						</div>
 					</div>
@@ -117,11 +117,25 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="collapse import-box" id="collapseExample">
-						<form role="form">				
+						<form role="form">
 							<div class="form-group">
-							    <label for="exampleInputFile">Daily drawings file</label>
+							    <label for="exampleInputFile">Select the data type to import</label>
+								<div class="radio">
+								  <label>
+								    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+								    Drawings
+								  </label>
+								</div>
+								<div class="radio">
+								  <label>
+								    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+								    Refusals
+								  </label>
+								</div>
+							  </div>				
+							<div class="form-group">
+							    <label for="exampleInputFile">Data file to import</label>
 							    <input type="file" id="exampleInputFile">
-							    <p class="help-block">Select the data file from your computer.</p>
 							  </div>				
 							<div class="form-group">
 								<a class="btn btn-primary" href="">Import data</a>							
@@ -135,54 +149,10 @@
 					<div class="table-responsive">
 						<table class="table table-condensed table-hover lifting-table">
 						  <thead>
-							<tr><th>
-								<div class="dropdown"><a href="" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Terminals <span class="caret"></span></a>
-								  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">All terminals</a></li>
-									<li class="divider"></li>
-								    <li role="presentation"><a role="menuitem" tabindex="-1" href="terminal-aberdeen.html">Conoco Aberdeen</a></li>
-								    <li role="presentation"><a role="menuitem" tabindex="-1" href="terminal-bramhall.html">Conoco Bramhall</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Immingham</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Inverness</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Kingsbury</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Avonmouth</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Birmingham</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Hythe</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Purfleet</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Greenergy Clydebank</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Greenergy Tees</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Harvest Seal Sands</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ineos Dalston</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mabanaft Avonmouth</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mabanaft Ross</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pace Fuelcare IOW</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Shell Stanlow</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco BOSL</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Cardiff</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Kingsbury</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Plymouth</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Stanlow</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">TFE J41</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">TFE Gadbrook</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total LOR</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total Milford</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total Nottingham</a></li>
-								</ul>
-								</div>
-								</th><th>Job number</th><th>Location</th><th>Site</th><th>Order number</th><th>
-									<div class="dropdown"><a href="" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Status <span class="caret"></span></a>
-									  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Show all</a></li>
-										<li class="divider"></li>
-									    <li role="presentation"><a role="menuitem" tabindex="-1" href="status-paid.html">Paid</a></li>
-									    <li role="presentation"><a role="menuitem" tabindex="-1" href="status-checked.html">Checked</a></li>
-									    <li role="presentation"><a role="menuitem" tabindex="-1" href="status-open.html">Open</a></li>
-									  </ul>
-									</div>
-									</th><th>Invoice number</th><th>UNL</th><th class="small">actual</th><th>DSL</th><th class="small">actual</th><th>GAS</th><th class="small">actual</th><th><span class="glyphicon glyphicon-comment" title="Comment"></span></th><th><!-- empty cell --></th></tr>
+							<tr><th>Terminals</th><th>Job number</th><th>Location</th><th>Site</th><th>Order number</th><th>Status</th><th>Invoice number</th><th>UNL</th><th class="small">actual</th><th>DSL</th><th class="small">actual</th><th>GAS</th><th class="small">actual</th><th><span class="glyphicon glyphicon-comment" title="Comment"></span></th><th><!-- empty cell --></th></tr>
 							</thead>
 							<tbody>
-								<tr class="text-muted"><td>Conoco Aberdeen</td><td>823015</td><td>Aberdeen</td><td>160</td><td>1606762</td><td><span class="label label-default">Paid</span></td><td>997368904</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td><span class="glyphicon glyphicon-comment" title="OK"></span></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#EditDelivery">Edit</button></td></tr>
+								<tr><td>Conoco Aberdeen</td><td>823015</td><td>Aberdeen</td><td>160</td><td>1606762</td><td><span class="label label-default">Open</span></td><td>997368904</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td><span class="glyphicon glyphicon-comment" title="OK"></span></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#EditDelivery">Edit</button></td></tr>
 								<tr><td>Conoco Aberdeen</td><td>823016</td><td>Inverurie</td><td>189</td><td>1896470</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
 								<tr><td>Conoco Aberdeen</td><td>823014</td><td>Peterhead</td><td>194</td><td>1946459</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td class="text-danger">12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
 								<tr><td>Conoco Aberdeen</td><td>823014</td><td>Peterhead</td><td>194</td><td>1946459</td><td><span class="label label-default">Open</span></td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>

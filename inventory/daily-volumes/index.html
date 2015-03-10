@@ -83,7 +83,10 @@
 			<div class="row">
 				<div class="col-xs-6 col-sm-8">
 					<div class="form-group">
-						<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Import daily volumes</a>
+						<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+						  <span class="glyphicon glyphicon-chevron-down"></span>
+						  Import data
+						</button>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-4">	
@@ -106,12 +109,11 @@
 						<div class="collapse import-box" id="collapseExample">
 							<form role="form">				
 								<div class="form-group">
-								    <label for="exampleInputFile">Daily volumes file</label>
+								    <label for="exampleInputFile">Data file to import</label>
 								    <input type="file" id="exampleInputFile">
-								    <p class="help-block">Select the data file from your computer.</p>
 								  </div>				
 								<div class="form-group">
-									<a class="btn btn-default" href="import-volumes.html">Import data</a>							
+									<a class="btn btn-primary" href="">Import selected file</a>							
 								</div>
 							</form>
 						</div>

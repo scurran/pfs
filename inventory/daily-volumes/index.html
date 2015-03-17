@@ -11,6 +11,8 @@
 	
 	    <!-- Custom styles for this template -->
 	    <link href="../../pfs.css" rel="stylesheet">	
+	    <link href="../../bootstrap-3.2.0-dist/css/datepicker.css" rel="stylesheet">
+	
 
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,10 +65,14 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-4 pull-right">
 				    <label class="control-label sr-only" for="date">Set working date</label>
-					<div class="input-group">
-						<input id="date" class="form-control input-lg" type="text" placeholder="Today's date" value="Mon 01 Dec 2014">
-						<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-		               </div>
+				    <div class="input-group input-group-lg">
+				      <span class="input-group-btn">
+				        	<button class="btn btn-default" type="button">
+								<span class="glyphicon glyphicon-calendar"></span>
+							</button>
+				      </span>
+						<input id="datepicker" class="form-control" type="text" placeholder="Set working day" value="Mon 01 Dec 2014">
+				    </div>
 					<p class="help-block">Week ending 07/12/2014 (2014 wk 44)</p>
 				</div>
 				<div class="col-xs-12 col-sm-8">
@@ -155,15 +161,26 @@
 			</div>
 
 
-					    <!-- Bootstrap core JavaScript
-					    ================================================== -->
-					    <!-- Placed at the end of the document so the pages load faster -->
-					    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-					    <script src="../../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
-					    <script src="../../assets/docs.min.js"></script>
-						<!-- Collaborate!
-						<script src="https://togetherjs.com/togetherjs-min.js"></script>
-						<button onclick="TogetherJS(this); return false;">Start TogetherJS</button> -->			
-					  </body>
-					</html>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/docs.min.js"></script>
+	<!-- Collaborate!
+	<script src="https://togetherjs.com/togetherjs-min.js"></script>
+	<button onclick="TogetherJS(this); return false;">Start TogetherJS</button> -->	
+	<script src="../../assets/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        // When the document is ready
+        $(document).ready(function () {
+            
+            $('#datepicker').datepicker({
+                format: "D dd M yyyy"
+            });  
+        
+        });
+    </script>		
+  </body>
+</html>
 

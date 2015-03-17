@@ -144,9 +144,14 @@ a:hover {
 
 .regdata-table {max-width:50%;}
 
-.label-accepted {
+.label-agreed {
 	background-color: #006655;
     color: #fff;
+}
+
+.label-paid {
+	background-color: #FFE151;
+    color: #006655;
 }
 
 
@@ -161,7 +166,7 @@ a:hover {
 	cursor:help;
 }
 
-.lifting-table th:first-child + th + th, .lifting-table td:first-child + td +td {
+.lifting-table th:first-child + th, .lifting-table td:first-child + td {
  text-align:left; 	
 }
 

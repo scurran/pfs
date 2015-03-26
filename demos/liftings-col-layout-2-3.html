@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Morrisons Petrol Management System</title>
+
+	    <!-- Bootstrap core CSS -->
+	    <link href="../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	    <!-- Custom styles for this template -->
+	    <link href="../pfs.css" rel="stylesheet">
+	    <link href="../bootstrap-3.2.0-dist/css/datepicker.css" rel="stylesheet">
+	    <link href="../bootstrap-3.2.0-dist/css/typeahead.css" rel="stylesheet">
+	
+	
+
+	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	  </head>
+	  <body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="dashboard.html">
+				<img alt="Morrisons logo" src="../morrisonslogo.png" class="navbar-logo"> 
+				Petrol Operations</a>
+	        </div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="">Margins</a></li>
+					<li><a href="">Pricing</a></li>
+					<li class="active"><a href="">Logistics</a></li>
+					<li><a href="">Inventory</a></li>		
+					<li><a href="">Markets</a></li>
+					</ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				     <span class="glyphicon glyphicon-cog"></span>Configuration <span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu" role="menu">
+					    <li><a href="">Manage sites</a></li>
+			            <li><a href="">Manage terminals</a></li>	
+			            <li><a href="">Manage products</a></li>
+			            <li><a href="">Manage regulatory data</a></li>
+				    </ul>
+				</li>
+				<li><a href="">Sign out</a></li>
+				</ul>	
+			</div>		
+	      </div>
+	    </div>
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-8">
+					<ul class="nav nav-pills" role="tablist">
+						<li class="active"><a href="">Liftings</a></li>
+						<li><a href="">Refusals</a></li>
+						<li><a href="">Invoicing</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<hr>
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="table-responsive">
+						<table class="table table-condensed table-hover lifting-table" id="example">
+						  <thead>
+							<tr><th>Supplier/Terminal</th><th>Job number</th><th>Site/Location</th><th>Order number</th><th>ULP</th><th>ULD</th><th>GAS</th><th>LPG</th><th>Status</th><th>Invoice number</th><th><span class="glyphicon glyphicon-comment" title="Comment"></span></th><th><!-- empty cell --></th></tr>
+							</thead>
+							<tbody>
+								<tr><td>Conoco Aberdeen</td><td>823015</td><td>160 Aberdeen</td><td>1606762</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Paid</td><td>997368904</td><td><span class="glyphicon glyphicon-comment" title="OK"></span></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Aberdeen</td><td>823016</td><td>189 Inverurie</td><td>1896470</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Agreed</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Aberdeen</td><td>823014</td><td>194 Peterhead</td><td>1946459</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Aberdeen</td><td>823014</td><td>194 Peterhead</td><td>1946459</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823106</td><td>003 Enterprise 5</td><td>0036658</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823071</td><td>005 Keighley</td><td>0056475</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823099</td><td>022 Failsworth</td><td>0226339</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823070</td><td>028 Eccles</td><td>0286551</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823069</td><td>037 Dukinfield</td><td>0376369</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823098</td><td>050 Stoke</td><td>0506553</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823072</td><td>053 Rochdale</td><td>0536559</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823162</td><td>057 Oldham</td><td>0576469</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823161</td><td>059 Bolton Atlas</td><td>0596451</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823067</td><td>093 Denton</td><td>0936374</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823054</td><td>104 Nelson</td><td>1046503</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823160</td><td>119 Hyde</td><td>1196372</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823068</td><td>122 Cheadle Heath</td><td>1226643</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823105</td><td>122 Cheadle Heath</td><td>1226644</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823100</td><td>137 Swinnow Road</td><td>1376513</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823159</td><td>212 Harwood</td><td>2126361</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823055</td><td>215 Bredbury</td><td>2156543</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823066</td><td>256 Newcastle Und</td><td>2566512</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823167</td><td>256 Newcastle Und</td><td>2566513</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823165</td><td>391 Openshaw</td><td>3916350</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823166</td><td>398 Great Harwood</td><td>3986135</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823056</td><td>475 Illingsworth</td><td>4756369</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823104</td><td>900 Colne RDC</td><td>9006046</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>	
+		</div>
+		
+					
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/docs.min.js"></script>
+    <script src="../assets/typeahead.js"></script>
+    <script src="../assets/bootstrap-datepicker.js"></script>
+
+	
+  </body>
+</html>
+					

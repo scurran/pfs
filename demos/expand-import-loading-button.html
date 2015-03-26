@@ -11,11 +11,6 @@
 	
 	    <!-- Custom styles for this template -->
 	    <link href="../pfs.css" rel="stylesheet">
-	    <link href="../bootstrap-3.2.0-dist/css/datepicker.css" rel="stylesheet">
-	    <link href="../bootstrap-3.2.0-dist/css/typeahead.css" rel="stylesheet">
-		<link rel="stylesheet" href="../assets/ladda-bootstrap-master/dist/ladda-themeless.min.css">
-	
-	
 
 	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -87,14 +82,14 @@
 				</div>	
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="import-box" id="collapseExample">
+					<div class="collapse import-box" id="collapseExample">
 						<form role="form">				
 							<div class="form-group">
 							    <label for="exampleInputFile">Data file to import</label>
 							    <input type="file" id="exampleInputFile">
 							  </div>				
 							<div class="form-group">
-								<button type="button" id="myButton" data-loading-text="Loading selected file..." class="btn btn-primary" autocomplete="off">
+								<button type="button" id="importButton" data-loading-text="Loading selected file..." class="btn btn-primary" autocomplete="off">
 								  Import selected file
 								</button>
 							</div>
@@ -111,14 +106,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
     <script src="../assets/js/docs.min.js"></script>
-    <script src="../assets/typeahead.js"></script>
-    <script src="../assets/bootstrap-datepicker.js"></script>
 	<script>
-	  $('#myButton').on('click', function () {
-	    var $btn = $(this).button('loading')
-	    // business logic...
-	    $btn.button('reset')
-	  })
+	$(function(){
+	    var $btn = $('#importButton');
+	    $btn.click(function(){
+	        var $this = $(this);
+	        $this.attr('disabled', 'disabled').html("Loading selected file...");
+	        setTimeout(function () {
+	            $this.removeAttr('disabled').html('Import selected file');
+	        }, 3000)
+	    });
+	})
 	</script>
 	
   </body>

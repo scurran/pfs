@@ -96,18 +96,14 @@
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-4">	
-					<div class="input-group">
-				      <input type="text" class="form-control" placeholder="Search daily volumes">
-					      <div class="input-group-btn">
-							<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-					        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="glyphicon glyphicon-filter"></span></button>
-					        <ul class="dropdown-menu dropdown-menu-right" role="menu">
-							    <li><a href="index.html">Remove filter</a></li>
-								<li class="divider"></li>
-							    <li><a href="filter-missing-volumes.html">Show missing volumes</a></li>
-					        </ul>
-					      </div>
-					    </div>
+					<div class="form-group has-feedback">
+					  <label class="control-label sr-only" for="inputGroupSuccess1">Search</label>
+					  <div class="input-group">
+					    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+					    <input type="text" class="form-control hasclear" id="inputGroupSuccess1" placeholder="Search daily volumes" aria-describedby="inputGroupSuccess1Status">
+					  </div>
+					  <span class=" glyphicon glyphicon-remove-circle text-muted form-control-feedback" aria-hidden="true"></span>
+					</div>					
 					</div>
 				</div>
 				<div class="row">
@@ -180,7 +176,18 @@
             });  
         
         });
-    </script>		
+    </script>
+	<script type="text/javascript">
+	$(".hasclear").keyup(function () {
+	    var t = $(this);
+	    t.next('span').toggle(Boolean(t.val()));
+	});
+	$(".clearer").hide($(this).prev('input').val());
+	$(".clearer").click(function () {
+	    $(this).prev('input').val('').focus();
+	    $(this).hide();
+	});
+	</script>	
   </body>
 </html>
 

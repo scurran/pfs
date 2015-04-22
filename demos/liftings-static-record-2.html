@@ -95,7 +95,7 @@
 							<tr><th>Supplier/Terminal</th><th>Job number</th><th>Site/Location</th><th>Order number</th><th>ULP</th><th>ULD</th><th>GAS</th><th>Status</th><th>Invoice number</th><th><span class="glyphicon glyphicon-comment" title="Comment"></span></th><th><!-- empty cell --></th></tr>
 							</thead>
 							<tbody>
-								<tr><td>Conoco Aberdeen</td><td>823015</td><td>160 Aberdeen</td><td>1606762</td><td>12345</td><td>12345</td><td>12345</td><td>Paid</td><td>997368904</td><td><span class="glyphicon glyphicon-comment" title="OK"></span></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#1234567890">Edit</button></td></tr>
+								<tr><td><a href="#" data-toggle="modal" data-target="#terminalview">Conoco Aberdeen</a></td><td>823015</td><td>160 Aberdeen</td><td>1606762</td><td>12345</td><td>12345</td><td>12345</td><td>Paid</td><td>997368904</td><td><span class="glyphicon glyphicon-comment" title="OK"></span></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#1234567890">Edit</button></td></tr>
 								<tr><td>Conoco Aberdeen</td><td>823016</td><td>189 Inverurie</td><td>1896470</td><td>12345</td><td>12345</td><td>12345</td><td>Agreed</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
 								<tr><td>Conoco Aberdeen</td><td>823014</td><td>194 Peterhead</td><td>1946459</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
 								<tr><td>Conoco Aberdeen</td><td>823014</td><td>194 Peterhead</td><td>1946459</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
@@ -241,6 +241,273 @@
 				    </div>
 				  </div>
 				</div>		
+				
+		<!-- Add delivery modal -->
+				<div class="modal fade" id="terminalview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h3 class="modal-title" id="myModalLabel">Conoco Aberdeen <small>Weekly volumes</small></h3>
+				      </div>
+				      <div class="modal-body">
+						<h4>Volume (litres)</h4>				
+						<div class="row">
+							<div class="col-xs-2">
+								<ul class="list-unstyled">
+								  <li>Fuel grade</li>
+								  <li>Unleaded</li>	
+								  <li>Diesel</li>	
+								  <li>Gasoil</li>	
+								  <li>Total</li>		
+								</ul>				
+							</div>
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Monday</li>
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>
+								  <li>1,234,567</li>	
+								  <li>12,345,678</li>		
+								</ul>
+							</div>	
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Tuesday</li>
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>
+								  <li>1,234,567</li>	
+								  <li>12,345,678</li>		
+								</ul>
+							</div>
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Wednesday</li>
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>
+								  <li>1,234,567</li>	
+								  <li>12,345,678</li>		
+								</ul>
+							</div>	
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Thursday</li>
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>
+								  <li>1,234,567</li>	
+								  <li>12,345,678</li>		
+								</ul>
+							</div>
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Friday</li>
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>
+								  <li>1,234,567</li>	
+								  <li>12,345,678</li>		
+								</ul>
+							</div>	
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Saturday</li>
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>
+								  <li>1,234,567</li>	
+								  <li>12,345,678</li>		
+								</ul>
+							</div>
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Sunday</li>
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>
+								  <li>1,234,567</li>	
+								  <li>12,345,678</li>		
+								</ul>
+							</div>	
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Total</li>
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>	
+								  <li>1,234,567</li>	
+								  <li>12,345,678</li>		
+								</ul>
+							</div>						
+						</div>
+						<hr>
+						<h4>Cash value (&pound;)</h4>				
+						<div class="row">
+							<div class="col-xs-2">
+								<ul class="list-unstyled">
+								  <li>Fuel grade</li>
+								  <li>Unleaded</li>	
+								  <li>Diesel</li>	
+								  <li>Gasoil</li>	
+								  <li>Total</li>		
+								</ul>				
+							</div>
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Monday</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;12,345,678</li>		
+								</ul>
+							</div>	
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Tuesday</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;12,345,678</li>		
+								</ul>
+							</div>
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Wednesday</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;12,345,678</li>		
+								</ul>
+							</div>	
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Thursday</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;12,345,678</li>		
+								</ul>
+							</div>
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Friday</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;12,345,678</li>		
+								</ul>
+							</div>	
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Saturday</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;12,345,678</li>		
+								</ul>
+							</div>
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Sunday</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;12,345,678</li>		
+								</ul>
+							</div>	
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Total</li>
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;1,234,567</li>	
+								  <li>&pound;12,345,678</li>		
+								</ul>
+							</div>						
+						</div>	
+						<hr>
+						<h4>Cost price (ppl)</h4>				
+						<div class="row">
+							<div class="col-xs-2">
+								<ul class="list-unstyled">
+								  <li>Fuel grade</li>
+								  <li>Unleaded</li>	
+								  <li>Diesel</li>	
+								  <li>Gasoil</li>			
+								</ul>				
+							</div>
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Monday</li>
+								  <li>0.981</li>	
+								  <li>0.945</li>	
+								  <li>0.467</li>	
+								</ul>
+							</div>	
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Tuesday</li>
+								  <li>0.981</li>	
+								  <li>0.945</li>	
+								  <li>0.467</li>		
+								</ul>
+							</div>
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Wednesday</li>
+								  <li>0.981</li>	
+								  <li>0.945</li>	
+								  <li>0.467</li>		
+								</ul>
+							</div>	
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Thursday</li>
+								  <li>0.981</li>	
+								  <li>0.945</li>	
+								  <li>0.467</li>		
+								</ul>
+							</div>
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Friday</li>
+								  <li>0.981</li>	
+								  <li>0.945</li>	
+								  <li>0.467</li>		
+								</ul>
+							</div>	
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Saturday</li>
+								  <li>0.981</li>	
+								  <li>0.945</li>	
+								  <li>0.467</li>		
+								</ul>
+							</div>
+							<div class="col-xs-1">				
+								<ul class="list-unstyled">
+								  <li>Sunday</li>
+								  <li>0.981</li>	
+								  <li>0.945</li>	
+								  <li>0.467</li>		
+								</ul>
+							</div>							
+						</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>				
 					
     <!-- Bootstrap core JavaScript
     ================================================== -->

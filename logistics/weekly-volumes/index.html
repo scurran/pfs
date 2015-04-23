@@ -89,103 +89,19 @@
 		<hr>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-6 col-sm-8">											
-					<div class="form-group">
-						<div class="btn-group">
-							<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-							  <span class="glyphicon glyphicon-chevron-down"></span>
-							  Import data
-							</button>
-							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#AddDelivery">
-							  <span class="glyphicon glyphicon-plus"></span>
-							  Add record
-							</button>
-						</div>
-					</div>
-				</div>	
-				<div class="col-xs-6 col-sm-4">	
-					<div class="form-group">
-						<div class="input-group">
-					      <input type="text" class="form-control" placeholder="Search for a term">
-						      <div class="input-group-btn">
-						        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-						        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="glyphicon glyphicon-filter"></span></button>
-								
-						        <ul class="dropdown-menu dropdown-menu-right" role="menu">
-								    <li><a href="index.html">Remove filter</a></li>
-									<li class="divider"></li>
-								    <li><a href="filter-missing-volumes.html">Show missing volumes</a></li>
-						        </ul>	
-					      </div>
-					    </div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="collapse import-box" id="collapseExample">
-						<form role="form">
-							<div class="form-group">
-							    <label for="exampleInputFile">Select the data type to import</label>
-								<div class="radio">
-								  <label>
-								    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-								    Drawings
-								  </label>
-								</div>
-								<div class="radio">
-								  <label>
-								    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-								    Refusals
-								  </label>
-								</div>
-							  </div>				
-							<div class="form-group">
-							    <label for="exampleInputFile">Data file to import</label>
-							    <input type="file" id="exampleInputFile">
-							  </div>				
-							<div class="form-group">
-								<a class="btn btn-primary" href="">Import selected file</a>							
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="row">
 				<div class="col-xs-12">
 					<div class="table-responsive">
-						<table class="table table-condensed table-hover lifting-table" id="example">
+						<table class="table table-condensed table-hover" id="example">
+							<caption>Volume</caption>
 						  <thead>
-							<tr><th>Status</th><th><span class="glyphicon glyphicon-comment" title="Comment"></span></th><th>Supplier</th><th>Terminals</th><th>Site</th><th>Location</th><th>Job number</th><th>Order number</th><th>Invoice number</th><th>ULP</th><th>ULD</th><th>GAS</th><th>LPG</th><th><!-- empty cell --></th></tr>
+							<tr><th>Fuel grade</th><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>Total</th></tr>
+							<tr><td>Unleaded</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>12,345,678</td></tr>
+							<tr><td>Diesel</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>12,345,678</td></tr>
+							<tr><td>Gasoil</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>12,345,678</td></tr>
+							<tr><td>Total</td><td>12,345,678</td><td>12,345,678</td><td>12,345,678</td><td>12,345,678</td><td>12,345,678</td><td>12,345,678</td></tr>
 							</thead>
 							<tbody>
-								<tr><td><span class="label label-paid">Paid</span></td><td><span class="glyphicon glyphicon-comment" title="OK"></span></td><td>Conoco</td><td> Aberdeen</td><td>160</td><td>Aberdeen</td><td>823015</td><td>1606762</td><td><span class="label label-paid">997368904</span></td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#EditDelivery">Edit</button></td></tr>
-								<tr><td><span class="label label-agreed">Agreed</span></td><td><!-- no comment --></td><td>Conoco</td><td> Aberdeen</td><td>189</td><td>Inverurie</td><td>823016</td><td>1896470</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Aberdeen</td><td>194</td><td>Peterhead</td><td>823014</td><td>1946459</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Aberdeen</td><td>194</td><td>Peterhead</td><td>823014</td><td>1946459</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>003</td><td>Enterprise 5</td><td>823106</td><td>0036658</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>005</td><td>Keighley</td><td>823071</td><td>0056475</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>022</td><td>Failsworth</td><td>823099</td><td>0226339</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>028</td><td>Eccles</td><td>823070</td><td>0286551</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>037</td><td>Dukinfield</td><td>823069</td><td>0376369</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>050</td><td>Stoke</td><td>823098</td><td>0506553</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>053</td><td>Rochdale</td><td>823072</td><td>0536559</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>057</td><td>Oldham</td><td>823162</td><td>0576469</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>059</td><td>Bolton Atlas</td><td>823161</td><td>0596451</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>093</td><td>Denton</td><td>823067</td><td>0936374</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>104</td><td>Nelson</td><td>823054</td><td>1046503</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>119</td><td>Hyde</td><td>823160</td><td>1196372</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>122</td><td>Cheadle Heath</td><td>823068</td><td>1226643</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>122</td><td>Cheadle Heath</td><td>823105</td><td>1226644</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>137</td><td>Swinnow Road</td><td>823100</td><td>1376513</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>212</td><td>Harwood</td><td>823159</td><td>2126361</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>215</td><td>Bredbury</td><td>823055</td><td>2156543</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>256</td><td>Newcastle Und</td><td>823066</td><td>2566512</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>256</td><td>Newcastle Und</td><td>823167</td><td>2566513</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>391</td><td>Openshaw</td><td>823165</td><td>3916350</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>398</td><td>Great Harwood</td><td>823166</td><td>3986135</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>475</td><td>Illingsworth</td><td>823056</td><td>4756369</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
-								<tr><td><span class="label label-default">Open</span></td><td><!-- no comment --></td><td>Conoco</td><td> Bramhall</td><td>900</td><td>Colne RDC</td><td>823104</td><td>9006046</td><td>&mdash;</td><td>12345</td><td>12345</td><td>12345</td><td>0</td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								
 						</tbody>
 						</table>
 					</div>

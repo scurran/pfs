@@ -234,11 +234,11 @@ a:hover {
 	
 
 .list-weekly-volumes ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-float:left;
-width:11.111111111%;
+  	padding: 0;
+  	margin: 0;
+  	list-style: none;
+	float:left;
+	width:11.111111111%;
 }	
 
 .list-weekly-volumes ul:first-child li {
@@ -251,8 +251,19 @@ width:11.111111111%;
 }
 
 .list-weekly-volumes ul li {
-  padding: 5px;
-  text-align: right;
-border-bottom: 1px solid #ddd;
+  	padding: 5px;
+  	text-align: right;
+	border-bottom: 1px solid #ddd;
+}
+
+table.weekly-volumes tbody:nth-child(odd) tr td  {
+	  background-color: #f9f9f9;
+}
+
+table.weekly-volumes tfoot tr td {
+	font-weight: bold;
+	border-top: 2px solid #ddd;
+	border-bottom: 2px solid #ddd;
+	
 }
 	

@@ -79,9 +79,8 @@
 				</div>
 				<div class="col-xs-12 col-sm-8">
 					<ul class="nav nav-pills" role="tablist">
-						<li class="active"><a href="index.html">Liftings</a></li>
-						<li><a href="../refusals/index.html">Refusals</a></li>
-						<li><a href="../invoicing/index.html">Invoicing</a></li>
+						<li><a href="index.html">Daily volumes</a></li>
+						<li class="active"><a href="#">Weekly Volumes</a></li>
 					</ul>
 				</div>
 			</div>	
@@ -89,316 +88,97 @@
 		<hr>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12">
-					<div class="table-responsive">
-						<table class="table table-condensed table-hover" id="example">
-							<caption>Volume</caption>
-						  <thead>
-							<tr><th>Fuel grade</th><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>Total</th></tr>
-							<tr><td>Unleaded</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>12,345,678</td></tr>
-							<tr><td>Diesel</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>12,345,678</td></tr>
-							<tr><td>Gasoil</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>1,234,456</td><td>12,345,678</td></tr>
-							<tr><td>Total</td><td>12,345,678</td><td>12,345,678</td><td>12,345,678</td><td>12,345,678</td><td>12,345,678</td><td>12,345,678</td></tr>
-							</thead>
-							<tbody>
-								
-						</tbody>
-						</table>
-					</div>
+					<div class="col-xs-12">
+						<div class="table-responsive">
+							<table class="table table-condensed table-hover weekly-volumes">
+							  	<thead>
+									<tr>
+										<th>
+											<div class="dropdown"><a href="" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Supplier/Terminal
+											 <span class="caret"></span></a>
+											  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">All terminals</a></li>
+												<li class="divider"></li>
+											    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Aberdeen</a></li>
+											    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Bramhall</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Immingham</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Inverness</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Kingsbury</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Avonmouth</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Birmingham</a></li>
+												<li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">Esso Hythe</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Purfleet</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Greenergy Clydebank</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Greenergy Tees</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Harvest Seal Sands</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ineos Dalston</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mabanaft Avonmouth</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mabanaft Ross</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pace Fuelcare IOW</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Shell Stanlow</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco BOSL</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Cardiff</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Kingsbury</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Plymouth</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Stanlow</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">TFE J41</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">TFE Gadbrook</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total LOR</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total Milford</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total Nottingham</a></li>
+											</ul>
+											</div>
+										</th>
+										<th>Date</th>
+										<th><span class="label label-default">0.91</span> Unleaded </th>
+										<th><span class="label label-default">0.91</span> Diesel </th>
+										<th><span class="label label-default">0.91</span> Gasoil </th>
+										<th>Order number</th>
+										<th><span class="glyphicon glyphicon-comment" title="Comment"></span></th>
+										<th>
+											<div class="dropdown"><a href="" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Invoice number <span class="caret"></span></a>
+											  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+											    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Duplicate</a></li>
+											</ul>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr><td>Esso Hythe</td><td>Mon 27 Apr 2014</td><td>12345</td><td>12345</td><td>12345</td><td>1896470</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td></tr>
+									<tr><td>Esso Hythe</td><td>Mon 27 Apr 2014</td><td>12345</td><td>12345</td><td>12345</td><td>1896470</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td></tr>
+									<tr><td>Esso Hythe</td><td>Mon 27 Apr 2014</td><td>12345</td><td>12345</td><td>12345</td><td>1896470</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td></tr>
+								</tbody>
+								<tbody>
+									<tr><td>Sub-total</td><td>Mon 27 Apr 2014</td><td>12345</td><td>12345</td><td>12345</td><td><!-- empty cell --></td><td><!-- empty cell --></td><td><!-- empty cell --></td></tr>
+								</tbody>
+								<tbody>
+									<tr><td>Esso Hythe</td><td>Tue 28 Apr 2014</td><td>12345</td><td>12345</td><td>12345</td><td>1896470</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td></tr>
+									<tr><td>Esso Hythe</td><td>Tue 28 Apr 2014</td><td>12345</td><td>12345</td><td>12345</td><td>1896470</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td></tr>
+									<tr><td>Esso Hythe</td><td>Tue 28 Apr 2014</td><td>12345</td><td>12345</td><td>12345</td><td>1896470</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td></tr>
+								</tbody>
+								<tbody>
+									<tr><td>Sub-total</td><td>Tue 28 Apr 2014</td><td>12345</td><td>12345</td><td>12345</td><td><!-- empty cell --></td><td><!-- empty cell --></td><td><!-- empty cell --></td></tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td>Total</td>
+										<td>Week ending 03/05/2015</td>
+										<td>123456</td>
+										<td>123456</td>
+										<td>123456</td>
+										<td><!-- empty cell --></td>
+										<td><!-- empty cell --></td>
+										<td><!-- empty cell --></td>									
+									</tr>
+								</tfoot>	
+							</table>
+						</div>
+					</div>	
 				</div>
 			</div>	
 		</div>
 		
-<!-- Add delivery modal -->
-		<div class="modal fade" id="AddDelivery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h3 class="modal-title" id="myModalLabel">Add a record</h3>
-		      </div>
-		      <div class="modal-body">
-		        <form role="form">					
-				<div class="row">
-					<div class="col-xs-12 col-sm-6">				
-					  <div class="form-group">
-					    <label for="terminalBrand">Terminal</label>
-					    <select class="form-control" id="terminalBrand">
-						<option>Select an existing terminal</option>
-					    <option>Conoco Aberdeen</option>
-					    <option>Conoco Bramhall</option>
-						<option>Conoco Immingham</option>
-						<option>Conoco Inverness</option>
-						<option>Conoco Kingsbury</option>
-						<option>Esso Avonmouth</option>
-						<option>Esso Birmingham</option>
-						<option>Esso Hythe</option>
-						<option>Esso Purfleet</option>
-						<option>Greenergy Clydebank</option>
-						<option>Greenergy Tees</option>
-						<option>Harvest Seal Sands</option>
-						<option>Ineos Dalston</option>
-						<option>Mabanaft Avonmouth</option>
-						<option>Mabanaft Ross</option>
-						<option>Pace Fuelcare IOW</option>
-						<option>Shell Stanlow</option>
-						<option>Texaco BOSL</option>
-						<option>Texaco Cardiff</option>
-						<option>Texaco Kingsbury</option>
-						<option>Texaco Plymouth</option>
-						<option>Texaco Stanlow</option>
-						<option>TFE J41</option>
-						<option>TFE Gadbrook</option>
-						<option>Total LOR</option>
-						<option>Total Milford</option>
-						<option>Total Nottingham</option>							
-						</select>
-					  </div>
-					</div>
-					<div class="col-xs-12 col-sm-6">							
-					  <div class="form-group">
-					    <label for="jobNumber">Job number</label>
-					    <input type="text" class="form-control" id="jobNumber">
-					  </div>
-					</div>	
-					<div class="col-xs-12 col-sm-6">	
-					  <div class="form-group">
-					    <label for="terminalBrand">Location / Site ID</label>
-					    <select class="form-control" id="terminalBrand">
-						<option>Select an existing location</option>
-						<option>Aberdeen 160</option>  
-						<option>Inverurie 189</option>    
-						<option>Peterhead 194</option>
-						</select>
-					  </div>
-					</div>
-					<div class="col-xs-12 col-sm-6">						
-					  <div class="form-group">
-					    <label for="jobNumber">Order number</label>
-					    <input type="text" class="form-control" id="jobNumber">
-					  </div>
-					</div>
-				</div>	
-				<div class="row">	
-					<div class="col-xs-12 col-sm-6">
-						<label>Status</label>
-						<div class="radio">
-							<label class="radio-inline">
-						    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" checked>
-						    Open
-						  </label>
-						  <label class="radio-inline">
-						    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-						    Agreed
-						  </label>
-						  <label class="radio-inline">
-						    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-						    Paid
-						  </label>
-						</div>
-					</div>					
-					<div class="col-xs-12 col-sm-6">				
-					  <div class="form-group">
-					    <label for="jobNumber">Invoice number</label>
-					    <input type="text" class="form-control" id="jobNumber" disabled>
-					  </div>
-					</div>
-					<div class="col-xs-12">				
-					  <div class="form-group">
-					    <label for="jobNumber"><span class="glyphicon glyphicon-comment" title="Comment"></span> Comments</label>
-					    <textarea class="form-control" rows="1"></textarea>
-					  </div>
-					</div>
-				</div>
-				<hr><!-- separate form parts -->		
-				<div class="row">
-					<div class="col-xs-6 col-sm-3">	
-					  <div class="form-group">
-						<label class="control-label">UNL</label>
-					    	<input type="text" class="form-control">
-					</div>
-					<div class="form-group">
-						<label class="control-label">actual</label>
-					    	<input type="text" class="form-control">						
-					  </div>
-					</div>
-					<div class="col-xs-6 col-sm-3">	
-					  <div class="form-group">
-						<label class="control-label">GAS</label>
-					    	<input type="text" class="form-control">
-						</div>
-						<div class="form-group">
-						<label class="control-label">actual</label>
-					    	<input type="text" class="form-control">
-					  </div>
-					</div>
-					<div class="col-xs-6 col-sm-3">
-						<div class="form-group">
-						<label class="control-label">DSL</label>
-					    	<input type="text" class="form-control">
-						</div>
-						<div class="form-group">
-						<label class="control-label">actual</label>
-					    	<input type="text" class="form-control">						
-					  </div>
-					</div>
-				</div>
-					</form>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-		        <button type="button" class="btn btn-primary">Save record</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-		
-<!-- Edit delivery modal -->
-	<div class="modal fade" id="EditDelivery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h3 class="modal-title" id="myModalLabel">Aberdeen <small class="text-uppercase">1606762</small></h3>
-	      </div>
-	      <div class="modal-body">
-				<form role="form">
-					<div class="row">
-						<div class="col-xs-12 col-sm-6">				
-						  <div class="form-group">
-						    <label for="terminalBrand">Terminal</label>
-						    <select class="form-control" id="terminalBrand">
-							<option>Select an existing terminal</option>
-						    <option selected="selected">Conoco Aberdeen</option>
-						    <option>Conoco Bramhall</option>
-							<option>Conoco Immingham</option>
-							<option>Conoco Inverness</option>
-							<option>Conoco Kingsbury</option>
-							<option>Esso Avonmouth</option>
-							<option>Esso Birmingham</option>
-							<option>Esso Hythe</option>
-							<option>Esso Purfleet</option>
-							<option>Greenergy Clydebank</option>
-							<option>Greenergy Tees</option>
-							<option>Harvest Seal Sands</option>
-							<option>Ineos Dalston</option>
-							<option>Mabanaft Avonmouth</option>
-							<option>Mabanaft Ross</option>
-							<option>Pace Fuelcare IOW</option>
-							<option>Shell Stanlow</option>
-							<option>Texaco BOSL</option>
-							<option>Texaco Cardiff</option>
-							<option>Texaco Kingsbury</option>
-							<option>Texaco Plymouth</option>
-							<option>Texaco Stanlow</option>
-							<option>TFE J41</option>
-							<option>TFE Gadbrook</option>
-							<option>Total LOR</option>
-							<option>Total Milford</option>
-							<option>Total Nottingham</option>							
-							</select>
-						  </div>
-						</div>
-						<div class="col-xs-12 col-sm-6">							
-						  <div class="form-group">
-						    <label for="jobNumber">Job number</label>
-						    <input type="text" class="form-control" id="jobNumber" value="823015">
-						  </div>
-						</div>
-
-						<div class="col-xs-12 col-sm-6">	
-						  <div class="form-group">
-						    <label for="terminalBrand">Location / Site ID</label>
-						    <select class="form-control" id="terminalBrand">
-							<option>Select an existing location</option>
-							<option selected="selected">Aberdeen 160</option>  
-							<option>Inverurie 189</option>    
-							<option>Peterhead 194</option>
-							</select>
-						  </div>
-						</div>
-						<div class="col-xs-12 col-sm-6">						
-						  <div class="form-group">
-						    <label for="jobNumber">Order number</label>
-						    <input type="text" class="form-control" id="jobNumber" value="1606762">
-						  </div>
-						</div>
-					</div>
-				<div class="row">	
-					<div class="col-xs-12 col-sm-6">
-						<label>Status</label>
-						<div class="form-group">
-							<div class="radio">
-								<label class="radio-inline">
-							    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-							    Open
-							  </label>
-							  <label class="radio-inline">
-							    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-							    Agreed
-							  </label>
-							  <label class="radio-inline">
-							    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-							    Paid
-							  </label>
-							</div>
-						</div>
-					</div>					
-					<div class="col-xs-12 col-sm-6">				
-					  <div class="form-group">
-					    <label for="jobNumber">Invoice number</label>
-					    <input type="text" class="form-control" id="jobNumber" value="997368904">
-					  </div>
-					</div>
-					<div class="col-xs-12">				
-					  <div class="form-group">
-					    <label for="jobNumber"><span class="glyphicon glyphicon-comment" title="Comment"></span> Comments</label>
-					    <textarea class="form-control" rows="1">OK</textarea>
-					  </div>
-					</div>
-				</div>						
-				<hr><!-- separate form parts -->		
-				<div class="row">	
-					<div class="col-xs-6 col-sm-3">	
-					  <div class="form-group">
-						<label class="control-label">UNL</label>
-					    	<input type="text" class="form-control" value="12345">
-					</div>
-					<div class="form-group">
-						<label class="control-label">actual</label>
-					    	<input type="text" class="form-control" value="12345">						
-					  </div>
-					</div>
-					<div class="col-xs-6 col-sm-3">	
-					  <div class="form-group">
-						<label class="control-label">GAS</label>
-					    	<input type="text" class="form-control" value="12345">
-						</div>
-						<div class="form-group">
-						<label class="control-label">actual</label>
-					    	<input type="text" class="form-control" value="12345">
-					  </div>
-					</div>
-					<div class="col-xs-6 col-sm-3">
-						<div class="form-group">
-						<label class="control-label">DSL</label>
-					    	<input type="text" class="form-control" value="12345">
-						</div>
-						<div class="form-group">
-						<label class="control-label">actual</label>
-					    	<input type="text" class="form-control" value="12345">						
-					  </div>
-					</div>
-				</div>	
-					</form>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-		        <button type="button" class="btn btn-primary">Save record</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
 					
     <!-- Bootstrap core JavaScript
     ================================================== -->

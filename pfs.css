@@ -123,6 +123,10 @@ a:hover {
 	padding-right:10px;
 }
 
+.navbar-brand img {
+	display:inline;
+}
+
 .bg-week td {
     border-left: 1px dashed #ddd;
 }

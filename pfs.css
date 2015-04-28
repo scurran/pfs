@@ -257,13 +257,18 @@ a:hover {
 }
 
 table.weekly-volumes tbody:nth-child(odd) tr td  {
-	  background-color: #f9f9f9;
+	background-color: #f9f9f9;
+}
+table.weekly-volumes tbody:nth-child(odd) tr td:first-child, table.weekly-volumes tfoot tr td:first-child {
+	text-indent:15px;
+	color: #777;
 }
 
 table.weekly-volumes tfoot tr td {
-	font-weight: bold;
-	border-top: 2px solid #ddd;
-	border-bottom: 2px solid #ddd;
-	
+	background-color: #f9f9f9;	
+	border-top: 4px solid #ddd;
+	border-bottom: 4px solid #ddd;
 }
+
+
 	

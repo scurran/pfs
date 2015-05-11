@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Morrisons Petrol Management System</title>
+
+	    <!-- Bootstrap core CSS -->
+	    <link href="../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	    <!-- Custom styles for this template -->
+	    <link href="../pfs.css" rel="stylesheet">
+	    <link href="../bootstrap-3.2.0-dist/css/datepicker.css" rel="stylesheet">
+	    <link href="../bootstrap-3.2.0-dist/css/typeahead.css" rel="stylesheet">
+	
+	
+
+	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	  </head>
+	  <body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="dashboard.html">
+				<img alt="Morrisons logo" src="../morrisonslogo.png" class="navbar-logo"> 
+				Petrol Operations</a>
+	        </div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="">Margins</a></li>
+					<li><a href="">Pricing</a></li>
+					<li class="active"><a href="">Logistics</a></li>
+					<li><a href="">Inventory</a></li>		
+					<li><a href="">Markets</a></li>
+					</ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+				    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				     <span class="glyphicon glyphicon-cog"></span>Configuration <span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu" role="menu">
+					    <li><a href="">Manage sites</a></li>
+			            <li><a href="">Manage terminals</a></li>	
+			            <li><a href="">Manage products</a></li>
+			            <li><a href="">Manage regulatory data</a></li>
+				    </ul>
+				</li>
+				<li><a href="">Sign out</a></li>
+				</ul>	
+			</div>		
+	      </div>
+	    </div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-4 pull-right">
+				    <label class="control-label sr-only" for="date">Set working date</label>
+				    <div class="input-group input-group-lg">
+				      <span class="input-group-btn">
+				        	<button class="btn btn-default" type="button">
+								<span class="glyphicon glyphicon-calendar"></span>
+							</button>
+				      </span>
+						<input id="datepicker" class="form-control" type="text" placeholder="Set working day" value="Mon 01 Dec 2014">
+				    </div>
+					<p class="help-block">Week ending 07/12/2014 (2014 wk 44)</p>
+				</div>
+				<div class="col-xs-12 col-sm-8">
+					<ul class="nav nav-pills" role="tablist">
+						<li class="active"><a href="">Liftings</a></li>
+						<li><a href="">Refusals</a></li>
+						<li><a href="">Invoicing</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<hr>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-6 col-sm-8">											
+					<div class="form-group">
+						<div class="btn-group">
+							<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+							  <span class="glyphicon glyphicon-chevron-down"></span>
+							  Import data
+							</button>
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#AddDelivery">
+							  <span class="glyphicon glyphicon-plus"></span>
+							  Add record
+							</button>
+						</div>
+					</div>
+				</div>	
+				<div class="col-xs-6 col-sm-4">	
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+					      <input type="text" class="form-control" placeholder="Search for a term">
+						      <div class="input-group-btn">
+						        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="glyphicon glyphicon-filter"></span></button>
+						        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+								    <li><a href="index.html">Remove filter</a></li>
+									<li class="divider"></li>
+								    <li><a href="filter-missing-volumes.html">Show missing volumes</a></li>
+						        </ul>	
+					      </div>
+					    </div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="collapse import-box" id="collapseExample">
+						<form role="form">
+							<div class="form-group">
+							    <label for="exampleInputFile">Select the data type to import</label>
+								<div class="radio">
+								  <label>
+								    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+								    Drawings
+								  </label>
+								</div>
+								<div class="radio">
+								  <label>
+								    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+								    Refusals
+								  </label>
+								</div>
+							  </div>				
+							<div class="form-group">
+							    <label for="exampleInputFile">Data file to import</label>
+							    <input type="file" id="exampleInputFile">
+							  </div>				
+							<div class="form-group">
+								<a class="btn btn-primary" href="">Import selected file</a>							
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="table-responsive">
+						<table class="table table-condensed table-hover lifting-table" id="example">
+						  <thead>
+							<tr><th>Supplier/Terminal</th><th>Job number</th><th>Site/Location</th><th>Order number</th><th>ULP</th><th>ULD</th><th>GAS</th><th>Status</th><th>Invoice number</th><th><span class="glyphicon glyphicon-comment" title="Comment"></span></th><th><!-- empty cell --></th></tr>
+							</thead>
+							<tbody>
+								<tr><td><a href="#" data-toggle="modal" data-target="#terminalview">Conoco Aberdeen</a></td><td>823015</td><td>160 Aberdeen</td><td>1606762</td><td>12345</td><td>12345</td><td>12345</td><td>Paid</td><td>997368904</td><td><span class="glyphicon glyphicon-comment" title="OK"></span></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#1234567890">Edit</button></td></tr>
+								<tr><td>Conoco Aberdeen</td><td>823016</td><td>189 Inverurie</td><td>1896470</td><td>12345</td><td>12345</td><td>12345</td><td>Agreed</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Aberdeen</td><td>823014</td><td>194 Peterhead</td><td>1946459</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Aberdeen</td><td>823014</td><td>194 Peterhead</td><td>1946459</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823106</td><td>003 Enterprise 5</td><td>0036658</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823071</td><td>005 Keighley</td><td>0056475</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823099</td><td>022 Failsworth</td><td>0226339</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823070</td><td>028 Eccles</td><td>0286551</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823069</td><td>037 Dukinfield</td><td>0376369</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823098</td><td>050 Stoke</td><td>0506553</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823072</td><td>053 Rochdale</td><td>0536559</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823162</td><td>057 Oldham</td><td>0576469</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823161</td><td>059 Bolton Atlas</td><td>0596451</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823067</td><td>093 Denton</td><td>0936374</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823054</td><td>104 Nelson</td><td>1046503</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823160</td><td>119 Hyde</td><td>1196372</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823068</td><td>122 Cheadle Heath</td><td>1226643</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823105</td><td>122 Cheadle Heath</td><td>1226644</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823100</td><td>137 Swinnow Road</td><td>1376513</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823159</td><td>212 Harwood</td><td>2126361</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823055</td><td>215 Bredbury</td><td>2156543</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823066</td><td>256 Newcastle Und</td><td>2566512</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823167</td><td>256 Newcastle Und</td><td>2566513</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823165</td><td>391 Openshaw</td><td>3916350</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823166</td><td>398 Great Harwood</td><td>3986135</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823056</td><td>475 Illingsworth</td><td>4756369</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+								<tr><td>Conoco Bramhall</td><td>823104</td><td>900 Colne RDC</td><td>9006046</td><td>12345</td><td>12345</td><td>12345</td><td>Open</td><td>&mdash;</td><td><!-- no comment --></td><td><button class="btn btn-default btn-sm">Edit</button></td></tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+
+		<!-- Add delivery modal -->
+				<div class="modal fade" id="1234567890" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h3 class="modal-title" id="myModalLabel">Conoco Aberdeen <small>823015</small></h3>
+				      </div>
+				      <div class="modal-body">
+					<div class="alert alert-danger"><p>Please enter a valid date in the format DD/MM/YYYY</p></div>
+				        <form role="form">					
+						<div class="row">
+							<div class="col-xs-6 col-sm-3">				
+							  <div class="form-group has-error">
+								<label for="terminalBrand">Date</label>
+								<input type="text" class="form-control" placeholder="Enter as DD/MM/YYYY" value="01/12/2014">
+								<p class="help-block">30/11/2014</p>
+							  </div>
+							</div>
+							<div class="col-xs-6 col-sm-3">							
+							  <div class="form-group">
+							    <label for="jobNumber">Cost price week</label>
+								<input type="text" class="form-control" placeholder="Enter as YYYY wk NN" value="2014 wk 44">
+								<p class="help-block">2014 wk 43</p>
+							  </div>
+							</div>
+							<div class="col-xs-6 col-sm-3">
+							  <div class="form-group">
+								<label>Status</label>
+								<select class="form-control">
+									<option>Open</option>
+									<option>Query</option>
+									<option>Agreed</option>
+								</select>	
+							  </div>
+							</div>					
+							<div class="col-xs-6 col-sm-3">				
+							  <div class="form-group">
+							    <label for="jobNumber">Invoice number</label>
+							    <p class="form-control-static">997368904</p>
+							  </div>
+							</div>	
+						</div>
+						<hr>	
+						<div class="row">
+							<div class="col-xs-6 col-sm-3">	
+							  <div class="form-group">
+							    <label for="terminalBrand">Supplier/terminal</label>
+							    <select class="form-control">
+									<option>Conoco Aberdeen</option>
+								    <option>Conoco Bramhall</option>
+									<option>Conoco Immingham</option>
+									<option>Conoco Inverness</option>
+									<option>Conoco Inverness</option>
+									<option>Esso Avonmouth</option>
+									<option>Esso Birmingham</option>
+									<option>Esso Hythe</option>
+									<option>Esso Purfleet</option>
+									<option>Greenergy Clydebank</option>
+									<option>Greenergy Tees</option>
+									<option>Harvest Seal Sands</option>
+									<option>Ineos Dalston</option>
+									<option>Mabanaft Avonmouth</option>
+									<option>Mabanaft Ross</option>
+									<option>Pace Fuelcare IOW</option>
+									<option>Shell Stanlow</option>
+									<option>Texaco BOSL</option>
+									<option>Texaco Cardiff</option>
+									<option>Texaco Kingsbury</option>
+									<option>Texaco Plymouth</option>
+									<option>Texaco Stanlow</option>
+									<option>TFE J41</option>
+									<option>TFE Gadbrook</option>
+									<option>Total LOR</option>
+									<option>Total Milford</option>
+									<option>Total Nottingham</option>
+								</select>
+								<p class="help-block">Conoco Aberdeen</p>
+							  </div>
+							</div>
+							<div class="col-xs-6 col-sm-3">						
+							  <div class="form-group">
+							    <label for="jobNumber">Job number</label>
+							    <input type="text" class="form-control" placeholder="Enter job number" value="823015">
+								<p class="help-block">823015</p>
+							  </div>
+							</div>
+							<div class="col-xs-6 col-sm-3">	
+							  <div class="form-group">
+							    <label for="terminalBrand">Site/location</label>
+							    <select class="form-control">
+									<option>160 Aberdeen</option>
+								</select>
+								<p class="help-block">160 Aberdeen</p>
+							  </div>
+							</div>
+							<div class="col-xs-6 col-sm-3">						
+							  <div class="form-group">
+							    <label for="jobNumber">Order number</label>
+							    <input type="text" class="form-control" placeholder="Enter order number" value="1606762">
+								<p class="help-block">1606762</p>
+							  </div>
+							</div>							
+						</div>
+						<hr>
+						<div class="row">
+							<div class="col-xs-offset-3 col-xs-2"><strong class="small">Actual</strong></div>
+							<div class="col-xs-2"><strong class="small text-muted">DHL</strong></div>
+							<div class="col-xs-2"><strong class="small text-muted">VBO</strong></div>
+							<div class="col-xs-3"><strong class="small">STA</strong></div>
+						</div>	
+						<div class="row">
+							<label class="form-control-static col-xs-3">UNL</label>
+							<div class="form-group col-xs-2"><input type="text" class="form-control" size="15" placeholder="Enter value" value="12345"></div>
+							<p class="help-block col-xs-2">12345</p>
+							<p class="help-block col-xs-2">12345</p>
+							<div class="checkbox col-xs-3">
+							  <label>
+							    <input type="checkbox" value="" checked="checked">
+							    Yes
+							  </label>
+							</div>
+						</div>
+						<div class="row">
+								<label class="form-control-static col-xs-3">ULD</label>
+								<div class="form-group col-xs-2"><input type="text" class="form-control" size="15" placeholder="Enter value" value="12345"></div>
+								<p class="help-block col-xs-2">12345</p>
+								<p class="help-block col-xs-2">12345</p>
+								<div class="checkbox col-xs-3">
+								  <label>
+								    <input type="checkbox" value="" checked="checked">
+								    Yes
+								  </label>
+								</div>							
+								</div>
+						<div class="row">
+								<label class="form-control-static col-xs-3">GAS</label>
+								<div class="form-group col-xs-2"><input type="text" class="form-control" size="15" placeholder="Enter value" value="12345"></div>
+								<p class="help-block col-xs-2">12345</p>
+								<p class="help-block col-xs-2">12345</p>
+								<div class="checkbox col-xs-3">
+								  <label>
+								    <input type="checkbox" value="" checked="checked">
+								    Yes
+								  </label>
+								</div>						
+								</div>	
+						<hr>	
+						<div class="row">	
+							    <label class="form-control-static col-xs-3"><span class="glyphicon glyphicon-comment" title="Comment"></span> Comments</label>
+							    <div class="form-group col-xs-9">
+								<textarea class="form-control" rows="1">Any comments go here</textarea>
+							    </div>
+						</div>
+							</form>
+				      </div>
+				    <div class="modal-footer">
+						<button type="button" class="btn btn-link pull-left"><span class="glyphicon glyphicon-remove"></span> Delete record</button>
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				        <button type="button" class="btn btn-primary">Save record</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>		
+				</div>				
+					
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/docs.min.js"></script>
+    <script src="../assets/typeahead.js"></script>
+    <script src="../assets/bootstrap-datepicker.js"></script>
+
+	
+  </body>
+</html>
+					

@@ -87,7 +87,7 @@
 				<div class="col-xs-12 col-sm-8">
 					<ul class="nav nav-pills" role="tablist">
 						<li class="active"><a href="index.html">Weekly volumes</a></li>
-						<li><a href="grni-report.html">GRNI report</a></li>
+						<li><a href="#" data-toggle="modal" data-target=".alert-modal-exit">GRNI report</a></li>
 					</ul>
 				</div>
 			</div>	
@@ -156,7 +156,7 @@
 									<tr><td>Mon 27 Apr 2014</td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td>1896470</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#1234567890">Edit</button></td></tr>
 								</tbody>
 								<tbody>
-									<tr><td><a href=""><span class="glyphicon glyphicon-minus-sign"></span> Mon 27 Apr 2014</a></td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td colspan="2">Daily invoice number</td><td><input type="text" size="12" value=""></td><td><a href="" title="Save and copy daily invoice entry"><span class="glyphicon glyphicon-open"></span> Copy</a></td></tr>
+									<tr><td><a href=""><span class="glyphicon glyphicon-minus-sign"></span> Mon 27 Apr 2014</a></td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td colspan="2">Daily invoice number</td><td><input type="text" size="12" value=""></td><td><a href="" title="Save and copy daily invoice entry" data-toggle="modal" data-target=".alert-modal-copy"><span class="glyphicon glyphicon-open"></span> Copy</a></td></tr>
 								</tbody>
 								<tbody>
 									<tr><td>Tue 28 Apr 2014</td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td>1896470</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#1234567890">Edit</button></td></tr>
@@ -164,7 +164,7 @@
 									<tr><td>Tue 28 Apr 2014</td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td>1896470</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#1234567890">Edit</button></td></tr>
 								</tbody>
 								<tbody>
-									<tr><td><a href="index-collapse.html"><span class="glyphicon glyphicon-minus-sign"></span> Tue 28 Apr 2014</a></td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td colspan="2">Daily invoice number</td><td><input type="text" size="12" value=""></td><td><a href="" title="Save and copy daily invoice entry"><span class="glyphicon glyphicon-open"></span> Copy</a></td></tr>
+									<tr><td><a href="index-collapse.html"><span class="glyphicon glyphicon-minus-sign"></span> Tue 28 Apr 2014</a></td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td colspan="2">Daily invoice number</td><td><input type="text" size="12" value=""></td><td><a href="" title="Save and copy daily invoice entry" data-toggle="modal" data-target=".alert-modal-copy"><span class="glyphicon glyphicon-open"></span> Copy</a></td></tr>
 								</tbody>
 								<tfoot>
 									<tr>
@@ -173,7 +173,7 @@
 										<td>123456</td>
 										<td>123456</td>
 										<td>123456</td>
-										<td colspan="2">Weekly invoice number</td><td><input type="text" size="12" value=""></td><td><a href="" title="Save and copy weekly invoice entry"><span class="glyphicon glyphicon-open"></span> Copy</a></td></td>									
+										<td colspan="2">Weekly invoice number</td><td><input type="text" size="12" value=""></td><td><a href="" title="Save and copy weekly invoice entry" data-toggle="modal" data-target=".alert-modal-copy"><span class="glyphicon glyphicon-open"></span> Copy</a></td></td>									
 									</tr>
 								</tfoot>	
 							</table>
@@ -181,6 +181,42 @@
 					</div>	
 				</div>
 			</div>	
+		</div>
+		<!-- Alert modal copy -->
+		<div class="modal fade alert-modal-copy" tabindex="-1" role="dialog" aria-labelledby="AlertModal" aria-hidden="true">
+		  <div class="modal-dialog modal-sm">
+		    <div class="modal-content">
+			        <div class="modal-header">
+			          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+			          <h4 id="mySmallModalLabel" class="modal-title">Confirm copy<a href="#mySmallModalLabel" class="anchorjs-link"><span class="anchorjs-icon"></span></a></h4>
+			        </div>
+			        <div class="modal-body">
+			          <p>Would you like to overwrite any invoice numbers already entered?</p>
+			        </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+			        <button type="button" class="btn btn-primary">Yes</button>
+			      </div>
+			      </div>
+		  </div>
+		</div>
+		<!-- Alert modal exit -->
+		<div class="modal fade alert-modal-exit" tabindex="-1" role="dialog" aria-labelledby="AlertModal" aria-hidden="true">
+		  <div class="modal-dialog modal-sm">
+		    <div class="modal-content">
+			        <div class="modal-header">
+			          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+			          <h4 id="mySmallModalLabel" class="modal-title">Confirm exit<a href="#mySmallModalLabel" class="anchorjs-link"><span class="anchorjs-icon"></span></a></h4>
+			        </div>
+			        <div class="modal-body">
+			          <p>Would you like to exit this screen? Unsaved invoice numbers will be lost.</p>
+			        </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+			        <button type="button" class="btn btn-primary">Yes</button>
+			      </div>
+			      </div>
+		  </div>
 		</div>
 		<!-- Add delivery modal -->
 				<div class="modal fade" id="1234567890" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

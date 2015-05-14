@@ -198,6 +198,10 @@ a:hover {
   font-size: 14px;
 }
 
+.lifting-table tfoot {
+	background-color: #eee;
+}
+
 .lifting-table-2 td a {
 	text-decoration:underline;
 }

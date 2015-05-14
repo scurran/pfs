@@ -189,6 +189,15 @@ a:hover {
 	border:1px solid #ddd;
 }
 
+.lifting-table tbody tr td select {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  background-color: #fff;
+  border-color: #ccc;
+  font-size: 14px;
+}
+
 .lifting-table-2 td a {
 	text-decoration:underline;
 }
@@ -276,6 +285,30 @@ table.weekly-volumes tfoot tr td {
 
 table.weekly-volumes tr td input {
 	text-align:right;
+}
+
+.autosave-alert {
+	border: 1px solid transparent;
+  	border-radius: 4px;
+  	width:20%;
+  	position:fixed;
+	top:65px;
+  	left: 0;
+  	right: 0;
+  	margin: 0 auto;
+	text-align:center;
+	z-index:99;
+	display: inline-block;
+  	padding: 6px 12px;
+  	font-size: 14px;
+  	font-weight: normal;
+  	line-height: 1.42857143;
+}
+
+.btn-toggle-active {
+    background-color: #FFE151;
+    color: #006655;
+  	border-color: #ccc;
 }
 
 	

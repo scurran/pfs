@@ -296,7 +296,7 @@ table.weekly-volumes tr td input {
   	border-radius: 4px;
   	width:20%;
   	position:fixed;
-	top:65px;
+	bottom:0px;
   	left: 0;
   	right: 0;
   	margin: 0 auto;
@@ -315,4 +315,15 @@ table.weekly-volumes tr td input {
   	border-color: #ccc;
 }
 
-	
+.tooltip-inner {
+	background-color: #a94442;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #a94442;
+}
+
+.label-default {
+	background-color: #eee;
+	color:#555;	
+}

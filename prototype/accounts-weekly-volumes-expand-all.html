@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Morrisons Petrol Management System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="pfs.css" rel="stylesheet">	
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="dashboard.html">
+			<img alt="Morrisons logo" src="morrisonslogo.png" class="navbar-logo"> 
+			PUMPS</a>
+        </div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="dashboard.html">Dashboard</a></li>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pricing <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+		            <li><a href="pricing-bunker-prices.html">Bunker prices</a></li>
+		            <li><a href="pricing-retail-prices.html">Retail prices</a></li>
+					<li><a href="pricing-margin-calculations.html">Margin calculations</a></li>
+		          </ul>		
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Costs <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="costs-daily-summary.html">Daily summary</a></li>
+
+					<li><a href="costs-terminal-advice.html">Terminal advice</a></li>
+		          </ul>
+				</li>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Logistics <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="logistics-liftings.html">Liftings</a></li>
+					<li><a href="logistics-inventory.html">Inventory</a></li>			
+		          </ul>	
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reports <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="reports-sta-report.html">STA report</a></li>
+					<li><a href="reports-sales-volumes.html">Sales volumes</a></li>
+					<li><a href="reports-closing-stock.html">Closing stock</a></li>			
+					<li><a href="reports-drawings-report.html">Drawings report</a></li>						
+		          </ul>	
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Accounts <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li class="active"><a href="accounts-weekly-volumes.html">Weekly volumes</a></li>
+					<li><a href="accounts-grni-report.html">GRNI report</a></li>
+		          </ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Configuration <span class="caret"></span></a>
+				    <ul class="dropdown-menu" role="menu">
+					    <li><a href="config-manage-sites.html">Manage sites</a></li>
+			            <li><a href="config-manage-terminals.html">Manage terminals</a></li>	
+			            <li><a href="config-manage-products.html">Manage products</a></li>
+			            <li><a href="config-manage-retail-products.html">Manage retail products</a></li>
+			            <li><a href="config-manage-regulatory-data.html">Manage regulatory data</a></li>
+				    </ul>
+				</li>
+				<li><a href="logout.html">Logout</a></li>			
+			</ul>
+		</div>		
+      </div>
+    </div>
+	<div class="container-fluid">
+		<div class="row toolbar">	
+			<div class="col-xs-6 col-sm-3">
+				<div class="input-group">
+			      <span class="input-group-btn">
+					  <button type="button" class="btn btn-default" title="Go to previous day"><span class="glyphicon glyphicon-chevron-left"></span></button>
+			      </span>
+					<input id="datepicker" class="form-control" type="text" placeholder="Set working day" value="Mon 01 Dec 2014">
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default" title="Go to next day"> <span class="glyphicon glyphicon-chevron-right"></span></button>
+					</span>	
+				</div>
+			</div>
+			<div class="col-xs-6">											
+				<div class="btn-group">
+					<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+					Conoco Aberdeen
+					<span class="glyphicon glyphicon-chevron-down"></span>
+					</button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="terminal-aberdeen.html">Conoco Aberdeen</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="terminal-bramhall.html">Conoco Bramhall</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Immingham</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Inverness</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Inverness</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Avonmouth</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Birmingham</a></li>
+						<li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">Esso Hythe</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Purfleet</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Greenergy Clydebank</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Greenergy Tees</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Harvest Seal Sands</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ineos Dalston</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mabanaft Avonmouth</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mabanaft Ross</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pace Fuelcare IOW</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Shell Stanlow</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco BOSL</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Cardiff</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Kingsbury</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Plymouth</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Stanlow</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">TFE J41</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">TFE Gadbrook</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total LOR</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total Milford</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total Nottingham</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>		
+		<div class="row">
+			<div class="col-xs-12">					
+				<div class="table-responsive">
+					<table class="table table-condensed table-hover weekly-volumes">
+					  	<thead>
+							<tr>
+								<th>Date</th>
+								<th>Order number</th>
+								<th>Site</th>
+								<th><span class="label label-default">0.91</span> Unleaded </th>
+								<th><span class="label label-default">0.91</span> Diesel </th>
+								<th><span class="label label-default">0.91</span> Gasoil </th>
+								<th><span class="glyphicon glyphicon-comment" title="Comment"></span></th>
+								<th>Invoice number</th>
+								<th><button class="btn btn-sm btn-primary" title="Save all invoice entries">Save all</button></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td>Mon 27 Apr 2014</td><td>1896470</td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#1234567890">Edit</button></td></tr>
+							<tr><td>Mon 27 Apr 2014</td><td>1896470</td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#1234567890">Edit</button></td></tr>
+							<tr><td>Mon 27 Apr 2014</td><td>1896470</td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#1234567890">Edit</button></td></tr>
+						</tbody>
+						<tbody>
+							<tr><td><a href=""><span class="glyphicon glyphicon-minus-sign"></span> Mon 27 Apr 2014</a></td><td>All orders</td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><input type="text" size="12" value=""></td><td><a href="" title="Save and copy daily invoice entry" data-toggle="modal" data-target=".alert-modal-copy"><span class="glyphicon glyphicon-open"></span> Copy</a></td></tr>
+						</tbody>
+						<tbody>
+							<tr><td>Tue 28 Apr 2014</td><td>1896470</td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#1234567890">Edit</button></td></tr>
+							<tr><td>Tue 28 Apr 2014</td><td>1896470</td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#1234567890">Edit</button></td></tr>
+							<tr><td>Tue 28 Apr 2014</td><td>1896470</td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td><span class="glyphicon glyphicon-comment" title="Comment"></span></td><td><input type="text" size="12" value=""></td><td><button class="btn btn-default btn-sm" data-toggle="modal" data-target="#1234567890">Edit</button></td></tr>
+						</tbody>
+						<tbody>
+							<tr><td><a href="accounts-weekly-volumes.html"><span class="glyphicon glyphicon-minus-sign"></span> Tue 28 Apr 2014</a></td><td>All orders</td><td>160 Aberdeen</td><td>12345</td><td>12345</td><td>12345</td><td></td><td><input type="text" size="12" value=""></td><td><a href="" title="Save and copy daily invoice entry" data-toggle="modal" data-target=".alert-modal-copy"><span class="glyphicon glyphicon-open"></span> Copy</a></td></tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td><a href="accounts-weekly-volumes.html"><span class="glyphicon glyphicon-minus-sign"></span> Week ending 13/04/2014</a></td>
+								<td>All orders</td>
+								<td>All locations</td>
+								<td>123456</td>
+								<td>123456</td>
+								<td>123456</td>
+								<td></td><td><input type="text" size="12" value=""></td><td><a href="" title="Save and copy weekly invoice entry" data-toggle="modal" data-target=".alert-modal-copy"><span class="glyphicon glyphicon-open"></span> Copy</a></td></td>									
+							</tr>
+						</tfoot>	
+					</table>
+				</div>	
+			</div>
+		</div>	
+	</div>
+<!-- Footer -->	
+	<div class="navbar navbar-default navbar-fixed-bottom">
+	   	<ol class="breadcrumb text-muted small">
+		  <li>PUMPS</li>
+		  <li>Accounts</li>
+		  <li>Weekly volumes</li>
+		</ol>
+	</div>		
+   <!-- Bootstrap core JavaScript
+   ================================================== -->
+   <!-- Placed at the end of the document so the pages load faster -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+ </body>
+</html>

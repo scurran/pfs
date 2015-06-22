@@ -4,9 +4,8 @@ min-height: 100%;
 }
 
 body {
-	padding-top:65px;
-	margin-bottom: 60px;
-	
+	padding-top:50px;
+	padding-bottom: 20px;
 }
 
 .navbar-inverse {
@@ -297,30 +296,31 @@ table.weekly-volumes tr td input {
 
 .application-alert {
 	border: 1px solid transparent;
-	border-radius: 4px;
-	width:20%;
-	position:fixed;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
+  	border-radius: 4px;
+  	width:20%;
+  	position:fixed;
+
+  	left: 0;
+  	right: 0;
+  	margin: 0 auto;
 	text-align:center;
 	z-index:99;
 	display: inline-block;
-	padding: 6px 12px;
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 1.42857143;
-	color: #fff;
-	background-color: #006655;
+  	padding: 6px 12px;
+  	font-size: 14px;
+  	font-weight: normal;
+  	line-height: 1.42857143;
 }
 
-.application-alert-loading {
+.application-alert > .application-alert-loading {
 	top:50%;
 }
 
-.application-alert-saving {
+.application-alert > .application-alert-saving {
 	bottom:0px;
 }
+
+
 
 .btn-toggle-active {
     background-color: #FFE151;
@@ -350,3 +350,24 @@ table.weekly-volumes tr td input {
 .table-retail-prices > tbody > tr > td {
 	border-left: 1px solid #ddd;
 }
+
+.toolbar {
+  min-height: 20px;
+  padding: 9px 0;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e7e7e7;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.toolbar-buttons {
+	text-align:center;
+}
+
+.navbar-fixed-bottom {
+	min-height:20px;
+	}
+.breadcrumb {
+	margin-bottom:0;
+}	

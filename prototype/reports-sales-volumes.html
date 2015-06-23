@@ -54,7 +54,7 @@
 					<li><a href="logistics-liftings.html">Liftings</a></li>
 					<li><a href="logistics-inventory.html">Inventory</a></li>			
 		          </ul>	
-				<li class="active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reports <span class="caret"></span></a>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reports <span class="caret"></span></a>
 				  <ul class="dropdown-menu" role="menu">
 					<li><a href="reports-sta-report.html">STA report</a></li>
 					<li class="active"><a href="reports-sales-volumes.html">Sales volumes</a></li>
@@ -82,7 +82,54 @@
 			</ul>
 		</div>		
       </div>
-    </div>		
+    </div>
+	<div class="container-fluid">
+		<div class="row toolbar">	
+			<div class="col-xs-3">
+				<div class="input-group">
+			      <span class="input-group-btn">
+					  <a href="logistics-inventory-historic.html" class="btn btn-default" title="Go to previous day"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			      </span>
+					<input id="datepicker" class="form-control" type="text" placeholder="Set working day" value="Wed 01 Jan 2014">
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default" title="Go to next day"> <span class="glyphicon glyphicon-chevron-right"></span></button>
+					</span>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="table-responsive">
+						<table class="table table-condensed table-hover">
+						  	<thead>
+								<tr><th>Week ending</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th><th>Total</th><th>Est M3</th></tr>
+							</thead>
+							<tbody>
+								<tr><td>07/12/2014 (2014 wk 44)</td><td>8,411</td><td>7,910</td><td>8,289</td><td>8,898</td><td>9,687</td><td>7,844</td><td>6,008</td><td>57,047</td><td>57.0</td></tr>
+								<tr class="text-muted"><td>Year on year change</td><td>6.6%</td><td>3.5%</td><td>-0.8%</td><td>-2.6%</td><td>-0.7%</td><td>-5.6%</td><td>-5.9%</td><td>-0.7%</td><td>-0.8%</td></tr>
+								<tr><td>30/11/2014 (2014 wk 43)</td><td>8,411</td><td>7,910</td><td>8,289</td><td>8,898</td><td>9,687</td><td>7,844</td><td>6,008</td><td>57,047</td><td>57.0</td></tr>
+								<tr class="text-muted"><td>Year on year change</td><td>6.6%</td><td>3.5%</td><td>-0.8%</td><td>-2.6%</td><td>-0.7%</td><td>-5.6%</td><td>-5.9%</td><td>-0.7%</td><td>-0.8%</td></tr>
+								<tr><td>23/12/2014 (2014 wk 42)</td><td>8,411</td><td>7,910</td><td>8,289</td><td>8,898</td><td>9,687</td><td>7,844</td><td>6,008</td><td>57,047</td><td>57.0</td></tr>
+								<tr class="text-muted"><td>Year on year change</td><td>6.6%</td><td>3.5%</td><td>-0.8%</td><td>-2.6%</td><td>-0.7%</td><td>-5.6%</td><td>-5.9%</td><td>-0.7%</td><td>-0.8%</td></tr>
+								<tr><td>16/11/2014 (2014 wk 41)</td><td>8,411</td><td>7,910</td><td>8,289</td><td>8,898</td><td>9,687</td><td>7,844</td><td>6,008</td><td>57,047</td><td>57.0</td></tr>
+								<tr class="text-muted"><td>Year on year change</td><td>6.6%</td><td>3.5%</td><td>-0.8%</td><td>-2.6%</td><td>-0.7%</td><td>-5.6%</td><td>-5.9%</td><td>-0.7%</td><td>-0.8%</td></tr>
+								<tr><td>09/11/2014 (2014 wk 40)</td><td>8,411</td><td>7,910</td><td>8,289</td><td>8,898</td><td>9,687</td><td>7,844</td><td>6,008</td><td>57,047</td><td>57.0</td></tr>
+								<tr class="text-muted"><td>Year on year change</td><td>6.6%</td><td>3.5%</td><td>-0.8%</td><td>-2.6%</td><td>-0.7%</td><td>-5.6%</td><td>-5.9%</td><td>-0.7%</td><td>-0.8%</td></tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>	
+<!-- Footer -->	
+	<div class="navbar navbar-default navbar-fixed-bottom">
+	   	<ol class="breadcrumb text-muted small">
+		  <li>PUMPS</li>
+		  <li>Reports</li>
+		  <li>Sales volumes</li>
+		</ol>
+	</div>	
    <!-- Bootstrap core JavaScript
    ================================================== -->
    <!-- Placed at the end of the document so the pages load faster -->

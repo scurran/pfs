@@ -83,6 +83,32 @@
 		</div>		
       </div>
     </div>
+	<div class="container-fluid">
+		<div class="row toolbar">	
+			<div class="col-xs-12">
+				<button class="btn btn-link"  data-toggle="modal" data-target="#AddTerminal">
+					<span class="glyphicon glyphicon-plus"></span>
+					Add a terminal
+				</button>	
+			</div>
+		</div>	
+		<div class="row">	
+			<div class="col-xs-12">
+				<div class="table-responsive">
+					<table class="table table-condensed table-hover">
+					  <thead>
+						<tr><th><a href="terminals-list-sort.html">Terminal</a></th><th><a href="">Brand</a></th><th>Postcode</th><th><a href="">Feed type</a></th><th><a href="">Weekly contract amount</a></th><th></th></tr>
+						</thead>
+						<tbody>
+							<tr><td class="text-uppercase">Avonmouth</td><td class="text-uppercase">Esso</td><td><a href="https://www.google.co.uk/maps?q=BS11+9BW">AB1 2QW</a></td><td>Pipeline</td><td>800,000</td><td><button class="btn btn-default btn-sm pull-right" data-toggle="modal" data-target="#EditTerminal">Edit</button></td></tr>
+							<tr><td class="text-uppercase">Birmingham</td><td class="text-uppercase">Esso</td><td><a href="https://www.google.co.uk/maps?q=B24+8DN">B24 8DN</a></td><td>Pipeline</td><td>3,000,000</td><td><button class="btn btn-default btn-sm pull-right">Edit </button></td></tr>
+							<tr><td class="text-uppercase">Cardiff</td><td class="text-uppercase">Valero</td><td><a href="https://www.google.co.uk/maps?q=CF10+4US">CF10 4US</a></td><td>Sea</td><td>3,000,000</td><td><button class="btn btn-default btn-sm pull-right">Edit</button></td></tr>
+						</tbody>
+					</table>
+				</div>	
+			</div>
+		</div>	
+	</div>
 <!-- Footer -->	
 	<div class="navbar navbar-default navbar-fixed-bottom">
 	   	<ol class="breadcrumb text-muted small">
@@ -90,7 +116,147 @@
 		  <li>Configuration</li>
 		  <li>Manage terminals</li>
 		</ol>
-	</div>		
+	</div>
+<!-- Add terminal modal -->
+<div class="modal fade" id="AddTerminal" tabindex="-1" role="dialog" aria-labelledby="AddTerminal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Add terminal</h4>
+      </div>
+      <div class="modal-body">
+			<form role="form">
+			  <div class="form-group">
+			    <label for="terminalName">Terminal name</label>
+			    <input type="text" class="form-control" id="terminalName">
+			  </div>
+			  <div class="form-group">
+			    <label for="terminalBrand">Brand</label>
+			    <select class="form-control" id="terminalBrand">
+				<option>Select an existing brand</option>
+				<option>Conoco</option>	
+				<option>Esso</option>	
+				<option>Greenergy</option>
+				<option>P66</option>
+				<option>Total</option>	
+				<option>Valero</option>								
+				</select>
+			  </div>
+			  <div class="form-group">
+			    <label for="terminalBrand" class="sr-only">New brand</label>
+				<input type="text" class="form-control" id="terminalBrandNew" placeholder="Enter a new brand">
+			  </div>
+			  <div class="form-group">
+			    <label for="terminalPostcode">Postcode</label>
+			    <input type="text" class="form-control" id="terminalPostcode">
+			  </div>
+			<div class="form-group">
+				<label>Feed type</label>
+			    
+				<div class="checkbox">
+				  <label>
+				    <input type="checkbox" value="">
+				    Pipeline
+				  </label>
+				</div>
+				<div class="checkbox">
+				  <label>
+				    <input type="checkbox" value="">
+				    Rail
+				  </label>
+				</div>
+				<div class="checkbox">
+				  <label>
+				    <input type="checkbox" value="">
+				    Refinery
+				  </label>
+				</div>
+				<div class="checkbox">
+				  <label>
+				    <input type="checkbox" value="">
+				    Sea
+				  </label>
+				</div>
+			</div>	
+			  <div class="form-group">
+			    <label for="terminalPostcode">Weekly contract amount</label>
+			    <input type="text" class="form-control" id="terminalPostcode">
+			  </div>
+			</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Edit terminal modal -->
+<div class="modal fade" id="EditTerminal" tabindex="-1" role="dialog" aria-labelledby="EditTerminal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Edit terminal</h4>
+      </div>
+      <div class="modal-body">
+			<form role="form">
+			  <div class="form-group">
+			    <label for="terminalName">Terminal name</label>
+			    <input type="text" class="form-control" id="terminalName" value="Avonmouth">
+			  </div>
+			  <div class="form-group">
+			    <label for="terminalBrand">Brand</label>
+			    <input type="text" class="form-control" id="terminalBrand" value="Esso">
+			  </div>
+			  <div class="form-group">
+			    <label for="terminalPostcode">Postcode</label>
+			    <input type="text" class="form-control" id="terminalPostcode" value="AB1 2QW">
+			  </div>
+			<div class="form-group">
+				<label>Feed type</label>
+			    
+				<div class="checkbox">
+				  <label>
+				    <input type="checkbox" value="" checked>
+				    Pipeline
+				  </label>
+				</div>
+				<div class="checkbox">
+				  <label>
+				    <input type="checkbox" value="">
+				    Rail
+				  </label>
+				</div>
+				<div class="checkbox">
+				  <label>
+				    <input type="checkbox" value="">
+				    Refinery
+				  </label>
+				</div>
+				<div class="checkbox">
+				  <label>
+				    <input type="checkbox" value="">
+				    Sea
+				  </label>
+				</div>
+			</div>	
+			  <div class="form-group">
+			    <label for="terminalPostcode">Weekly contract amount</label>
+			    <input type="text" class="form-control" id="terminalPostcode" value="3,000,000">
+			  </div>
+			</form>
+      </div>
+      <div class="modal-footer">
+		<button type="button" class="btn btn-link pull-left"><span class="glyphicon glyphicon-remove"></span> Delete</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->			
    <!-- Bootstrap core JavaScript
    ================================================== -->
    <!-- Placed at the end of the document so the pages load faster -->

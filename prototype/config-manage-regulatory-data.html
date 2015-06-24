@@ -83,6 +83,107 @@
 		</div>		
       </div>
     </div>	
+	<div class="container-fluid" data-spy="affix" data-offset-top="60">
+		<div class="row toolbar">	
+			<div class="col-xs-12">											
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="modal" data-target="#AddVATRate">
+					  <span class="glyphicon glyphicon-plus"></span>
+					  Add VAT rate
+					</button>
+					<button type="button" class="btn btn-link" data-toggle="modal" data-target="#AddRTFORate">
+					  <span class="glyphicon glyphicon-plus"></span>
+					  Add RTFO rate
+					</button>
+					<button type="button" class="btn btn-link" data-toggle="modal" data-target="#AddDutyAmounts">
+					  <span class="glyphicon glyphicon-plus"></span>
+					  Add duty amounts
+					</button>
+				</div>
+			</div>	
+		</div>
+	</div>	
+	<div class="container-fluid">		
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">VAT rates</div>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-condensed">
+								<thead>
+									<tr><th>Effective date</th><th>VAT rate</th><th><!-- empty cell --></th></tr>
+								</thead>
+								<tbody>
+									<tr><td>01/01/2015</td><td>17.5%</td><td><button class="btn btn-default" data-toggle="modal" data-target="#EditVATRate">Edit</button></td></tr>
+									<tr><td>04/01/2011</td><td>20%</td><td><!-- empty cell --></td></tr>
+									<tr><td>04/01/2011</td><td>20%</td><td><!-- empty cell --></td></tr>
+									<tr><td>01/01/2010</td><td>17.5%</td><td><!-- empty cell --></td></tr>
+									<tr><td>01/01/2009</td><td>15%</td><td><!-- empty cell --></td></tr>
+									<tr><td>01/01/2000</td><td>17.5%</td><td><!-- empty cell --></td></tr>							
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>		
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">RTFO rates</div>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-condensed">
+								<thead>
+									<tr><th>Effective date</th><th>RTFO rate</th><th><!-- empty cell --></th></tr>
+								</thead>
+								<tbody>
+									<tr><td>15/04/2014</td><td>5.00%</td><td><button class="btn btn-default" data-toggle="modal" data-target="#EditRTFORate">Edit</button></td></tr>
+									<tr><td>15/04/2013</td><td>5.00%</td><td><!-- empty cell --></td></tr>
+									<tr><td>15/04/2012</td><td>4.50%</td><td><!-- empty cell --></td></tr>
+									<tr><td>15/04/2011</td><td>4.00%</td><td><!-- empty cell --></td></tr>
+									<tr><td>01/04/2010</td><td>3.50%</td><td><!-- empty cell --></td></tr>
+									<tr><td>01/01/2000</td><td>0.00%</td><td><!-- empty cell --></td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>	
+				</div>	
+			</div>
+			<div class="col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">Duty amounts</div>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-condensed duty-table">
+								<thead>
+									<tr>
+										<th>Effective date</th>
+										<th title="Retail product name"><span class="help-block" title="Feedstock">Unleaded</span> Unleaded</th>
+										<th title="Retail product name"><span class="help-block" title="Feedstock">Diesel</span> Diesel</th>
+										<th title="Retail product name"><span class="help-block" title="Feedstock">Diesel</span> Gasoil</th>
+										<th title="Retail product name"><span class="help-block" title="Feedstock">Ethanol</span> Unleaded</th>
+										<th title="Retail product name"><span class="help-block" title="Feedstock">Red Bio-diesel</span> Diesel</th>
+										<th title="Retail product name"><span class="help-block" title="Feedstock">Red Bio-diesel</span> Gasoil</th>
+										<th title="Retail product name"><span class="help-block" title="Feedstock">LPG</span> LPG</th>
+										<th title="Retail product name"><span class="help-block" title="Feedstock">Med Unleaded</span> Unleaded</th>
+										<th title="Retail product name"><span class="help-block" title="Feedstock">Med Unleaded</span> Super</th>
+										<th title="Retail product name"><span class="help-block" title="Feedstock">Med Diesel</span> Diesel</th>
+										<th><!-- empty cell --></th>
+									</tr>	
+								</thead>
+								<tbody>
+									<tr><td>01/04/2011</td><td title="Unit price is pence-per-litre (ppl)">57.95</td><td title="Unit price is pence-per-litre (ppl)">57.95</td><td title="Unit price is pence-per-litre (ppl)">11.14</td><td title="Unit price is pence-per-litre (ppl)">57.95</td><td title="Unit price is pence-per-litre (ppl)">57.95</td><td title="Unit price is pence-per-litre (ppl)">11.14</td><td title="Unit price is pence-per-litre (ppl)">15.80</td><td title="Unit price is pounds-per-ton (&pound;/t)">290.00</td><td title="Unit price is pounds-per-ton (&pound;/t)">290.00</td><td title="Unit price is pounds-per-ton (&pound;/t)">220.00</td><td><button class="btn btn-default" data-toggle="modal" data-target="#EditDutyAmounts">Edit</button></td></tr>
+									<tr><td>01/04/2011</td><td title="Unit price is pence-per-litre (ppl)">57.95</td><td title="Unit price is pence-per-litre (ppl)">57.95</td><td title="Unit price is pence-per-litre (ppl)">11.14</td><td title="Unit price is pence-per-litre (ppl)">57.95</td><td title="Unit price is pence-per-litre (ppl)">57.95</td><td title="Unit price is pence-per-litre (ppl)">11.14</td><td title="Unit price is pence-per-litre (ppl)">15.80</td><td title="Unit price is pounds-per-ton (&pound;/t)">290.00</td><td title="Unit price is pounds-per-ton (&pound;/t)">290.00</td><td title="Unit price is pounds-per-ton (&pound;/t)">220.00</td><td></td></tr>
+									<tr><td>01/04/2011</td><td title="Unit price is pence-per-litre (ppl)">57.95</td><td title="Unit price is pence-per-litre (ppl)">57.95</td><td title="Unit price is pence-per-litre (ppl)">11.14</td><td title="Unit price is pence-per-litre (ppl)">57.95</td><td title="Unit price is pence-per-litre (ppl)">57.95</td><td title="Unit price is pence-per-litre (ppl)">11.14</td><td title="Unit price is pence-per-litre (ppl)">15.80</td><td title="Unit price is pounds-per-ton (&pound;/t)">290.00</td><td title="Unit price is pounds-per-ton (&pound;/t)">290.00</td><td title="Unit price is pounds-per-ton (&pound;/t)">220.00</td><td></td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>		
+			</div>						
+		</div>	
+	</div>
+
 <!-- Footer -->	
 	<div class="navbar navbar-default navbar-fixed-bottom">
 	   	<ol class="breadcrumb text-muted small">
@@ -91,6 +192,297 @@
 		  <li>Manage regulatory data</li>
 		</ol>
 	</div>	
+	
+<!-- Add VAT rate modal -->
+<div class="modal fade" id="AddVATRate" tabindex="-1" role="dialog" aria-labelledby="AddVATRate" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Add VAT rate</h4>
+      </div>
+      <div class="modal-body">
+			<form role="form">
+				<div class="row">
+					<div class="form-group col-xs-6">
+					<label class="control-label">Effective date</label>
+				    <input type="text" class="form-control" placeholder="DD/MM/YYYY">	
+				  </div>
+				  <div class="form-group col-xs-6">
+					<label class="control-label">VAT rate</label>
+					<div class="input-group">
+				    <input type="text" class="form-control">	
+					<div class="input-group-addon">%</div>
+					</div>
+				  </div>
+			  </div>
+			</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->	
+
+<!-- Add RFO rate modal -->
+<div class="modal fade" id="AddRTFORate" tabindex="-1" role="dialog" aria-labelledby="AddRTFORate" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Add <acronym title="Renewable Transport Fuel Obligation">RTFO</acronym> rate</h4>
+      </div>
+      <div class="modal-body">
+			<form role="form">
+				<div class="row">
+					<div class="form-group col-xs-6">
+						<label class="control-label">Effective date</label>
+						<input type="text" class="form-control" placeholder="DD/MM/YYYY">	
+					</div>
+					<div class="form-group col-xs-6">
+						<label class="control-label">RTFO rate</label>
+						<div class="input-group">
+							<input type="text" class="form-control">	
+							<div class="input-group-addon">%</div>
+						</div>
+					</div>
+			  </div>
+			</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Add duty amounts modal -->
+<div class="modal fade" id="AddDutyAmounts" tabindex="-1" role="dialog" aria-labelledby="AddDutyAmounts" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Add duty amounts</h4>
+      </div>
+      <div class="modal-body">
+			<form role="form">
+				<div class="row">
+				  <div class="form-group col-xs-6">
+					<label class="control-label">Effective date</label>
+				    <input type="text" class="form-control" placeholder="DD/MM/YYYY">	
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Unleaded</span>
+					<label class="control-label" title="Retail product name">Unleaded <span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    <input type="text" class="form-control">
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Diesel</span>
+					<label class="control-label" title="Retail product name">Diesel <span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    	<input type="text" class="form-control">
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block">Diesel</span>
+					<label class="control-label" title="Retail product name">Gasoil <span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    	<input type="text" class="form-control">	
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Ethanol</span>
+					<label class="control-label" title="Retail product name">Unleaded<span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    	<input type="text" class="form-control">
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Red Bio-diesel</span>
+					<label class="control-label" title="Retail product name">Diesel <span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    	<input type="text" class="form-control">
+				  </div>
+				<div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Red Bio-diesel</span>
+					<label class="control-label" title="Retail product name">Gasoil<span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    	<input type="text" class="form-control">
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">LPG</span>							
+					<label class="control-label" title="Retail product name">LPG <span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    	<input type="text" class="form-control">
+				  </div>	
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Med Unleaded</span>
+					<label class="control-label" title="Retail product name">Unleaded <span class="badge badge-unit-price" title="Unit price">&pound;/t</span></label>
+				    	<input type="text" class="form-control">
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Med Unleaded </span>
+					<label class="control-label" title="Retail product name">Super<span class="badge badge-unit-price" title="Unit price">&pound;/t</span></label>
+				    	<input type="text" class="form-control">
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Med Diesel</span>
+					<label class="control-label" title="Retail product name">Med Diesel <span class="badge badge-unit-price" title="Unit price">&pound;/t</span></label>
+				    	<input type="text" class="form-control">
+				  </div>
+				</div>	
+			</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Edit VAT rate modal -->
+<div class="modal fade" id="EditVATRate" tabindex="-1" role="dialog" aria-labelledby="EditVATRate" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Edit VAT rate</h4>
+      </div>
+      <div class="modal-body">
+			<form role="form">
+				<div class="row">
+					<div class="form-group col-xs-6">
+					<label class="control-label">Effective date</label>
+				    <input type="text" class="form-control" value="01/01/2011">	
+				  </div>
+				  <div class="form-group col-xs-6">
+					<label class="control-label">VAT rate</label>
+					<div class="input-group">
+				    <input type="text" class="form-control" value="17.5">	
+					<div class="input-group-addon">%</div>
+					</div>
+				  </div>
+			  </div>
+			</form>
+      </div>
+      <div class="modal-footer">
+		<button type="button" class="btn btn-link pull-left"><span class="glyphicon glyphicon-remove"></span> Delete</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->	
+
+<!-- Edit RFO rate modal -->
+<div class="modal fade" id="EditRTFORate" tabindex="-1" role="dialog" aria-labelledby="EditRTFORate" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Edit <acronym title="Renewable Transport Fuel Obligation">RTFO</acronym> rate</h4>
+      </div>
+      <div class="modal-body">
+			<form role="form">
+				<div class="row">
+					<div class="form-group col-xs-6">
+					<label class="control-label">Effective date</label>
+				    <input type="text" class="form-control" value="15/04/2014" placeholder="DD/MM/YYYY">	
+				  </div>
+				  <div class="form-group col-xs-6">
+					<label class="control-label">RTFO rate</label>
+					<div class="input-group">
+				    <input type="text" class="form-control" value="5.00">	
+					<div class="input-group-addon">%</div>
+					</div>
+				  </div>
+			  </div>
+			</form>
+      </div>
+      <div class="modal-footer">
+		<button type="button" class="btn btn-link pull-left"><span class="glyphicon glyphicon-remove"></span> Delete</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Edit duty amounts modal -->
+<div class="modal fade" id="EditDutyAmounts" tabindex="-1" role="dialog" aria-labelledby="EditDutyAmounts" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Edit duty amounts</h4>
+      </div>
+      <div class="modal-body">
+			<form role="form">
+				<div class="row">
+				  <div class="form-group col-xs-6">
+					<label class="control-label">Effective date</label>
+				    <input type="text" class="form-control" value="01/01/2011" placeholder="DD/MM/YYYY">	
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Unleaded</span>
+					<label class="control-label" title="Retail product name">Unleaded <span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    	<input type="text" class="form-control" value="57.95">
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Diesel</span>
+					<label class="control-label" title="Retail product name">Diesel <span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    	<input type="text" class="form-control" value="57.95">
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block">Diesel</span>
+					<label class="control-label" title="Retail product name">Gasoil <span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    	<input type="text" class="form-control" value="11.14">	
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Ethanol</span>
+					<label class="control-label" title="Retail product name">Unleaded<span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    	<input type="text" class="form-control" value="57.95">
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Red Bio-diesel</span>
+					<label class="control-label" title="Retail product name">Diesel <span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    	<input type="text" class="form-control" value="57.95">
+				  </div>
+				<div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Red Bio-diesel</span>
+					<label class="control-label" title="Retail product name">Gasoil<span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    	<input type="text" class="form-control" value="11.14">
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-2">
+					<span class="help-block" title="Feedstock">LPG</span>							
+					<label class="control-label" title="Retail product name">LPG <span class="badge badge-unit-price" title="Unit price">ppl</span></label>
+				    	<input type="text" class="form-control" value="15.80">
+				  </div>	
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Med Unleaded</span>
+					<label class="control-label" title="Retail product name">Unleaded <span class="badge badge-unit-price" title="Unit price">&pound;/t</span></label>
+				    	<input type="text" class="form-control" value="290.00">
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Med Unleaded </span>
+					<label class="control-label" title="Retail product name">Super<span class="badge badge-unit-price" title="Unit price">&pound;/t</span></label>
+				    	<input type="text" class="form-control" value="220.00">
+				  </div>
+				  <div class="form-group col-xs-6 col-sm-3">
+					<span class="help-block" title="Feedstock">Med Diesel</span>
+					<label class="control-label" title="Retail product name">Med Diesel <span class="badge badge-unit-price" title="Unit price">&pound;/t</span></label>
+				    	<input type="text" class="form-control" value="290.00">
+				  </div>
+				</div>	
+			</form>
+      </div>
+      <div class="modal-footer">
+		<button type="button" class="btn btn-link pull-left"><span class="glyphicon glyphicon-remove"></span> Delete</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
    <!-- Bootstrap core JavaScript
    ================================================== -->
    <!-- Placed at the end of the document so the pages load faster -->

@@ -83,45 +83,66 @@
 		</div>		
       </div>
     </div>
-		<div class="container-fluid">
-			<div class="row toolbar">	
-				<div class="col-xs-3">
-					<div class="input-group">
-				      <span class="input-group-btn">
-						  <button type="button" class="btn btn-default" title="Go to previous day"><span class="glyphicon glyphicon-chevron-left"></span></button>
-				      </span>
-						<input id="datepicker" class="form-control" type="text" placeholder="Set working day" value="Mon 01 Dec 2014">
-						<span class="input-group-btn">
-							<button type="button" class="btn btn-default" title="Go to next day"> <span class="glyphicon glyphicon-chevron-right"></span></button>
-						</span>	
-						</div>
-					</div>
-				</div>		
-			<div class="row">
-				<div class="col-xs-12">					
-					<table class="table table-condensed table-hover table-retail-prices">
-						<thead>
-							<tr><th><!--empty cell --></th><th colspan="3">Unleaded</th><th colspan="3">Diesel</th><th colspan="3">Gasoil</th><th colspan="3">LPG</th></tr>	
-						</thead>
-						<tbody>
-							<tr>
-								<th>001 Chingford</th>
-								<td class="text-muted small" title="Previous day's Unleaded price">114.9</td><td title="Today's Unleaded price">114.9</td><td class="text-muted small" title="Next day's Unleaded price">114.9</td>
-								<td class="text-muted small" title="Previous day's Diesel price">114.9</td><td title="Today's Diesel price">114.9</td><td class="text-muted small" title="Next day's Diesel price">114.9</td>
-								<td class="text-muted small" title="Previous day's Gasoil price">114.9</td><td title="Today's Gasoil price">114.9</td><td class="text-muted small" title="Next day's  Gasoil price">114.9</td>
-								<td class="text-muted small" title="Previous day's LPG price">114.9</td><td title="Today's LPG price">114.9</td><td class="text-muted small" title="Next day's LPG price">114.9</td>
-							</tr>
-							<tr>
-								<th>002 Mayo Avenue</th>
-								<td class="text-muted small" title="Previous day's Unleaded price">114.9</td><td title="Today's Unleaded price">114.9</td><td class="text-muted small" title="Next day's Unleaded price">114.9</td>
-								<td class="text-muted small" title="Previous day's Diesel price">114.9</td><td title="Today's Diesel price">114.9</td><td class="text-muted small" title="Next day's Diesel price">114.9</td>
-								<td class="text-muted small" title="Previous day's Gasoil price">114.9</td><td title="Today's Gasoil price">114.9</td><td class="text-muted small" title="Next day's  Gasoil price">114.9</td>
-								<td class="text-muted small" title="Previous day's LPG price">114.9</td><td title="Today's LPG price">114.9</td><td class="text-muted small" title="Next day's LPG price">114.9</td>
-						</tbody>	
-					</table>					
+	<div class="container-fluid">
+		<div class="row toolbar">	
+			<div class="col-xs-12 col-sm-3">
+				<div class="input-group">
+			      <span class="input-group-btn">
+					  <button type="button" class="btn btn-default" title="Go to previous day"><span class="glyphicon glyphicon-chevron-left"></span></button>
+			      </span>
+					<input class="form-control" type="text" placeholder="Set working day" value="Mon 01 Dec 2014">
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default" title="Go to next day"> <span class="glyphicon glyphicon-chevron-right"></span></button>
+					</span>	
 				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6">											
+				<div class="btn-group">
+					<button type="button" class="btn btn-link" data-toggle="modal" data-target="#Refresh">
+					  <span class="glyphicon glyphicon-refresh"></span>
+					  Refresh prices
+					</button>
+					<button type="button" class="btn btn-link" data-toggle="modal" data-target="#Accept">
+					  <span class="glyphicon glyphicon-ok"></span>
+					  Accept changes
+					</button>
+				</div>
+				<label class="checkbox-inline form-control-static">
+				  <input type="checkbox" id="inlineCheckbox1" value="option1"> Only show price changes
+				</label>
+			</div>
+			<div class="col-xs-12 col-sm-3">
+				<div class="input-group">
+				    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span>				      
+					<input type="text" class="form-control" placeholder="Search for a term">
+			    </div>
 			</div>	
-		</div>
+		</div>		
+		<div class="row">
+			<div class="col-xs-12">					
+				<table class="table table-condensed table-hover table-retail-prices">
+					<thead>
+						<tr><th>Site</th><th colspan="3">Unleaded</th><th colspan="3">Diesel</th><th colspan="3">Gasoil</th><th colspan="3">LPG</th></tr>	
+					</thead>
+					<tbody>
+						<tr>
+							<th>001 Chingford</th>
+							<td class="text-muted small" title="Previous day's Unleaded price">114.9</td><td title="Today's Unleaded price">114.9</td><td class="text-muted small" title="Next day's Unleaded price">114.9</td>
+							<td class="text-muted small" title="Previous day's Diesel price">114.9</td><td title="Today's Diesel price">114.9</td><td class="text-muted small" title="Next day's Diesel price">114.9</td>
+							<td class="text-muted small" title="Previous day's Gasoil price">114.9</td><td title="Today's Gasoil price">114.9</td><td class="text-muted small" title="Next day's  Gasoil price">114.9</td>
+							<td class="text-muted small" title="Previous day's LPG price">114.9</td><td title="Today's LPG price">114.9</td><td class="text-muted small" title="Next day's LPG price">114.9</td>
+						</tr>
+						<tr>
+							<th>002 Mayo Avenue</th>
+							<td class="text-muted small" title="Previous day's Unleaded price">114.9</td><td title="Today's Unleaded price">114.9</td><td class="text-muted small" title="Next day's Unleaded price">114.9</td>
+							<td class="text-muted small" title="Previous day's Diesel price">114.9</td><td title="Today's Diesel price">114.9</td><td class="text-muted small" title="Next day's Diesel price">114.9</td>
+							<td class="text-muted small" title="Previous day's Gasoil price">114.9</td><td title="Today's Gasoil price">114.9</td><td class="text-muted small" title="Next day's  Gasoil price">114.9</td>
+							<td class="text-muted small" title="Previous day's LPG price">114.9</td><td title="Today's LPG price">114.9</td><td class="text-muted small" title="Next day's LPG price">114.9</td>
+					</tbody>	
+				</table>					
+			</div>
+		</div>	
+	</div>
 	<!-- Footer -->	
 		<div class="navbar navbar-default navbar-fixed-bottom">
 		   	<ol class="breadcrumb text-muted small">

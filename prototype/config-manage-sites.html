@@ -82,20 +82,66 @@
 			</ul>
 		</div>		
       </div>
-    </div>	
-	<div class="container-fluid">
-		<div class="row toolbar">	
-			<div class="col-xs-12">
-				<button class="btn btn-link"  data-toggle="modal" data-target="#AddSite">
-					<span class="glyphicon glyphicon-plus"></span>
-					Add a site
-				</button>	
+		<div class="container-fluid">
+			<div class="row toolbar">	
+				<div class="col-xs-12 col-sm-9">
+					<button class="btn btn-link"  data-toggle="modal" data-target="#AddSite">
+						<span class="glyphicon glyphicon-plus"></span>
+						Add a site
+					</button>	
+				</div>
+				<div class="col-xs-12 col-sm-3">
+					<div class="input-group">
+					    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span>				      
+						<input type="text" class="form-control" placeholder="Search for a term">
+				    </div>
+				</div>
 			</div>
 		</div>	
+    </div>	
+	<div class="container-fluid">
 		<div class="row">	
 			<div class="col-xs-12">
 				<div class="table-responsive">
-
+					<table class="table table-condensed table-hover">
+						<thead>
+							<tr>
+								<th>Site</th>
+								<th>Location</th>
+								<th>Type</th>
+								<th>Region</th>
+								<th>Fuel sold</th>
+								<th>Supply terminals</th>
+								<th>Kalibrate</th>
+								<th>Open date</th>
+								<th>Close date</th>
+							</tr>	
+						</thead>
+						<tbody>
+							<tr>
+								<td><a href="">003</a></td>
+								<td>Enterprise 5</td>
+								<td>PFS</td>
+								<td>North</td>
+								<td>ULP, ULD, GAS</td>
+								<td>Conoco Bramhall</td>
+								<td>YES</td>
+								<td>01 Jan 2000</td>
+								<td>31 Dec 2010</td>
+							</tr>
+							<tr>
+								<td><a href="">005</a></td>
+								<td>Keighley</td>
+								<td>PFS</td>
+								<td>North </td>
+								<td>ULP, ULD, GAS</td>
+								<td>Conoco Bramhall <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Terminal 2, Terminal 3" style="cursor:pointer;">&plus;</span></td>
+								<td>YES</td>
+								<td>01 Jan 2000</td>
+								<td>31 Dec 2010</td>
+							</tr>
+						</tbody>		
+					</table>	
 				</div>	
 			</div>
 		</div>	
@@ -107,11 +153,113 @@
 		  <li>Configuration</li>
 		  <li>Manage sites</li>
 		</ol>
-	</div>	
+	</div>
+	
+	<!-- Add VAT rate modal -->
+	<div class="modal fade" id="AddSite" tabindex="-1" role="dialog" aria-labelledby="AddSite" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">Add site</h4>
+	      </div>
+	      <div class="modal-body">
+				<form role="form">
+					<div class="row">
+						<div class="form-group col-xs-2">
+							<label class="control-label">Site</label>
+							<input class="form-control" type="text" value="003">
+						</div>	
+						<div class="form-group col-xs-5">
+							<label class="control-label">Location</label>
+							<input class="form-control" type="text" value="Enterprise 5">
+						</div>	
+						<div class="form-group col-xs-4">
+						 	<div class="checkbox-inline">
+							  <label>
+							    <input type="checkbox" value="">
+							    Kalibrate pricing
+							  </label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-xs-3">
+						 	<label class="control-label">Open date</label>
+						 	<input class="form-control" type="text">
+						</div>
+						<div class="form-group col-xs-3">
+					 	 	<label class="control-label">Close date</label>
+						 	<input class="form-control" type="text">
+						</div>
+						<div class="form-group col-xs-3">
+							<strong>Type</strong>
+							<div class="checkbox">
+							  <label>
+							    <input type="checkbox" value="">
+							    PFS
+							  </label>
+							</div>	
+							<div class="checkbox">
+							  <label>
+							    <input type="checkbox" value="">
+							    RDS
+							  </label>
+							</div>
+						</div>
+						<div class="form-group col-xs-3">
+							<strong>Region</strong>
+						 	<div class="radio">
+							  <label>
+							    <input type="radio" value="">
+							    North
+							  </label>
+							</div>
+							<div class="radio">
+							  <label>
+							    <input type="radio" value="">
+							    Central
+							  </label>
+							</div>
+							<div class="radio">
+							  <label>
+							    <input type="radio" value="">
+							    South East
+							  </label>
+							</div>
+							<div class="radio">
+							  <label>
+							    <input type="radio" value="">
+							    South West
+							  </label>
+							</div>
+						</div>
+					</div>
+					<div class="row">	
+						<div class="form-group col-xs-12">
+						 	<strong>Supply terminals</strong>
+						 	<p class="form-control-static">Terminal name</p>
+						</div>
+						
+				  </div>
+				</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+	        <button type="button" class="btn btn-primary">Save</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->		
    <!-- Bootstrap core JavaScript
    ================================================== -->
    <!-- Placed at the end of the document so the pages load faster -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+	<script>
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+	</script
  </body>
 </html>

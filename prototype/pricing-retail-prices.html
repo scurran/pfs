@@ -82,42 +82,44 @@
 			</ul>
 		</div>		
       </div>
+		<div class="container-fluid">
+			<div class="row toolbar">	
+				<div class="col-xs-12 col-sm-3">
+					<div class="input-group">
+				      <span class="input-group-btn">
+						  <button type="button" class="btn btn-default" title="Go to previous day"><span class="glyphicon glyphicon-chevron-left"></span></button>
+				      </span>
+						<input class="form-control" type="text" placeholder="Set working day" value="Mon 01 Dec 2014">
+						<span class="input-group-btn">
+							<button type="button" class="btn btn-default" title="Go to next day"> <span class="glyphicon glyphicon-chevron-right"></span></button>
+						</span>	
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">											
+					<div class="btn-group">
+						<button type="button" class="btn btn-link" data-toggle="modal" data-target="#Refresh">
+						  <span class="glyphicon glyphicon-refresh"></span>
+						  Refresh prices
+						</button>
+						<button type="button" class="btn btn-link" data-toggle="modal" data-target="#Accept">
+						  <span class="glyphicon glyphicon-ok"></span>
+						  Accept changes
+						</button>
+					</div>
+					<label class="checkbox-inline form-control-static">
+					  <input type="checkbox" id="inlineCheckbox1" value="option1"> Only show price changes
+					</label>
+				</div>
+				<div class="col-xs-12 col-sm-3">
+					<div class="input-group">
+					    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span>				      
+						<input type="text" class="form-control" placeholder="Search for a term">
+				    </div>
+				</div>	
+			</div>
+		</div>	
     </div>
-	<div class="container-fluid">
-		<div class="row toolbar">	
-			<div class="col-xs-12 col-sm-3">
-				<div class="input-group">
-			      <span class="input-group-btn">
-					  <button type="button" class="btn btn-default" title="Go to previous day"><span class="glyphicon glyphicon-chevron-left"></span></button>
-			      </span>
-					<input class="form-control" type="text" placeholder="Set working day" value="Mon 01 Dec 2014">
-					<span class="input-group-btn">
-						<button type="button" class="btn btn-default" title="Go to next day"> <span class="glyphicon glyphicon-chevron-right"></span></button>
-					</span>	
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6">											
-				<div class="btn-group">
-					<button type="button" class="btn btn-link" data-toggle="modal" data-target="#Refresh">
-					  <span class="glyphicon glyphicon-refresh"></span>
-					  Refresh prices
-					</button>
-					<button type="button" class="btn btn-link" data-toggle="modal" data-target="#Accept">
-					  <span class="glyphicon glyphicon-ok"></span>
-					  Accept changes
-					</button>
-				</div>
-				<label class="checkbox-inline form-control-static">
-				  <input type="checkbox" id="inlineCheckbox1" value="option1"> Only show price changes
-				</label>
-			</div>
-			<div class="col-xs-12 col-sm-3">
-				<div class="input-group">
-				    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span>				      
-					<input type="text" class="form-control" placeholder="Search for a term">
-			    </div>
-			</div>	
-		</div>		
+	<div class="container-fluid">		
 		<div class="row">
 			<div class="col-xs-12">					
 				<table class="table table-condensed table-hover table-retail-prices">

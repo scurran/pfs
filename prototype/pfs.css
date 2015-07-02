@@ -4,13 +4,13 @@ min-height: 100%;
 }
 
 body {
-	padding-top:50px;
+	padding-top:120px;
 	padding-bottom: 20px;
 }
 
 .navbar-inverse {
   background-color: #006655;
-    border-color: #006655;
+  border-color: #006655;
 }
 
 .navbar-inverse .navbar-brand {
@@ -38,6 +38,10 @@ body {
 .navbar-inverse .navbar-toggle {
 	background-color: #006655;
     border-color: #fff;
+}
+
+.navbar-fixed-top {
+	border-width: 0;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
@@ -75,9 +79,13 @@ height: 60px;
 }
 
 .btn-link,
+.navbar-inverse .toolbar .btn-link,
 .btn-link:hover,
+.navbar-inverse .toolbar .btn-link:hover,
 .btn-link:focus,
-.btn-link:active {
+.navbar-inverse .toolbar .btn-link:focus,
+.btn-link:active
+.navbar-inverse .toolbar .btn-link:active {
   color: #006655;
 }
 .btn-link:hover,
@@ -142,11 +150,11 @@ a:hover {
 
 /*.table > thead > tr > th, .table > tbody > tr > td {text-align:right;} */
 
-.table th, .table td  { text-align:right; }
+.table-pumps th, .table-pumps td  { text-align:right; }
 
 /*.table th.table-control, .table td.table-control  { text-align:center; }*/
 
-.table th:first-child, .table td:first-child  { text-align:left; }
+.table-pumps th:first-child, .table-pumps td:first-child  { text-align:left; }
 
 /*.table th:last-child, .table td:last-child  { text-align:left; }*/
 
@@ -333,14 +341,6 @@ table.weekly-volumes tr td input {
   	border-color: #ccc;
 }
 
-.tooltip-inner {
-	background-color: #a94442;
-}
-
-.tooltip.bottom .tooltip-arrow {
-  border-bottom-color: #a94442;
-}
-
 .label-default {
 	background-color: #eee;
 	color:#555;	
@@ -359,15 +359,14 @@ table.weekly-volumes tr td input {
 .toolbar {
   min-height: 20px;
   padding: 9px 0;
-  margin-bottom: 20px;
   background-color: #f8f8f8;
   border-bottom: 1px solid #e7e7e7;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
 }
 
-.toolbar-buttons {
-	text-align:center;
+.toolbar .btn-link {
+	color: #337ab7;;
 }
 
 .navbar-fixed-bottom {

@@ -83,18 +83,18 @@
 		</div>		
       </div>
 		<div class="container-fluid">
-			<div class="row toolbar">	
-				<div class="col-xs-12 col-sm-9">
-					<button class="btn btn-link"  data-toggle="modal" data-target="#AddSite">
-						<span class="glyphicon glyphicon-plus"></span>
-						Add a site
-					</button>	
-				</div>
+			<div class="row toolbar">
 				<div class="col-xs-12 col-sm-3">
 					<div class="input-group">
 					    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span>				      
 						<input type="text" class="form-control" placeholder="Search for a term">
 				    </div>
+				</div>	
+				<div class="col-xs-12 col-sm-6">
+					<button class="btn btn-link"  data-toggle="modal" data-target="#AddSite">
+						<span class="glyphicon glyphicon-plus"></span>
+						Add a site
+					</button>	
 				</div>
 			</div>
 		</div>	
@@ -165,122 +165,149 @@
 	      </div>
 	      <div class="modal-body">
 				<form role="form">
-
-						<div class="form-group">
-							<label class="control-label">Site</label>
-							<input class="form-control" type="text" value="003">
+					<div class="form-group">
+						<label class="control-label">Site</label>
+						<input class="form-control" type="text">
+					</div>	
+					<div class="form-group">
+						<label class="control-label">Location</label>
+						<input class="form-control" type="text">
+					</div>	
+					<p><strong>Type</strong></p>
+					<div class="form-group">
+						<div class="checkbox-inline">
+						  <label>
+						    <input type="checkbox" value="">
+						    PFS
+						  </label>
 						</div>	
-						<div class="form-group">
-							<label class="control-label">Location</label>
-							<input class="form-control" type="text" value="Enterprise 5">
+						<div class="checkbox-inline">
+						  <label>
+						    <input type="checkbox" value="">
+						    RDS
+						  </label>
+						</div>
+					</div>
+					<p><strong>Region</strong></p>
+					<div class="form-group">
+					 	<div class="radio-inline">
+						  <label>
+						    <input type="radio" value="">
+						    North
+						  </label>
+						</div>
+						<div class="radio-inline">
+						  <label>
+						    <input type="radio" value="">
+						    Central
+						  </label>
+						</div>
+						<div class="radio-inline">
+						  <label>
+						    <input type="radio" value="">
+						    South East
+						  </label>
+						</div>
+						<div class="radio-inline">
+						  <label>
+						    <input type="radio" value="">
+						    South West
+						  </label>
+						</div>
+					</div>
+					<p><strong>Fuel sold</strong></p>
+					<div class="form-group">
+						<div class="checkbox-inline">
+						  <label>
+						    <input type="checkbox" value="">
+						    ULD
+						  </label>
 						</div>	
-						<div class="form-group">
-						 	<div class="checkbox-inline">
-							  <label>
-							    <input type="checkbox" value="">
-							    Kalibrate pricing enabled?
-							  </label>
-							</div>
+						<div class="checkbox-inline">
+						  <label>
+						    <input type="checkbox" value="">
+						    DSL
+						  </label>
 						</div>
-						<div class="form-group">
-						 	<label class="control-label">Open date</label>
-						 	<input class="form-control" type="text">
+						<div class="checkbox-inline">
+						  <label>
+						    <input type="checkbox" value="">
+						    GAS
+						  </label>
+						</div>	
+						<div class="checkbox-inline">
+						  <label>
+						    <input type="checkbox" value="">
+						    LPG
+						  </label>
 						</div>
-						<div class="form-group">
-					 	 	<label class="control-label">Close date</label>
-						 	<input class="form-control" type="text">
+					</div>
+					<div class="form-group">
+					 	<div class="checkbox-inline">
+						  <label>
+						    <input type="checkbox" value="">
+						    Kalibrate
+						  </label>
 						</div>
-						<h5>Type</h5>
-						
-						<div class="form-group">
-							<div class="checkbox-inline">
-							  <label>
-							    <input type="checkbox" value="">
-							    PFS
-							  </label>
-							</div>	
-							<div class="checkbox-inline">
-							  <label>
-							    <input type="checkbox" value="">
-							    RDS
-							  </label>
-							</div>
-						</div>
-						<h5>Location</h5>
-						<div class="form-group">
-						 	<div class="radio-inline">
-							  <label>
-							    <input type="radio" value="">
-							    North
-							  </label>
-							</div>
-							<div class="radio-inline">
-							  <label>
-							    <input type="radio" value="">
-							    Central
-							  </label>
-							</div>
-							<div class="radio-inline">
-							  <label>
-							    <input type="radio" value="">
-							    South East
-							  </label>
-							</div>
-							<div class="radio-inline">
-							  <label>
-							    <input type="radio" value="">
-							    South West
-							  </label>
-							</div>
-						</div>
-						<h5>Products sold</h5>
-						<div class="form-group">
-							<div class="checkbox-inline">
-							  <label>
-							    <input type="checkbox" value="">
-							    Unleaded
-							  </label>
-							</div>	
-							<div class="checkbox-inline">
-							  <label>
-							    <input type="checkbox" value="">
-							    Diesel
-							  </label>
-							</div>
-							<div class="checkbox-inline">
-							  <label>
-							    <input type="checkbox" value="">
-							    Gasoil
-							  </label>
-							</div>	
-							<div class="checkbox-inline">
-							  <label>
-							    <input type="checkbox" value="">
-							    LPG
-							  </label>
-							</div>
-							<div class="checkbox-inline">
-							  <label>
-							    <input type="checkbox" value="">
-							    Super
-							  </label>
-							</div>	
-							<div class="checkbox-inline">
-							  <label>
-							    <input type="checkbox" value="">
-							    Adblue
-							  </label>
-							</div>
-						</div>
-						<h5>Supply terminals</h5>
-						<div class="form-group">
-					    	<label class="checkbox-inline">
-							  <input type="checkbox" id="inlineCheckbox1" value="option1" checked> Conoco Bramhall
-							</label>
-							<label class="checkbox-inline">
-							  <input type="checkbox" id="inlineCheckbox2" value="option2"checked> Conoco Aberdeen
-							</label>
+					</div>
+					<div class="input-group">
+					  <p class="form-control-static"><strong>Supply terminals</strong></p>
+						<div class="input-group-btn">
+							<button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+							<span class="glyphicon glyphicon-plus"></span>
+							Add terminal
+							</button>
+							  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							    <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="terminal-aberdeen.html">Conoco Aberdeen</a></li>
+							    <li role="presentation"><a role="menuitem" tabindex="-1" href="terminal-bramhall.html">Conoco Bramhall</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Immingham</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Inverness</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Conoco Inverness</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Avonmouth</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Birmingham</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Hythe</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Esso Purfleet</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Greenergy Clydebank</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Greenergy Tees</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Harvest Seal Sands</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ineos Dalston</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mabanaft Avonmouth</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mabanaft Ross</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pace Fuelcare IOW</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Shell Stanlow</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco BOSL</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Cardiff</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Kingsbury</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Plymouth</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texaco Stanlow</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">TFE J41</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">TFE Gadbrook</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total LOR</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total Milford</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Total Nottingham</a></li>
+							</ul>
+						</div>	
+					</div>	
+					<div class="input-group">
+					  <p class="form-control-static">Conoco Aberdeen</p>
+					  <div class="input-group-btn">
+					    <button class="btn btn-link">Remove</button>
 					  </div>
+					</div>
+					<div class="input-group">
+					  <p class="form-control-static">Conoco Bramhall</p>
+					  <div class="input-group-btn">
+					    <button class="btn btn-link">Remove</button>
+					  </div>
+					</div>			
+					<div class="form-group">
+					 	<label class="control-label">Open date</label>
+					 	<input class="form-control" type="text">
+					</div>
+					<div class="form-group">
+				 	 	<label class="control-label">Close date</label>
+					 	<input class="form-control" type="text">
+					</div>
 				</form>
 	      </div>
 	      <div class="modal-footer">

@@ -110,12 +110,36 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>Description</td>
-						    	<td>Morrisons ID</td>
-								<td>VBO reference</td>
-								<td>DHL reference</td>
-						    	<td>Start date</td>
-						    	<td>End date</td>
+								<td><a href="">Unleaded</a></td>
+						    	<td>0123456789</td>
+								<td>ULP</td>
+								<td>ULP</td>
+						    	<td>01/01/2015</td>
+						    	<td></td>
+							</tr>
+							<tr>
+								<td><a href="">Diesel</a></td>
+						    	<td>0123456789</td>
+								<td>ULD</td>
+								<td>ULD</td>
+						    	<td>01/01/2015</td>
+						    	<td></td>
+							</tr>
+							<tr>
+								<td><a href="">Gasoil</a></td>
+						    	<td>0123456789</td>
+								<td>GAS</td>
+								<td>GAS</td>
+						    	<td>01/01/2015</td>
+						    	<td></td>
+							</tr>
+							<tr>
+								<td><a href="">LPG</a></td>
+						    	<td>0123456789</td>
+								<td>LPG</td>
+								<td>LPG</td>
+						    	<td>01/01/2015</td>
+						    	<td></td>
 							</tr>
 						</tbody>
 					</table>
@@ -131,6 +155,49 @@
 		  <li>Manage retail products</li>
 		</ol>
 	</div>	
+<!-- Add retail product modal -->
+<div class="modal fade" id="AddRetailProduct" tabindex="-1" role="dialog" aria-labelledby="AddRetailProduct" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Add retail product</h4>
+      </div>
+      <div class="modal-body">
+			<form role="form">
+			  <div class="form-group">
+			    <label for="productDesc">Description</label>
+			    <input type="text" class="form-control" id="productDesc">
+			  </div>
+			  <div class="form-group">
+			    <label for="morrId">Morrisons ID</label>
+			    <input type="text" class="form-control" id="morrId">
+			  </div>
+			  <div class="form-group">
+			    <label for="vboRef">VBO reference</label>
+			    <input type="text" class="form-control" id="vboRef">
+			  </div>
+			  <div class="form-group">
+			    <label for="dhlRef">DHL reference</label>
+			    <input type="text" class="form-control" id="dhlRef">
+			  </div>
+			  <div class="form-group">
+			    <label for="startDate">Start date</label>
+			    <input type="text" class="form-control" id="startDate">
+			  </div>
+			  <div class="form-group">
+			    <label for="endDate">End date</label>
+			    <input type="text" class="form-control" id="endDate">
+			  </div>			
+			</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->	
    <!-- Bootstrap core JavaScript
    ================================================== -->
    <!-- Placed at the end of the document so the pages load faster -->

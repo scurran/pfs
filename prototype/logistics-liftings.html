@@ -95,28 +95,15 @@
 					</span>	
 					</div>
 				</div>
+				<div class="col-xs-12 col-sm-6">											
+						<button type="button" class="btn btn-link"  data-toggle="modal" data-target="#Import">
+						  <span class="glyphicon glyphicon-import"></span>
+						  Import data
+						</button>
+				</div>
 			</div>
 		</div>	
     </div>	
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="import-box" id="collapseExample">
-					<form role="form">				
-						<div class="form-group">
-						    <label for="exampleInputFile">Data file to import</label>
-						    <input type="file" id="exampleInputFile">
-						  </div>				
-						<div class="form-group">
-							<button type="button" id="importButton" data-loading-text="Loading selected file..." class="btn btn-primary" autocomplete="off">
-							  Import selected file
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>	
 <!-- Footer -->	
 	<div class="navbar navbar-default navbar-fixed-bottom">
 	   	<ol class="breadcrumb text-muted small">
@@ -126,22 +113,48 @@
 		</ol>
 	</div>								
 	
-   <!-- Bootstrap core JavaScript
-   ================================================== -->
-   <!-- Placed at the end of the document so the pages load faster -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-   <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
-	<script>
-	$(function(){
-	    var $btn = $('#importButton');
-	    $btn.click(function(){
-	        var $this = $(this);
-	        $this.attr('disabled', 'disabled').html("Loading selected file...");
-	        setTimeout(function () {
-	            $this.removeAttr('disabled').html('Import selected file');
-	        }, 3000)
-	    });
-	})
-	</script>
+<!-- Import modal -->
+<div class="modal fade" id="Import" tabindex="-1" role="dialog" aria-labelledby="Import" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Import data</h4>
+      </div>
+      <div class="modal-body">
+			<div class="import-box">
+				<form role="form">				
+					<div class="form-group">
+					    <label for="exampleInputFile">Data file to import</label>
+					    <input type="file" id="exampleInputFile">
+					  </div>				
+					<div class="form-group">
+						<a href="logistics-liftings-historic.html" id="importButton" data-loading-text="Loading selected file..." class="btn btn-primary" autocomplete="off">
+						  Import selected file
+						</a>
+					</div>
+				</form>
+			</div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->	
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+<script>
+$(function(){
+    var $btn = $('#importButton');
+    $btn.click(function(){
+        var $this = $(this);
+        $this.attr('disabled', 'disabled').html("Loading selected file...");
+        setTimeout(function () {
+            $this.removeAttr('disabled').html('Import selected file');
+        }, 3000)
+    });
+})
+</script>
  </body>
 </html>

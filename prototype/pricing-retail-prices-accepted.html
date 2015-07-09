@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body>	
 	<div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -110,7 +110,11 @@
     </div>
 	<div class="container-fluid">		
 		<div class="row">
-			<div class="col-xs-12">	
+			<div class="col-xs-12">
+				<div class="alert alert-success">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<p>Price changes accepted. <strong>Prices will be updated overnight</strong>.</p>
+				</div>	
 				<div class="table-responsive">
 				<table class="table table-condensed table-hover table-retail-prices">
 					<thead>
@@ -120,13 +124,11 @@
 							<th colspan="2"><a href="#" data-toggle="modal" data-target="#PriceDistribution">Gasoil</a></th><th><span class="small"><span class="glyphicon glyphicon-arrow-up"></span> 26</span> <span class="small"><span class="glyphicon glyphicon-arrow-down"></span> 0</span></th>
 							<th colspan="2"><a href="#" data-toggle="modal" data-target="#PriceDistribution">LPG</a></th><th><span class="small"><span class="glyphicon glyphicon-arrow-up"></span> 26</span> <span class="small"><span class="glyphicon glyphicon-arrow-down"></span> 0</span></th>
 							<th colspan="2"><a href="#" data-toggle="modal" data-target="#PriceDistribution">Super</a></th><th><span class="small"><span class="glyphicon glyphicon-arrow-up"></span> 26</span> <span class="small"><span class="glyphicon glyphicon-arrow-down"></span> 0</span></th>
-							<th colspan="2"><a href="#" data-toggle="modal" data-target="#PriceDistribution">Adblue</a></th><th><span class="small"><span class="glyphicon glyphicon-arrow-up"></span> 26</span> <span class="small"><span class="glyphicon glyphicon-arrow-down"></span> 0</span></th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr class="small text-muted">
 							<td><span class="glyphicon glyphicon-calendar"></span> Mon 06 July 2015</td>
-							<td>Current</td><td>Proposed</td><td>Scheduled</td>
 							<td>Current</td><td>Proposed</td><td>Scheduled</td>
 							<td>Current</td><td>Proposed</td><td>Scheduled</td>
 							<td>Current</td><td>Proposed</td><td>Scheduled</td>
@@ -140,7 +142,6 @@
 							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Gasoil price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Gasoil price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled Gasoil price">114.9</span></td>
 							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current LPG price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed LPG price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled LPG price">114.9</span></td>
 							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Super price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Super price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled Super price">114.9</span></td>
-							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Adblue price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Adblue price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled Adblue price">114.9</span></td>
 						</tr>
 						<tr>
 							<th>002 Mayo Avenue</th>
@@ -149,7 +150,6 @@
 							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Gasoil price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Gasoil price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled Gasoil price">114.9</span></td>
 							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current LPG price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed LPG price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled LPG price">114.9</span></td>
 							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Super price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Super price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled Super price">114.9</span></td>
-							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Adblue price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Adblue price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled Adblue price">114.9</span></td>
 						</tr>
 						<tr>
 							<th>003 Enterprise 5</th>
@@ -158,7 +158,6 @@
 							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Gasoil price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Gasoil price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled Gasoil price">114.9</span></td>
 							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current LPG price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed LPG price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled LPG price">114.9</span></td>
 							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Super price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Super price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled Super price">114.9</span></td>
-							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Adblue price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Adblue price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled Adblue price">114.9</span></td>
 						</tr>
 						<tr>
 							<th>005 Keighley</th>
@@ -167,7 +166,6 @@
 							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Gasoil price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Gasoil price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled Gasoil price">114.9</span></td>
 							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current LPG price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed LPG price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled LPG price">114.9</span></td>
 							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Super price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Super price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled Super price">114.9</span></td>
-							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Adblue price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Adblue price"><a href="">114.9</a></span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Scheduled Adblue price">114.9</span></td>
 						</tr>
 					</tbody>	
 				</table>

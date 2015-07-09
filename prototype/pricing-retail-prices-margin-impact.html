@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Morrisons Petrol Management System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="pfs.css" rel="stylesheet">	
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="dashboard.html">
+			<img alt="Morrisons logo" src="morrisonslogo.png" class="navbar-logo"> 
+			PUMPS</a>
+        </div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="dashboard.html">Dashboard</a></li>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pricing <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+		            <li><a href="pricing-bunker-prices.html">Bunker prices</a></li>
+		            <li class="active"><a href="pricing-retail-prices.html">Retail prices</a></li>
+					<li><a href="pricing-margin-calculations.html">Margin calculations</a></li>
+		          </ul>		
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Costs <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="costs-daily-summary.html">Daily summary</a></li>
+
+					<li><a href="costs-terminal-advice.html">Terminal advice</a></li>
+		          </ul>
+				</li>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Logistics <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="logistics-liftings.html">Liftings</a></li>
+					<li><a href="logistics-inventory.html">Inventory</a></li>			
+		          </ul>	
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reports <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="reports-sta-report.html">STA report</a></li>
+					<li><a href="reports-sales-volumes.html">Sales volumes</a></li>
+					<li><a href="reports-closing-stock.html">Closing stock</a></li>			
+					<li><a href="reports-drawings-report.html">Drawings report</a></li>						
+		          </ul>	
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Accounts <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="accounts-weekly-volumes.html">Weekly volumes</a></li>
+					<li><a href="accounts-grni-report.html">GRNI report</a></li>
+		          </ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Configuration <span class="caret"></span></a>
+				    <ul class="dropdown-menu" role="menu">
+					    <li><a href="config-manage-sites.html">Manage sites</a></li>
+			            <li><a href="config-manage-terminals.html">Manage terminals</a></li>	
+			            <li><a href="config-manage-products.html">Manage products</a></li>
+			            <li><a href="config-manage-retail-products.html">Manage retail products</a></li>
+			            <li><a href="config-manage-regulatory-data.html">Manage regulatory data</a></li>
+				    </ul>
+				</li>
+				<li><a href="logout.html">Logout</a></li>			
+			</ul>
+		</div>		
+      </div>
+		<div class="container-fluid">
+			<div class="row toolbar">	
+				<div class="col-xs-12 col-sm-3">
+					<div class="input-group">
+					    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span>				      
+						<input type="text" class="form-control" placeholder="Search for a term">
+				    </div>
+				</div>
+				<div class="col-xs-12 col-sm-6">											
+						<button type="button" class="btn btn-link" data-toggle="modal" data-target="#Refresh">
+						  <span class="glyphicon glyphicon-refresh"></span>
+						  Refresh prices
+						</button>
+					<label class="checkbox-inline form-control-static">
+					  <input type="checkbox" id="inlineCheckbox1" value="option1"> Only show price changes
+					</label>
+				</div>
+				<div class="col-xs-12 col-sm-3">
+					<button type="button" class="btn btn-link pull-right" data-toggle="modal" data-target="#Accept">
+					  <span class="glyphicon glyphicon-ok"></span>
+					  Accept changes
+					</button>
+				</div>	
+			</div>
+		</div>	
+    </div>
+	<div class="container-fluid">		
+		<div class="row">
+			<div class="col-xs-12">	
+				<div class="alert alert-success">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<p>Price refreshed. Displaying proposed prices from Kalibrate.</p>
+				</div>
+				<div class="table-responsive">
+				<table class="table table-condensed table-hover table-retail-prices">
+					<thead>
+						<tr>
+							<th>Site</th><th colspan="2"><a href="#" data-toggle="modal" data-target="#PriceDistribution">Unleaded</a></th><th><span class="small text-success"><span class="glyphicon glyphicon-arrow-up"></span> 26</span> <span class="small text-danger"><span class="glyphicon glyphicon-arrow-down"></span> 0</span></th>
+							<th colspan="2"><a href="#" data-toggle="modal" data-target="#PriceDistribution">Diesel</a></th><th><span class="small"><span class="glyphicon glyphicon-arrow-up"></span> 26</span> <span class="small"><span class="glyphicon glyphicon-arrow-down"></span> 0</span></th>
+							<th colspan="2"><a href="#" data-toggle="modal" data-target="#PriceDistribution">Gasoil</a></th><th><span class="small"><span class="glyphicon glyphicon-arrow-up"></span> 26</span> <span class="small"><span class="glyphicon glyphicon-arrow-down"></span> 0</span></th>
+							<th colspan="2"><a href="#" data-toggle="modal" data-target="#PriceDistribution">LPG</a></th><th><span class="small"><span class="glyphicon glyphicon-arrow-up"></span> 26</span> <span class="small"><span class="glyphicon glyphicon-arrow-down"></span> 0</span></th>
+							<th colspan="2"><a href="#" data-toggle="modal" data-target="#PriceDistribution">Super</a></th><th><span class="small"><span class="glyphicon glyphicon-arrow-up"></span> 26</span> <span class="small"><span class="glyphicon glyphicon-arrow-down"></span> 0</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="small text-muted">
+							<td><span class="glyphicon glyphicon-calendar"></span> Mon 06 July 2015</td>
+							<td>Current</td><td>Proposed</td><td>Scheduled</td>
+							<td>Current</td><td>Proposed</td><td>Scheduled</td>
+							<td>Current</td><td>Proposed</td><td>Scheduled</td>
+							<td>Current</td><td>Proposed</td><td>Scheduled</td>
+							<td>Current</td><td>Proposed</td><td>Scheduled</td>
+						</tr>
+						<tr>
+							<th>001 Chingford</th>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Unleaded price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Unleaded price"><a id="proposed-price" class="editable editable-click" data-title="Proposed Unleaded price" data-placement="bottom" data-type="text" href="#">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Diesel price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Diesel price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Gasoil price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Gasoil price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current LPG price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed LPG price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Super price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Super price"><a href="">114.9</a></span></td><td></td>
+						</tr>
+						<tr>
+							<th>002 Mayo Avenue</th>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Unleaded price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Unleaded price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Diesel price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Diesel price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Gasoil price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Gasoil price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current LPG price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed LPG price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Super price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Super price"><a href="">114.9</a></span></td><td></td>
+						</tr>
+						<tr>
+							<th>003 Enterprise 5</th>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Unleaded price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Unleaded price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Diesel price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Diesel price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Gasoil price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Gasoil price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current LPG price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed LPG price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Super price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Super price"><a href="">114.9</a></span></td><td></td>
+						</tr>
+						<tr>
+							<th>005 Keighley</th>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Unleaded price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Unleaded price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Diesel price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Diesel price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Gasoil price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Gasoil price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current LPG price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed LPG price"><a href="">114.9</a></span></td><td></td>
+							<td class="text-muted"><span data-toggle="tooltip" data-placement="bottom" title="Current Super price">114.9</span></td><td><span data-toggle="tooltip" data-placement="bottom" title="Proposed Super price"><a href="">114.9</a></span></td><td></td>
+						</tr>
+					</tbody>	
+				</table>
+				</div>					
+			</div>
+		</div>	
+	</div>
+	<!-- Footer -->	
+		<div class="navbar navbar-default navbar-fixed-bottom">
+		   	<ol class="breadcrumb text-muted small">
+			  <li>PUMPS</li>
+			  <li>Pricing</li>
+			  <li>Retail prices</li>
+			</ol>
+		</div>
+		
+<!-- Refresh prices modal -->
+<div class="modal fade" id="Refresh" tabindex="-1" role="dialog" aria-labelledby="Refresh" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Refresh proposed prices?</h4>
+      </div>
+      <div class="modal-body">
+		<p>Selecting "Refresh" prices will overwrite proposed prices on current screen.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a href="pricing-retail-prices-refreshed.html" class="btn btn-primary" id="refreshButton">Refresh</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+		
+<!-- Accept prices modal -->
+<div class="modal fade" id="Accept" tabindex="-1" role="dialog" aria-labelledby="Accept" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Accept price changes?</h4>
+      </div>
+      <div class="modal-body">
+		<p>Price change will be effective from <strong>00:00am</strong> on <strong>Tue 07 July 2015</strong>.</p>
+		<form>
+			<div class="checkbox">
+			  <label>
+			    <input type="checkbox" value="">
+			    <a href="pricing-retail-prices-immediate.html">Update prices immediately?</a>
+			  </label>
+			</div>
+		</form>	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a href="pricing-retail-prices-accepted.html" class="btn btn-primary">Accept</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->		
+		
+<!-- Price distribution modal -->
+<div class="modal fade" id="PriceDistribution" tabindex="-1" role="dialog" aria-labelledby="PriceDistribution" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Unleaded price distribution</h4>
+      </div>
+      <div class="modal-body">
+			<table class="table table-condensed">
+				<thead>
+					<tr><th colspan="3">Price point</th><th colspan="4">Margin</th></tr>
+					<tr class="small text-muted"><td>Price</td><td>&plus;</td><td>&minus;</td><td colspan="2">This week</td><td colspan="2">Next week</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>116.8</td><td>40</td><td>45</td><td>0.01</td><td>0.02</td><td>0.01</td><td>0.02</td></tr>
+					<tr><td>116.8</td><td>40</td><td>45</td><td>0.01</td><td>0.02</td><td>0.01</td><td>0.02</td></tr>
+				</tbody>
+				<tfoot>
+				</tfoot>			
+			</table>	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->	
+		
+				
+   <!-- Bootstrap core JavaScript
+   ================================================== -->
+   <!-- Placed at the end of the document so the pages load faster -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+	<script>
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+	</script>
+	<script>
+	$(function(){
+	    var $btn = $('#refreshButton');
+	    $btn.click(function(){
+	        var $this = $(this);
+	        $this.attr('disabled', 'disabled').html("Refreshing prices...");
+	        setTimeout(function () {
+	            $this.removeAttr('disabled').html('Refresh');
+	        }, 3000)
+	    });
+	})
+	</script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function() {
+	//toggle `popup` / `inline` mode
+	$.fn.editable.defaults.mode = 'popup';
+	//make proposed price editable
+	$('#proposed-price').editable();
+	});
+    </script>	
+ </body>
+</html>
